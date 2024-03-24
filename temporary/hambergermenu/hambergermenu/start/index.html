@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <button class="mobile-menu-icon" 
+  onclick="overlay()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+  <div class="overlay">
+    <nav>
+      <ul>
+        <li>
+          <dl>
+            <dt class="open-aco">
+              <a href="#">会社概要</a></dt>
+            <dd>aaa</dd>
+            <dd>aaa</dd>
+            <dd>aaa</dd>
+          </dl>
+        </li>
+        
+        <li>
+          <dl>
+            <dt class="open-aco">
+              <a href="#">事業説明</a></dt>
+            <dd>aaa</dd>
+            <dd>aaa</dd>
+            <dd>aaa</dd>
+          </dl>
+        </li>
+
+        <li>
+          <dl>
+            <dt class="open-aco">
+              <a href="#">採用情報</a></dt>
+            <dd>aaa</dd>
+            <dd>aaa</dd>
+            <dd>aaa</dd>
+          </dl>
+        </li>
+
+        <li><a href="#">アクセス</a></li>
+        <li><a href="#">お問合せ</a></li>
+      </ul>
+    </nav>
+
+  </div>
+
+  <script>
+
+    
+    
+    const overlay = () =>{
+      const ol = document.querySelector('.overlay');
+      ol.classList.toggle('show');
+      document.querySelector('.mobile-menu-icon').classList.toggle('menu-open');
+      if ( ol.classList.contains('show') === false ){
+        dts.forEach(dt => {
+          dt.parentNode.classList.remove('appear');
+        });
+      }
+    }
+    
+    const dts = document.querySelectorAll('dt');
+    dts.forEach(dt => {
+      dt.addEventListener('click', ()=>{
+        dt.parentNode.classList.toggle('appear');
+        
+        dts.forEach(el => {
+          if (dt !== el) {
+            el.parentNode.classList.remove('appear');
+          }
+        });
+      });
+    });
+    
+    
+  </script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+@charset "UTF-8";
+@media screen and (min-width: 320px) and (max-width: 1024px) {
+  .recruit-hiro-pic {
+    position: relative;
+    background-image: url("../common/img/pictures/recruit-pic-long.png");
+    padding: 0;
+    text-align: center;
+    height: 200px;
+  }
+  .pic-mask {
+    height: 100%;
+    background: rgba(255, 255, 255, 0.4);
+  }
+
+  .recruit-hiro-pic p {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: 25px;
+    width: 100%;
+  }
+
+  /* 採用詳細のセクション記述 */
+
+  .recruit-detail {
+    text-align: center;
+  }
+  .recruit-logo {
+    width: 120px;
+    margin: 40px 0 0 0;
+  }
+
+  .recruit-object {
+    width: 200px;
+    display: block;
+    margin: auto;
+  }
+  .recruit-sub-title {
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+
+  .recruit-sub-text {
+    display: inline-block;
+    text-align: left;
+    font-size: 20px;
+    width: 80%;
+  }
+
+  .work-example-section {
+    background: #e0e0e0;
+    position: relative;
+  }
+
+  .heading > span {
+    font-size: 30px;
+  }
+
+  #recruit-entry-button {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 427px) {
+  .recruit-hiro-pic p {
+    font-size: 20px;
+  }
+
+  .recruit-logo {
+    width: 90px;
+  }
+
+  .recruit-sub-text {
+    font-size: 15px;
+  }
+
+  .inner-content {
+    padding: 90px 0 50px 0;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 374px) {
+  .recruit-hiro-pic p {
+    font-size: 18px;
+  }
+
+  .recruit-logo {
+    width: 60px;
+  }
+
+  .recruit-sub-text {
+    font-size: 12px;
+  }
+
+  .inner-content {
+    padding: 90px 0 50px 0;
+  }
+
+  .recruit-sub-title {
+    font-size: 20px;
+  }
+
+  .recruit-object {
+    width: 100px;
+  }
+  button {
+    width: 80%;
+  }
+  .work-example1 > .heading > span {
+    font-size: 20px;
+  }
+
+  .work-example2 > .heading > span {
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,52 @@
+
+.container{
+  width: 100%;
+  display: flex;
+}
+
+.pop{
+ 
+  margin: auto 20px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: burlywood;
+  
+  opacity: 0;
+ 
+ 
+}
+
+.pop.pon{ 
+
+  animation: pop-bounce;
+  animation-duration: 1s;
+  animation-fill-mode:forwards;
+  animation-timing-function: ease;
+  &:nth-child(2){
+    animation-delay:.4s ;
+  }
+  &:nth-child(3){
+    animation-delay:.8s ;
+  }
+  &:nth-child(4){
+    animation-delay:1.2s ;
+  }
+}
+
+@keyframes pop-bounce {
+  0%{
+    transform:translateY(150px);
+  }
+  50%{
+    opacity: .5;
+    transform:translateY(-30px);
+  }
+  100%{
+    opacity: 1;
+    transform:translateY(0);
+  }
+
+
+}
+

@@ -1,0 +1,29 @@
+@charset "UTF-8";
+@media screen and (min-width: 1024px) {
+  /* 問い合わせ先の詳細のスタイル */
+
+  .contact-detail {
+    width: 30%;
+    margin: 0 auto 60px auto;
+    padding: 0.5em 1em;
+    background: #fff;
+    border: solid 5px #33bcef; /*線*/
+    text-align: center;
+  }
+
+  .contact-detail div {
+    padding: 0;
+    margin: 0 0 20px 0;
+    font-weight: bold;
+    font-size: 22px;
+  }
+
+  .contact-title :before {
+    content: "\25B6";
+  }
+
+  .contact-text a {
+    color: black;
+  }
+}
+

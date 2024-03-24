@@ -1,0 +1,67 @@
+@charset "UTF-8";
+@media screen and (min-width: 1024px) {
+  
+  
+  .recruit-hiro-pic {
+    position: relative;
+    background-image: url("../common/img/pictures/recruit-pic-long.png");
+    width: 100%;
+    height: 200px;
+    max-width: 100%;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    text-align: center;
+  }
+
+  .pic-mask {
+    height: 100%;
+    background: rgba(255, 255, 255, 0.4);
+  }
+
+  .recruit-hiro-pic p {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: 40px;
+  }
+
+  /* 採用詳細のセクション記述 */
+
+  .recruit-detail {
+    text-align: center;
+  }
+  .recruit-logo {
+    width: 120px;
+    margin: 40px 0 0 0;
+  }
+
+  .recruit-object {
+    width: 200px;
+    display: block;
+    margin: auto;
+  }
+  .recruit-sub-title {
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+
+  .recruit-sub-text {
+    display: inline-block;
+    text-align: left;
+    font-size: 20px;
+  }
+
+  .work-example-section {
+    background: #e0e0e0;
+    position: relative;
+  }
+
+  #recruit-entry-button {
+    text-align: center;
+  }
+}

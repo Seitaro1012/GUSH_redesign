@@ -1,0 +1,203 @@
+@charset "UTF-8";
+/* 代表挨拶セクションの記述 */
+.greeting-section {
+  box-sizing: content-box;
+  background: linear-gradient(#ffffff, #00a9eb);
+  margin: 0 calc(50% - 50vw);
+  width: 100vw;
+  font-size: 22px;
+}
+.greeting-field {
+  width: 70%;
+  margin: auto;
+}
+.greeting-text {
+  margin: 20px 0 25px 0;
+  display: inline-block;
+  text-align: left;
+  -webkit-animation-name: faderight;
+          animation-name: faderight;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+.greeting-name {
+  margin-top: 30px;
+  text-align: right;
+}
+
+/* 企業情報セクションの記述 */
+.company-name {
+  font-size: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.info-text-section {
+  width: 100vw;
+  margin: 0 calc(50% - 50vw);
+}
+
+/* 会社沿革セクションの記述 */
+.company-history-section {
+  box-sizing: content-box;
+  background: #e0e0e0;
+  margin: 0 calc(50% - 50vw);
+  width: 100vw;
+  text-align: center;
+  position:relative;
+}
+.history-field {
+  margin: auto;
+}
+.history-text-section {
+  width: 100vw;
+  margin: 0 calc(50% - 50vw);
+}
+
+/* 拠点とネットワークの記述 */
+.company-network-section{
+  position:relative;
+}
+
+.network-list{
+  display: block;
+  text-align: left;
+}
+
+.area-text {
+  border-bottom: solid 1px #585859;
+  margin: 0 auto;
+}
+
+.network-text-section {
+  width: 70%;
+  margin: 0 auto;
+}
+.network-text {
+  margin: 20px;
+}
+
+/* table系CSS */
+.group-table{
+  border-collapse: collapse;
+  table-layout: fixed;
+  width: 70%;
+  margin: 0 auto;
+  border-spacing: 20px;
+}
+
+.table-text {
+  border-bottom: 1px solid black;
+}
+.table-text td{
+  height: 40px;
+  padding: 20px 0 0 20px;
+  text-align: left;
+}
+.table-subtitle {
+  width: 15%;
+}
+.table-subtitle:before {
+  content: "\25B6";
+}
+.table-detaile span:after{
+  content: "/";
+}
+.table-detaile span:last-child:after{
+  content: "";
+}
+
+/* ------------------------------
+   * 以降スマホ用CSS記載
+   * ------------------------------ */
+@media screen and (max-width: 1024px) {
+  .greeting-field {
+    text-align: center;
+    width: 80%;
+  }
+  .greeting-name {
+    text-align: center;
+  }
+  
+  /* 企業情報セクションの記述 */
+  .info-text-section {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    margin: 0;
+  }
+  
+  /* 会社沿革セクションの記述 */
+  .history-text-section {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .company-info-deteil {
+    overflow:hidden;
+  }
+  /* table系CSS */
+  .group-table {
+    width: 85%;
+  }
+  .table-text td {
+    padding-left: 10px;
+  }
+  
+  .network-text-section {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 427px) {
+  .greeting-section {
+    font-size: 18px;
+  }
+  .company-name {
+    font-size: 25px;
+  }
+  .group-table {
+    width: 100%;
+  }
+  .table-subtitle {
+    width: 110px;
+    font-size: 15px;
+  }
+  .table-detaile {
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 374px) {
+  .greeting-section {
+    font-size: 15px;
+  }
+  .greeting-field {
+    width: 80%;
+  }
+  .company-name {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .table-text td {
+    padding-bottom: 10px;
+  }
+  .table-subtitle {
+    width: 90px;
+    font-size: 12px;
+  }
+  .table-detaile {
+    font-size: 12px;
+  }
+  
+  .area-text {
+    font-size: 15px;
+  }
+  
+  .network-text {
+    font-size: 12px;
+  }
+}

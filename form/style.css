@@ -1,0 +1,92 @@
+form {
+  width: 400px;
+  margin: 0 auto;
+}
+.inputs {
+  position: relative;
+  width: 100%;
+  margin: 0 3% 25px 3%;
+  overflow: hidden;
+}
+.input_form {
+  float: left;
+  width: 100%;
+}
+input[type="text"],
+input[type="number"],
+input[type="email"],
+textarea {
+  font: 15px/24px sans-serif;
+  box-sizing: border-box;
+  margin: 8px 0;
+  transition: 0.3s;
+  outline: none;
+  border: solid 2px #00a4ea;
+  padding: 8px;
+  font-size: 15px;
+}
+textarea {
+  height: 100px;
+}
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  border-color: #00a4ea;
+}
+input[type="text"],
+input[type="number"],
+input[type="email"],
+textarea {
+  padding-left: 40px;
+}
+i {
+  position: absolute;
+  top: 12px;
+  left: 0;
+  padding: 9px 8px;
+  transition: 0.3s;
+  color: #00a4ea;
+}
+input[type="text"]:focus + i,
+input[type="number"]:focus + i,
+input[type="email"]:focus + i textarea:focus + i {
+  color: #00a4ea;
+}
+.btn-area {
+  text-align: center;
+  margin-top: 30px;
+}
+input[type="submit"] {
+  background: #00a4ea;
+  border: none;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 10px 20px;
+  margin: 0 10px;
+  border-radius: 10px;
+}
+input[type="reset"] {
+  background: #989ba1;
+  border: none;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 10px 20px;
+  margin: 0 10px;
+  border-radius: 10px;
+}
+
+.logo-section {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.logo-section img {
+  width: 150px;
+}
+
+.privecy {
+  text-align: center;
+}
