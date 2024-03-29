@@ -1,18 +1,35 @@
-@use 'sass: math';
-@use 'sass: meta';
+// @use 'sass: math';
+@use '_config' as *;
+// @use 'sass: meta';
 
-// 数値の単位除去
-@function strip-unit($number){
-  @if meta.type-of($number) == 'number' and not math.is-unitlless($number){
-    @return math.div($number, $number * 0 + 1);
-  }
-  @return $number;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Roboto:wght@400;700&display=swap');
+
+
+body{
+	font-family: 'Noto Sans', sans-serif;
+  line-height: 1.5;
+  color: $base-color-black;
 }
 
-// rem変換関数  font-size: rem(42px);など
-@function rem($pixel, $base: 16){
-  @if math.unit($pixel) != 'px'{
-    @warn '引数には、単位がpxの数値を入れて下さい'
-  }
-  @return math.div(stip-unit($pixel), 16) * 1rem;
+
+img {
+  max-width: 100%;
+  height: auto;
 }
+
+
+// // 数値の単位除去
+// @function strip-unit($number){
+//   @if meta.type-of($number) == 'number' and not math.is-unitlless($number){
+//     @return math.div($number, $number * 0 + 1);
+//   }
+//   @return $number;
+// }
+
+// // rem変換関数  font-size: rem(42px);など
+// @function rem($pixel, $base: 16){
+//   @if math.unit($pixel) != 'px'{
+//     @warn '引数には、単位がpxの数値を入れて下さい'
+//   }
+//   @return math.div(stip-unit($pixel), 16) * 1rem;
+// }

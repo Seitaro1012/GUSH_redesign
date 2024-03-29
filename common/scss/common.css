@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Roboto:wght@400;700&display=swap"); /*! destyle.css v4.0.1 | MIT License | https://github.com/nicolas-cusan/destyle.css */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Roboto:wght@400;700&display=swap");
+/*! destyle.css v4.0.1 | MIT License | https://github.com/nicolas-cusan/destyle.css */
 /* Reset box-model and set borders */
 /* ============================================ */
 *,
@@ -377,8 +378,117 @@ th {
 body {
   font-family: "Noto Sans", sans-serif;
   line-height: 1.5;
+  color: #0B1D26;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.gu-wrap {
+  background: #E7E7E7;
+}
+
+@media screen and (min-width: 768px) {
+  .gu-container {
+    max-width: 77.08vw;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  .gu-container {
+    margin-left: 6.11vw;
+    margin-right: 6.11vw;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .gu-inner {
+    max-width: 72.92vw;
+    margin: 0 auto;
+  }
 }
 
 /*--------
 heading
+---------*/
+.gu-heading-1 {
+  font-weight: 700;
+  margin-bottom: 0.3em;
+}
+@media screen and (min-width: 768px) {
+  .gu-heading-1 {
+    font-size: 6.25vw;
+  }
+}
+@media screen and (max-width: 767px) {
+  .gu-heading-1 {
+    font-size: 10.18vw;
+  }
+}
+.gu-heading-2 {
+  font-weight: 700;
+  margin-bottom: 1em;
+}
+@media screen and (min-width: 768px) {
+  .gu-heading-2 {
+    font-size: 2.92vw;
+  }
+}
+@media screen and (max-width: 767px) {
+  .gu-heading-2 {
+    font-size: 6.11vw;
+  }
+}
+.gu-heading-3 {
+  font-weight: 700;
+  margin-bottom: 1em;
+}
+@media screen and (min-width: 768px) {
+  .gu-heading-3 {
+    font-size: 2.08vw;
+  }
+}
+@media screen and (max-width: 767px) {
+  .gu-heading-3 {
+    font-size: 4.07vw;
+  }
+}
+.gu-heading__color-a {
+  color: #fff;
+}
+.gu-heading__color-b {
+  color: #1788A4;
+}
+.gu-heading__color-c {
+  color: #78C8DA;
+}
+
+/*--------
+text
+---------*/
+.gu-text-1 {
+  font-weight: 400;
+  margin-bottom: 1em;
+}
+@media screen and (min-width: 768px) {
+  .gu-text-1 {
+    font-size: 1.25vw;
+  }
+}
+@media screen and (max-width: 767px) {
+  .gu-text-1 {
+    font-size: 3.05vw;
+  }
+}
+.gu-text-1 + .gu-text-1 {
+  margin-bottom: 0;
+}
+.gu-text__color-a {
+  color: #fff;
+}
+
+/*--------
+text
 ---------*//*# sourceMappingURL=common.css.map */

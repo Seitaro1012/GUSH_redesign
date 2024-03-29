@@ -1,1 +1,22 @@
+@use '_config' as *;
 // ヘッダーフッター
+
+.gu-wrap{
+  background: $base-color-gray ;
+}
+.gu-container{
+  @include mq-up(){
+    max-width: vwpc(1480);
+    margin: 0 auto;
+  }
+  @include mq-down() {
+    margin-left: vw(24);
+    margin-right: vw(24);
+  }
+}
+.gu-inner{
+  @include mq-up(){
+    max-width: vwpc(1400);
+    margin: 0 auto;
+  }
+}

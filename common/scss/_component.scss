@@ -1,4 +1,79 @@
+@use '_config' as *;
+
 /*--------
 heading
 ---------*/
 
+.gu-heading{
+  &-1 {
+    font-weight: 700;
+    margin-bottom: 0.3em;
+    // line-height: 1;
+    @include mq-up(){
+      font-size: vwpc(120);
+    }
+    @include mq-down() {
+      font-size: vw(40);
+    }
+  }
+  &-2 {
+    font-weight: 700;
+    margin-bottom: 1em;
+    @include mq-up(){
+      font-size: vwpc(56);
+    }
+    @include mq-down() {
+      font-size: vw(24);
+    }
+  }
+  &-3{
+    font-weight: 700;
+    margin-bottom: 1em;
+    @include mq-up(){
+      font-size: vwpc(40);
+    }
+    @include mq-down() {
+      font-size: vw(16);
+    }
+  }
+  &__color-a{
+    color:$base-color-white;
+  }
+  &__color-b{
+    color:$sub-color-blue01;
+  }
+  &__color-c{
+    color:$sub-color-blue02;
+  }
+}
+
+/*--------
+text
+---------*/
+
+.gu-text{
+  &-1 {
+    font-weight: 400;
+    margin-bottom:1em;
+    @include mq-up(){
+      font-size: vwpc(24);
+    }
+    @include mq-down() {
+      font-size: vw(12);
+    }
+    &+&{
+      margin-bottom:0;
+    }
+  }
+  &__color-a{
+    color:$base-color-white;
+  }
+}
+
+/*--------
+text
+---------*/
+
+// .gu-button{
+
+// }

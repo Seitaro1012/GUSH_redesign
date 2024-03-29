@@ -1,12 +1,55 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Roboto:wght@400;700&display=swap');
-
-body{
-	font-family: 'Noto Sans', sans-serif;
-  line-height: 1.5;
-}
+@use 'sass:math';
 
 $base-color-blue: #0B5773;
 $base-color-gray: #E7E7E7;
 $base-color-white: #fff;
+$base-color-black: #0B1D26;
 
-$sub-color-blue: ;
+$sub-color-blue01: #1788A4;
+$sub-color-blue02: #78C8DA;
+$sub-color-black: #000;
+
+// bleakpoint
+$contents-width-sm: 768;
+
+
+// min-width
+$breakpoint-up: (
+  'sm': 'screen and (min-width: #{$contents-width-sm}px)',
+) !default;
+
+// max-width
+$breakpoint-down: (
+  'sm': 'screen and (max-width: #{$contents-width-sm - 1}px)',
+) !default;
+
+@mixin mq-up($breakpoint: sm) {
+  @media #{map-get($breakpoint-up, $breakpoint)} {
+    @content;
+  }
+}
+
+@mixin mq-down($breakpoint: sm) {
+  @media #{map-get($breakpoint-down, $breakpoint)} {
+    @content;
+  }
+}
+
+
+// @function m($n) {
+//   $arrMargin: 8, 12, 16, 20, 24, 30, 40, 60;
+//   @return nth($arrMargin, $n) * 1px;;
+// }
+
+
+// pxからvwに変換する
+@function vw($n) {
+  @return round(math.div($n, 393) * 100 * 100) * 0.01vw;
+}
+@function vwpc($n) {
+  @return round(math.div($n, 1920) * 100 * 100) * 0.01vw;
+}
+
+@function rem($n) {
+  @return round(math.div($n, 16) * 100) * 0.01rem;
+}
