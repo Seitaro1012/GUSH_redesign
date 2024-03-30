@@ -2,11 +2,9 @@
 @use '_config' as *;
 // @use 'sass: meta';
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Roboto:wght@400;700&display=swap');
-
-
 body{
-	font-family: 'Noto Sans', sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: vwpc(24);
   line-height: 1.5;
   color: $base-color-black;
 }

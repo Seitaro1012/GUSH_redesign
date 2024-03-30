@@ -6,9 +6,10 @@ heading
 
 .gu-heading{
   &-1 {
+    font-family: Roboto; 
     font-weight: 700;
-    margin-bottom: 0.3em;
-    // line-height: 1;
+    // margin-bottom: 0.3em;
+    line-height: 1.1;
     @include mq-up(){
       font-size: vwpc(120);
     }
@@ -54,7 +55,7 @@ text
 .gu-text{
   &-1 {
     font-weight: 400;
-    margin-bottom:1em;
+    // margin-bottom:1em;
     @include mq-up(){
       font-size: vwpc(24);
     }
@@ -62,7 +63,7 @@ text
       font-size: vw(12);
     }
     &+&{
-      margin-bottom:0;
+      margin-top:1em;
     }
   }
   &__color-a{
@@ -71,9 +72,25 @@ text
 }
 
 /*--------
-text
+button
 ---------*/
 
-// .gu-button{
-
-// }
+.gu-button{
+  &-1{
+    display: block;
+    font-family: Roboto; 
+    font-weight:700;
+    line-height: 1.17;
+    color:$base-color-white;
+    background: $sub-color-blue01;
+    border-radius: 9999px;
+    width: fit-content;
+    @include mq-up(){
+      font-size: vwpc(40);
+      padding: vwpc(8) vwpc(64);
+    }
+  }
+  &__center{
+    margin: 0 auto;
+  }
+}

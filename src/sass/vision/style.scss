@@ -1,0 +1,30 @@
+@use '../config' as *;
+
+.gu-section__vision-1{
+  @include mq-up(){
+    padding-bottom:vwpc(460);
+  }
+}
+.gu-section__vision-2{
+  // background:$base-color-blue;
+  @include mq-up(){
+    padding-bottom:vwpc(460);
+  }
+}
+.gu-section__vision-3{
+  @include mq-up(){
+    padding-bottom:vwpc(130);
+  }
+}
+
+.gu-heading-3 {
+  margin-top:1em;
+  &:first-of-type{
+    margin-top:0;
+  }
+}
+.gu-vision__content + .gu-button-1{
+  @include mq-up(){
+    margin-top:vwpc(150);
+  }
+}

@@ -1,0 +1,119 @@
+@use '_config' as *;
+// ヘッダーフッター
+
+.gu-header{
+  display: flex;
+  justify-content: space-between;
+  align-items:flex-end;
+  background: $base-color-white;
+  @include mq-up(){
+    height: vwpc(110);
+    padding:0 vwpc(80) vwpc(10) vwpc(48);
+  }
+
+  &__logo{
+    @include mq-up(){
+      // margin-right: vwpc(64);
+      width:vwpc(250);
+      padding: 0 0 vwpc(8);
+    }
+  }
+  &__navList{
+    display:flex;
+    justify-content: space-between;
+     li{
+       width: vwpc(224);
+       a {
+        margin: 0 auto;
+        display: block;
+        width:fit-content;
+        text-align: center;
+        padding: vwpc(16) 0 vwpc(8);
+      }
+    }
+  }
+}
+
+.gu-footer {
+  color: $base-color-white;
+  background: $base-color-blue;
+  font-size: vwpc(18);
+  &__container{
+    padding: vwpc(55) 0 vwpc(60);
+    display: flex;
+    justify-content: space-between;
+    max-width: vwpc(1480);
+    margin: 0 auto;
+  }
+  &__addressArea{
+    width: vwpc(300);
+  }
+  &__logo{
+    @include mq-up(){
+      // margin-right: vwpc(64);
+      width:vwpc(250);
+      margin-bottom: vwpc(40);
+    }
+  }
+  &__address{
+    margin-bottom: vwpc(40);
+
+  }
+  &__nav{
+    width: vwpc(300);
+  }
+  &__navList{
+    display: flex;
+    gap: vwpc(17);
+    flex-direction: column;
+  }
+    
+}
+
+// .gu-wrap{
+// }
+main {
+  background: $base-color-gray ;
+  margin-top: vwpc(280);
+}
+.gu-container{
+  @include mq-up(){
+    max-width: vwpc(1480);
+    margin: 0 auto;
+  }
+  @include mq-down() {
+    margin-left: vw(24);
+    margin-right: vw(24);
+  }
+}
+.gu-inner{
+  @include mq-up(){
+    padding: 0 vwpc(40) 0 ;
+  }
+}
+.gu-section {
+  position: relative;
+  &:nth-of-type(odd){
+    &:before{
+      content:"";
+      position: absolute;
+      background: url("/assets/images/wave01.png") no-repeat 0 0 / 100%;
+      width: 100%;
+      height: vwpc(280);
+      top: vwpc(-270);
+    }
+    // background:$base-color-blue;
+    
+  }
+  &:nth-of-type(even){
+    background:$base-color-blue;
+    &:before{
+      content:"";
+      position: absolute;
+      background: url("/assets/images/wave02.png") no-repeat 0 0 / 100%;
+      width: 100%;
+      height: vwpc(280);
+      top: vwpc(-270);
+    }
+  }
+}

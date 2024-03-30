@@ -8,27 +8,100 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>株式会社GUSH</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <!-- <link rel="stylesheet" href="../common/css/common.css" />
   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" /> -->
-  <link rel="stylesheet" href="/common/scss/common.css">
-  <link rel="stylesheet" href="/common/scss/vision/style.css">
+  <link rel="stylesheet" href="/assets/css/common.css">
+  <link rel="stylesheet" href="/assets/css/vision/style.css">
 </head>
 <body>
   <div class="gu-wrap">
+    <header class="gu-header">
+      <h1 class="gu-header__logo"><img src="/assets/images/logo.png" alt="GUSH.Inc"></h1>
+      <ul class="gu-header__navList">
+        <li>
+          <a href="/company/index.html">理念について</a>
+        </li>
+        <li>
+          <a href="/services/index.html">事業について</a>
+        </li>
+        <li>
+          <a href="/recruit/index.html">採用について</a>
+        </li>
+        <li>
+          <a href="/access/index.html">お知らせ</a>
+        </li>
+        <li>
+          <a href="/contact/index.html">問い合わせ</a>
+        </li>
+        <li>
+          <a href="/contact/index.html">オンラインショップ</a>
+        </li>
+      </ul>
+    </header>
+<!--モバイルメニュー-->
+<!-- <img id="mobile-logo" src="../common/img/logos/logo.png">
+<button class="mobile-menu-icon" onclick="overlay()">
+  <span></span>
+  <span></span>
+  <span></span>
+</button> -->
+
+<!-- <div class="overlay">
+  <nav>
+    <ul>
+      <li>
+        <dl>
+          <dt><a href="#">会社概要</a></dt>
+          <dd><a href="../company/index.html#Greeting">代表からの挨拶</a></dd>
+          <dd><a href="../company/index.html#Company">企業情報</a></dd>
+          <dd><a href="../company/index.html#History">会社沿革</a></dd>
+          <dd><a href="../company/index.html#Network">拠点ネットワーク</a></dd>
+        </dl>
+      </li>
+      <li>
+        <dl>
+          <dt><a href="#">当社のサービス</a></dt>
+            <dd><a href="../services/index.html#service">サービス</a></dd>
+            <dd><a href="../services/index.html#main">主要事業</a></dd>
+            <dd><a href="../services/index.html#related">関連事業</a></dd>
+            <dd><a href="../services/index.html#example">導入事例</a></dd>
+        </dl>
+      </li>
+
+      <li>
+        <dl>
+          <dt><a href="#">採用情報</a></dt>
+          <dd><a href="../recruit/index.html#newGraduate">新卒採用</a></dd>
+          <dd><a href="../recruit/index.html#midCareer">中途採用</a></dd>
+          <dd><a href="../recruit/index.html#work-example1">業務内容例①</a></dd>
+          <dd><a href="../recruit/index.html#work-example2">業務内容例②</a></dd>
+        </dl>
+      </li>
+
+      <li><a href="../access/index.html">アクセス</a></li>
+      <li><a href="../contact/index.html">お問い合わせ</a></li>
+    </ul>
+  </nav>
+</div> -->
+
+
+
     <main>
-      <section class="gu-vision-1">
+      <section class="gu-section gu-section__vision-1">
         <div class="gu-container">
           <h2 class="gu-heading-1 gu-heading__color-b">OUR PURPOSE</h2>
           <div class="gu-inner">
             <h3 class="gu-heading-2">必要とされる存在であり続ける</h3>
             <p class="gu-text-1">水が湧き出る泉の周りには植物が芽吹き、草木が生茂る。<br>潤いを求めて様々な動物が集まり、さらには沢山の人が訪れ、そこから新たな交流が生まれる。</p>
             <p class="gu-text-1">社名のGUSHは、gush spring【湧き出る泉】から来ており、私たちは生活に無くてはならない泉のような存在でありたいと考え、事業を通じて常に社会に貢献し続ける活動を展開しています。</p>
-            
           </div>
         </div>
       </section>
 
-      <section class="gu-vision-2">
+      <section class="gu-section gu-section__vision-2">
         <div class="gu-container">
           <h2 class="gu-heading-1 gu-heading__color-c">VISON</h2>
           <div class="gu-inner">
@@ -44,10 +117,69 @@
         </div>
       </section>
         
+      <section class="gu-section gu-section__vision-3">
+        <div class="gu-container">
+          <h2 class="gu-heading-1 gu-heading__color-c">GREETING</h2>
+          <div class="gu-inner">
+            <div class="gu-vision__content">
+
+              <h3 class="gu-heading-2">まだ見ぬ未来をわたしたちと</h3>
+              <p class="gu-text-1">こんにちは。</p>
+              <p class="gu-text-1">弊社にご興味をお持ちいただき、ありがとうございます。</p>
+              <p class="gu-text-1">株式会社GUSHは、2021年に長野県上田市にて創業いたしました。</p>
+              <p class="gu-text-1">事業の始まりは20xx年にスタートした雑貨を販売するお店です。<br>常にお客様の気持ちに寄り添い、商品のセレクトやコーディネートに関する<br>サポートをすることで、最適なアイテムを提案し、<br>新たな魅力や価値観を発見する場として、満足度の高い体験を提供しています。</p>
+              <p class="gu-text-1">また、雑貨販売事業を通じて派生した様々な事業の運営として、<br>新規事業をスタートされる方のサポートや地域のスポーツ振興事業など、<br>多岐に渡る活動をしております。</p>
+              <p class="gu-text-1">私たちは様々な方との関わり出会うことで、アイデアを形にしてきました<br>これからも沢山の素敵な出会いがあることを願っております。<br>ともに社会を活性化させるムーブメントを起こしましょう。</p>
+              <p class="gu-text-1">代表取締役　佐藤　圭太</p>
+            </div>
+              
+            <a class="gu-button-1 gu-button__center" href="#">事業についてはこちらへ</a>
+          </div>
+        </div>
+      </section>
+        
         
         
       
     </main>
+
+    <footer class="gu-footer">
+      <div class="gu-footer__container">
+        <div class="gu-footer__addressArea">
+          <p class="gu-footer__logo"><img src="/assets/images/logo_w.png" alt="GUSH.Inc"></p>
+          <p class="gu-footer__address">
+            〒386-0034<br>長野県上田市中之条576-1<br>スカイビル 105
+          </p>
+          <p class="gu-footer__copyright">&copy; 2024 GUSH Inc. </p>
+        </div>
+        
+        <div class="gu-footer__map"></div>
+        
+        <div class="gu-footer__nav">
+          <ul class="gu-footer__navList">
+            <li>
+              <a href="">理念について</a>
+            </li>
+            <li>
+              <a href="">事業について</a>
+            </li>
+            <li>
+              <a href="">採用について</a>
+            </li>
+            <li>
+              <a href="">お知らせ</a>
+            </li>
+            <li>
+              <a href="">お問い合わせ</a>
+            </li>
+            <li>
+              <a href="">オンラインストア</a>
+            </li>
+          </ul>
+        </div>
+        
+      </div>
+    </footer>
   </div>
 </body>
 
