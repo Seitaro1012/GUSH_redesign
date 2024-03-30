@@ -1,3 +1,13 @@
 .hide {
   display: none !important;
 }
+@include mq-up(){
+  .only-sp{
+    display: none;
+  }
+}
+@include mq-down(){
+  .only-pc{
+    display: none;
+  }
+}
