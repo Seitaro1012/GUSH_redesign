@@ -23,7 +23,7 @@
     margin-top:0;
   }
 }
-.gu-vision__content + .gu-button-1{
+.gu-vision__textArea + .gu-button-1{
   @include mq-up(){
     margin-top:vwpc(150);
   }
