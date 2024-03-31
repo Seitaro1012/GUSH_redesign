@@ -20,7 +20,7 @@ html{
 }
 body{
   margin:0;
-	font-family: 'Noto Sans', sans-serif;
+	font-family: 'Noto Sans JP', 'Roboto',  sans-serif;
 	font-weight: 400;
 	font-size: 1.6rem; /* 規定フォントサイズを16pxに設定 */
 	letter-spacing: 0.1em;
