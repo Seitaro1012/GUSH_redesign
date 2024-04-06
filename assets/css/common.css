@@ -907,7 +907,7 @@ button
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    padding: 13.23vw 9.16vw 35.62vw;
+    padding: 13.23vw 9.16vw 38.17vw;
   }
 
   .gu-footer__addressArea {
@@ -922,7 +922,7 @@ button
 
   .gu-footer__address {
     font-size: 2.04vw;
-    margin-bottom: 10.18vw;
+    margin-bottom: 12.72vw;
   }
 
   .gu-footer__copyright {
@@ -941,7 +941,7 @@ button
 
   .gu-footer__map {
     padding-top: 62.5%;
-    margin-bottom: 10.18vw;
+    margin-bottom: 12.72vw;
   }
 
   .gu-footer__navList {
@@ -949,7 +949,7 @@ button
   }
 
   main {
-    margin-top: 15.01vw;
+    margin-top: 17.3vw;
   }
 
   .gu-container {
