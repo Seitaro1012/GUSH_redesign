@@ -41,7 +41,7 @@
 
 const overlay = () =>{
   // let dts = document.querySelectorAll('dt');
-  console.log(this);
+  document.querySelector('body').classList.toggle('js-overlay');
   const ol = document.querySelector('.gu-overlay');
   ol.classList.toggle('js-show');
   document.querySelector('.gu-mobile-menu-icon').classList.toggle('js-open');

@@ -17,7 +17,6 @@
 
   &__logo{
     @include mq-up(){
-      // margin-right: vwpc(64);
       width:vwpc(250);
       padding: 0 0 vwpc(8);
     }
@@ -69,6 +68,7 @@
   }
   &.js-open {
     & > span {
+      background: $base-color-white;
       &:nth-child(1) {
         transition-delay: 70ms;
         transform: translateY(vw(9)) rotate(135deg);
@@ -85,84 +85,75 @@
   }
 }
 
+body.js-overlay {
+  overflow-y: hidden;
+}
+
 .gu-overlay {
+  &.js-show {
+    opacity: 1;
+    pointer-events: auto;
+  }
   @include mq-up(){
     display: none;
   }
-  display:block;
+  // display:block;
+  color:$base-color-white;
   position: absolute;
   height: 100vh;
   top: 0;
   bottom: 0;
   right: 0;
   left: 0;
-  background: rgba(51,188,239,0.95);
-  text-align: center;
-  padding: 64px;
+  background: $base-color-blue;
+  // text-align: center;
+  padding: vh(24);
   opacity: 0;
   pointer-events: none;
-  -webkit-transition: opacity .3s ease-in;
   transition: opacity .3s ease-in;
   z-index:18;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: space-between;
+  &__header{
+    margin-top: vh(56);
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    &Logo{
+      width: vh(112);
+      margin-bottom: vh(14);
+    }
+    &Address{
+      font-weight: 400;
+      font-size: vh(8);
+      margin-bottom: vh(19);
+    }
+    &SnsIcons{
+      display: flex;
+      gap: vh(16);
+      & li {
+        width:vh(16);
+      }
+    }
+  }
+  &__nav{
+    &List{
+      display: flex;
+      flex-direction: column;
+      font-size:vh(14);
+      gap:vh(30);
+    }
+  }
+  &__copyright{
+    font-family: roboto;
+    font-size: vh(12);
+    font-weight: 300;
+  }
+
 }
-.gu-overlay ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  font-size:20px;
-  text-align:-webkit-center;
-}
-.gu-overlay li {
-  text-align: left;
-  border-bottom: 1px solid gray;
-  margin-top: 24px;
-  width:75%;
-}
-.gu-overlay li a {
-  padding-left: 1px;
-  color: black;
-  text-decoration: none;
-}
-.gu-overlay dl {
-  margin: 0;
-}
-.gu-overlay dl dt {
-  cursor: pointer;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  position: relative;
-}
-.gu-overlay dl dt::after {
-  content: '+';
-  position: absolute;
-  top: -1px;
-  right: 16px;
-  -webkit-transition: -webkit-transform .3s;
-  transition: -webkit-transform .3s;
-  transition: transform .3s;
-  transition: transform .3s, -webkit-transform .3s;
-}
-.gu-overlay dl.appear dt::after {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-.gu-overlay dl dd {
-  margin: 0;
-  text-align: left;
-  padding: 8px;
-  display: none;
-}
-.gu-overlay dl.appear dd {
-  display: block;
-  -webkit-animation: .6s fadeIn;
-          animation: .6s fadeIn;
-}
-.gu-overlay.js-show {
-  opacity: 1;
-  pointer-events: auto;
-}
+
 
 
 .gu-footer {
@@ -181,7 +172,6 @@
   }
   &__logo{
     @include mq-up(){
-      // margin-right: vwpc(64);
       width:vwpc(250);
       margin-bottom: vwpc(40);
     }

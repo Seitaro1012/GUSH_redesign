@@ -36,15 +36,12 @@ $breakpoint-down: (
 }
 
 
-// @function m($n) {
-//   $arrMargin: 8, 12, 16, 20, 24, 30, 40, 60;
-//   @return nth($arrMargin, $n) * 1px;;
-// }
-
-
 // pxからvwに変換する
 @function vw($n) {
   @return round(math.div($n, 393) * 100 * 100) * 0.01vw;
+}
+@function vh($n) {
+  @return round(math.div($n, 628) * 100 * 100) * 0.01vh;
 }
 @function vwpc($n) {
   @return round(math.div($n, 1920) * 100 * 100) * 0.01vw;
