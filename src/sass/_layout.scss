@@ -138,13 +138,12 @@ body.js-overlay {
       }
     }
   }
-  &__nav{
-    &List{
-      display: flex;
-      flex-direction: column;
-      font-size:vh(14);
-      gap:vh(30);
-    }
+  &__navList{
+    display: flex;
+    flex-direction: column;
+    font-size:vh(14);
+    gap:vh(30);
+    
   }
   &__copyright{
     font-family: roboto;
@@ -159,34 +158,105 @@ body.js-overlay {
 .gu-footer {
   color: $base-color-white;
   background: $base-color-blue;
-  font-size: vwpc(18);
+  font-weight: 400;
+  position: relative;
+  @include mq-up(){
+    font-size: vwpc(18);
+  }
+  @include mq-down(){
+    font-size: vw(16);
+  }
   &__container{
-    padding: vwpc(55) 0 vwpc(60);
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    max-width: vwpc(1480);
-    margin: 0 auto;
+    @include mq-up(){
+      padding: vwpc(55) 0 vwpc(60);
+      max-width: vwpc(1480);
+      margin: 0 auto;
+    }
+    @include mq-down(){
+      flex-direction: column;
+      padding: vw(52) vw(36) vw(140);
+    }
   }
   &__addressArea{
     width: vwpc(300);
+    @include mq-down(){
+      text-align: center;
+      width: 100%;
+    }
+
   }
   &__logo{
     @include mq-up(){
       width:vwpc(250);
       margin-bottom: vwpc(40);
     }
+    @include mq-down(){
+      width:vw(112);
+      margin: 0 auto vw(16);
+    }
   }
   &__address{
     margin-bottom: vwpc(40);
+    @include mq-down(){
+      font-size: vw(8);
+      margin-bottom: vw(40);
+
+    }
 
   }
+  @include mq-down(){
+    
+    &__copyright{
+      font-size: vw(12);
+     position: absolute;
+     bottom:vw(40);
+     left : 50%;
+     transform: translateX(-50%); 
+    }
+  }
+  &__mapWrap{
+    max-width:vwpc(600);
+    width:vwpc(600);
+    @include mq-down(){
+      max-width:100%;
+      width:100%;
+    }
+  }
+  &__map{
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 50%; /* 比率を2:1に固定 */
+    @include mq-down(){
+      padding-top: 62.5%; 
+      margin-bottom: vw(40);
+    }
+      iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
   &__nav{
-    width: vwpc(300);
+    @include mq-up(){
+      width: vwpc(300);
+
+    }
   }
   &__navList{
     display: flex;
     gap: vwpc(17);
     flex-direction: column;
+    @include mq-down(){
+
+      gap: vw(30);
+
+    }
   }
     
 }

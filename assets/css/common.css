@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 /*! destyle.css v4.0.1 | MIT License | https://github.com/nicolas-cusan/destyle.css */
 
 /* Reset box-model and set borders */
@@ -641,19 +643,20 @@ body.js-overlay {
 .gu-footer {
   color: #fff;
   background: #0B5773;
-  font-size: 0.94vw;
+  font-weight: 400;
+  position: relative;
 }
 
 .gu-footer__container {
-  padding: 2.86vw 0 3.13vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  max-width: 77.08vw;
-  margin: 0 auto;
 }
 
 .gu-footer__addressArea {
@@ -664,8 +667,25 @@ body.js-overlay {
   margin-bottom: 2.08vw;
 }
 
-.gu-footer__nav {
-  width: 15.63vw;
+.gu-footer__mapWrap {
+  max-width: 31.25vw;
+  width: 31.25vw;
+}
+
+.gu-footer__map {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-top: 50%;
+  /* 比率を2:1に固定 */
+}
+
+.gu-footer__map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .gu-footer__navList {
@@ -801,9 +821,23 @@ button
     display: none;
   }
 
+  .gu-footer {
+    font-size: 0.94vw;
+  }
+
+  .gu-footer__container {
+    padding: 2.86vw 0 3.13vw;
+    max-width: 77.08vw;
+    margin: 0 auto;
+  }
+
   .gu-footer__logo {
     width: 13.02vw;
     margin-bottom: 2.08vw;
+  }
+
+  .gu-footer__nav {
+    width: 15.63vw;
   }
 
   main {
@@ -862,6 +896,56 @@ button
 
   .gu-header__navList {
     display: none;
+  }
+
+  .gu-footer {
+    font-size: 4.07vw;
+  }
+
+  .gu-footer__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 13.23vw 9.16vw 35.62vw;
+  }
+
+  .gu-footer__addressArea {
+    text-align: center;
+    width: 100%;
+  }
+
+  .gu-footer__logo {
+    width: 28.5vw;
+    margin: 0 auto 4.07vw;
+  }
+
+  .gu-footer__address {
+    font-size: 2.04vw;
+    margin-bottom: 10.18vw;
+  }
+
+  .gu-footer__copyright {
+    font-size: 3.05vw;
+    position: absolute;
+    bottom: 10.18vw;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+
+  .gu-footer__mapWrap {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .gu-footer__map {
+    padding-top: 62.5%;
+    margin-bottom: 10.18vw;
+  }
+
+  .gu-footer__navList {
+    gap: 7.63vw;
   }
 
   main {
