@@ -89,6 +89,12 @@ button
       font-size: vwpc(40);
       padding: vwpc(8) vwpc(64);
     }
+    @include mq-down(){
+      text-align: center;
+      width: 100%;
+      font-size: vw(24);
+      padding: vw(8) vw(16);
+    }
   }
   &__center{
     margin: 0 auto;

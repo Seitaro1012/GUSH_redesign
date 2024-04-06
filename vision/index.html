@@ -8,6 +8,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>株式会社GUSH</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="/assets/js/main.js" defer></script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -40,7 +42,45 @@
           <a href="/contact/index.html">オンラインショップ</a>
         </li>
       </ul>
+      <button class="gu-mobile-menu-icon" onclick="overlay()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </header>
+    <div class="gu-overlay">
+      <div class="gu-overlay__header">
+        <p class="gu-overlay__headerLogo"></p>
+        <p class="gu-overlay__headerAddress"></p>
+        <ul class="gu-overlay__headerSnsIcons">
+          <li><img src="" alt=""></li>
+          <li><img src="" alt=""></li>
+        </ul>
+      </div>
+      <nav class="gu-overlay__nav">
+        <li>
+          <a href="/company/index.html">理念について</a>
+        </li>
+        <li>
+          <a href="/services/index.html">事業について</a>
+        </li>
+        <li>
+          <a href="/recruit/index.html">採用について</a>
+        </li>
+        <li>
+          <a href="/access/index.html">お知らせ</a>
+        </li>
+        <li>
+          <a href="/contact/index.html">問い合わせ</a>
+        </li>
+        <li>
+          <a href="/contact/index.html">オンラインショップ</a>
+        </li>
+      </nav>
+      <p class="gu-overlay__copyright"></p>
+    </div>
+
+
 <!--モバイルメニュー-->
 <!-- <img id="mobile-logo" src="../common/img/logos/logo.png">
 <button class="mobile-menu-icon" onclick="overlay()">
@@ -49,43 +89,6 @@
   <span></span>
 </button> -->
 
-<!-- <div class="overlay">
-  <nav>
-    <ul>
-      <li>
-        <dl>
-          <dt><a href="#">会社概要</a></dt>
-          <dd><a href="../company/index.html#Greeting">代表からの挨拶</a></dd>
-          <dd><a href="../company/index.html#Company">企業情報</a></dd>
-          <dd><a href="../company/index.html#History">会社沿革</a></dd>
-          <dd><a href="../company/index.html#Network">拠点ネットワーク</a></dd>
-        </dl>
-      </li>
-      <li>
-        <dl>
-          <dt><a href="#">当社のサービス</a></dt>
-            <dd><a href="../services/index.html#service">サービス</a></dd>
-            <dd><a href="../services/index.html#main">主要事業</a></dd>
-            <dd><a href="../services/index.html#related">関連事業</a></dd>
-            <dd><a href="../services/index.html#example">導入事例</a></dd>
-        </dl>
-      </li>
-
-      <li>
-        <dl>
-          <dt><a href="#">採用情報</a></dt>
-          <dd><a href="../recruit/index.html#newGraduate">新卒採用</a></dd>
-          <dd><a href="../recruit/index.html#midCareer">中途採用</a></dd>
-          <dd><a href="../recruit/index.html#work-example1">業務内容例①</a></dd>
-          <dd><a href="../recruit/index.html#work-example2">業務内容例②</a></dd>
-        </dl>
-      </li>
-
-      <li><a href="../access/index.html">アクセス</a></li>
-      <li><a href="../contact/index.html">お問い合わせ</a></li>
-    </ul>
-  </nav>
-</div> -->
 
 
 
@@ -109,7 +112,7 @@
             <h4 class="gu-heading-3 gu-heading__color-a">個性から広がる社会</h4>
             <p class="gu-text-1 gu-text__color-a">様々な視点やアイデアを持ち、新たな価値や創造性を生み出す。<br>意義ある社会貢献に繋げ、社会全体の発展と豊かさを促進する。</p>
             <h4 class="gu-heading-3 gu-heading__color-a">人と人とを繋げ、新たなムーブメントを起こす</h4>
-            <p class="gu-text-1 gu-text__color-a">社名のGUSHは、gush 事業に情熱を注ぎ、新たな価値を生み出すことで、<br>私たちの住む街を創造し新たなムーブメントを起こす。</p>
+            <p class="gu-text-1 gu-text__color-a">社名のGUSHは、gush 事業に情熱を注ぎ、新たな価値を生み出すことで、<br class="only-pc">私たちの住む街を創造し新たなムーブメントを起こす。</p>
             <h4 class="gu-heading-3 gu-heading__color-a">実現する未来に向けて目標を持ち、共に歩む</h4>
             <p class="gu-text-1 gu-text__color-a">常に変化する社会へ怯えることなく、仲間と共に未来への一歩を踏み出す。<br>社会的責任を果たし、持続可能な社会の実現に向けて取り組む</p>
             
@@ -133,7 +136,7 @@
               <p class="gu-text-1">代表取締役　佐藤　圭太</p>
             </div>
               
-            <a class="gu-button-1 gu-button__center" href="#">事業についてはこちらへ</a>
+            <a class="gu-button-1 gu-button__center" href="__dummy__">事業についてはこちらへ</a>
           </div>
         </div>
       </section>
@@ -181,6 +184,8 @@
       </div>
     </footer>
   </div>
+
+ 
 </body>
 
 </html>
