@@ -1,0 +1,64 @@
+@use '../config' as *;
+
+.gu-services__image01 {
+  @include mq-up(){
+    max-width: vwpc(1000);
+    margin: 0 auto;
+  }
+}
+.gu-section .gu-image-1{
+  @include mq-up{
+    margin-top: vwpc(118);
+  }
+  @include mq-down{
+    margin-top: vw(32);
+  }
+}
+.gu-section__services-1{
+  @include mq-up(){
+    padding-bottom:vwpc(380);
+  }
+  @include mq-down(){
+    padding-bottom:vw(100);
+  }
+}
+.gu-section__services-2{
+  @include mq-up(){
+    padding-bottom:vwpc(500);
+  }
+  @include mq-down(){
+    padding-bottom:vw(100);
+  }
+}
+.gu-section__services-3{
+  @include mq-up(){
+    padding-bottom:vwpc(500);
+  }
+  @include mq-down(){
+    padding-bottom:vw(100);
+  }
+}
+.gu-section__services-4{
+  @include mq-up(){
+    padding-bottom:vwpc(400);
+  }
+  @include mq-down(){
+    padding-bottom:vw(100);
+  }
+}
+.gu-section__services-5{
+  @include mq-up(){
+    padding-bottom:vwpc(130);
+  }
+  @include mq-down(){
+    padding-bottom:vw(100);
+  }
+}
+.gu-vision__textArea + .gu-button-1{
+  @include mq-up(){
+    margin-top:vwpc(150);
+  }
+  @include mq-down(){
+    margin-top:vw(84);
+  }
+}

@@ -1,0 +1,65 @@
+@media screen and (min-width: 768px) {
+  .gu-services__image01 {
+    max-width: 52.08vw;
+    margin: 0 auto;
+  }
+
+  .gu-section .gu-image-1 {
+    margin-top: 6.15vw;
+  }
+
+  .gu-section__services-1 {
+    padding-bottom: 19.79vw;
+  }
+
+  .gu-section__services-2 {
+    padding-bottom: 26.04vw;
+  }
+
+  .gu-section__services-3 {
+    padding-bottom: 26.04vw;
+  }
+
+  .gu-section__services-4 {
+    padding-bottom: 20.83vw;
+  }
+
+  .gu-section__services-5 {
+    padding-bottom: 6.77vw;
+  }
+
+  .gu-vision__textArea + .gu-button-1 {
+    margin-top: 7.81vw;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .gu-section .gu-image-1 {
+    margin-top: 8.14vw;
+  }
+
+  .gu-section__services-1 {
+    padding-bottom: 25.45vw;
+  }
+
+  .gu-section__services-2 {
+    padding-bottom: 25.45vw;
+  }
+
+  .gu-section__services-3 {
+    padding-bottom: 25.45vw;
+  }
+
+  .gu-section__services-4 {
+    padding-bottom: 25.45vw;
+  }
+
+  .gu-section__services-5 {
+    padding-bottom: 25.45vw;
+  }
+
+  .gu-vision__textArea + .gu-button-1 {
+    margin-top: 21.37vw;
+  }
+}
+/*# sourceMappingURL=style.css.map */
