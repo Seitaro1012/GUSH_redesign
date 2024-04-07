@@ -1,6 +1,14 @@
 @use '_config' as *;
 // ヘッダーフッター
 
+#gu-header-js{
+  @include mq-up(){
+    height: vwpc(110);
+  }
+  @include mq-down(){
+    height: vw(40);
+  }
+}
 .gu-header{
   display: flex;
   justify-content: space-between;

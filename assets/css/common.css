@@ -803,6 +803,10 @@ button
 }
 
 @media screen and (min-width: 768px) {
+  #gu-header-js {
+    height: 5.73vw;
+  }
+
   .gu-header {
     height: 5.73vw;
     padding: 0 4.17vw 0.52vw 2.5vw;
@@ -880,6 +884,10 @@ button
 }
 
 @media screen and (max-width: 767px) {
+  #gu-header-js {
+    height: 10.18vw;
+  }
+
   .gu-header {
     height: 10.18vw;
     padding: 4.07vw 4.07vw 0;
