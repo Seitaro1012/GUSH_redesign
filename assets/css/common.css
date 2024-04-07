@@ -560,7 +560,7 @@ body.js-overlay {
   right: 0;
   left: 0;
   background: #0B5773;
-  padding: 3.82vh;
+  padding: 3.82vh 3.82vh 6.37vh;
   opacity: 0;
   pointer-events: none;
   -webkit-transition: opacity 0.3s ease-in;
@@ -736,7 +736,7 @@ heading
 .gu-heading-1 {
   font-family: Roboto;
   font-weight: 700;
-  line-height: 1.1;
+  line-height: 1.5;
 }
 
 .gu-heading-2 {

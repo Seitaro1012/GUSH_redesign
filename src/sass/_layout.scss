@@ -107,7 +107,7 @@ body.js-overlay {
   left: 0;
   background: $base-color-blue;
   // text-align: center;
-  padding: vh(24);
+  padding: vh(24) vh(24) vh(40);
   opacity: 0;
   pointer-events: none;
   transition: opacity .3s ease-in;
