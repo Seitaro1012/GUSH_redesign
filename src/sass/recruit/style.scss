@@ -48,8 +48,34 @@
     }
   }
 
+
+
+
 .company-detail-text {
     display: flex;
+
+    border-bottom: 0.5px solid #000;
+
+    @include mq-up(){
+      margin-bottom:vwpc(10);
+    }
+    @include mq-down(){
+      margin-bottom:vw(10);
+    }
+
+    @include mq-up(){
+      width:vwpc(770);
+    }
+    @include mq-down(){
+      width:vw(300);
+    }
 }
 
-  
+.company-detail-title {
+  @include mq-up(){
+    margin-right:vwpc(150);
+  }
+  @include mq-down(){
+    margin-right:vw(50);
+}
+}
