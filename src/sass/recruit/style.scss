@@ -1,0 +1,55 @@
+@use '../config' as *;
+
+.gu-section__recruit-1{
+    @include mq-up(){
+      padding-bottom:vwpc(460);
+    }
+    @include mq-down(){
+      padding-bottom:vw(100);
+    }
+  }
+
+.gu-section__recruit-2{
+    @include mq-up(){
+      padding-bottom:vwpc(460);
+    }
+    @include mq-down(){
+      padding-bottom:vw(100);
+    }
+  }
+
+.gu-section__recruit-3{
+    @include mq-up(){
+      padding-bottom:vwpc(300);
+    }
+    @include mq-down(){
+      padding-bottom:vw(100);
+    }
+  }
+
+.gu-heading-3 {
+    @include mq-up(){
+      margin-top:1em;
+      &:first-of-type{
+        margin-top:0;
+      }
+    }
+    @include mq-down(){
+      margin-top:1.5em;
+    }
+  }
+
+.gu-recruit__textArea + .gu-button-1{
+    @include mq-up(){
+      margin-top:vwpc(150);
+    }
+    @include mq-down(){
+      margin-top:vw(84);
+    }
+  }
+
+.company-detail-text {
+    display: flex;
+}
+
+  
