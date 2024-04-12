@@ -1,6 +1,7 @@
 @use '../config' as *;
 
 .gu-services__image01 {
+  text-align: center;
   @include mq-up(){
     max-width: vwpc(1000);
     margin: 0 auto;
