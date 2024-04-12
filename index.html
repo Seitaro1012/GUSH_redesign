@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -8,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>株式会社GUSH</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script type="module" src="/assets/js/main.js" defer></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -18,94 +18,35 @@
 </head>
 <body class="top">
   <div class="gu-wrap">
-    <header class="gu-header">
-      <h1 class="gu-header__logo"><img src="/assets/images/logo.png" alt="GUSH.Inc"></h1>
-      <ul class="gu-header__navList">
-        <li>
-          <a href="/company/index.html">理念について</a>
-        </li>
-        <li>
-          <a href="/services/index.html">事業について</a>
-        </li>
-        <li>
-          <a href="/recruit/index.html">採用について</a>
-        </li>
-        <li>
-          <a href="/access/index.html">お知らせ</a>
-        </li>
-        <li>
-          <a href="/contact/index.html">問い合わせ</a>
-        </li>
-        <li>
-          <a href="/contact/index.html">オンラインショップ</a>
-        </li>
-      </ul>
-    </header>
-<!--モバイルメニュー-->
-<!-- <img id="mobile-logo" src="../common/img/logos/logo.png">
-<button class="mobile-menu-icon" onclick="overlay()">
-  <span></span>
-  <span></span>
-  <span></span>
-</button> -->
-
-<!-- <div class="overlay">
-  <nav>
-    <ul>
-      <li>
-        <dl>
-          <dt><a href="#">会社概要</a></dt>
-          <dd><a href="../company/index.html#Greeting">代表からの挨拶</a></dd>
-          <dd><a href="../company/index.html#Company">企業情報</a></dd>
-          <dd><a href="../company/index.html#History">会社沿革</a></dd>
-          <dd><a href="../company/index.html#Network">拠点ネットワーク</a></dd>
-        </dl>
-      </li>
-      <li>
-        <dl>
-          <dt><a href="#">当社のサービス</a></dt>
-            <dd><a href="../services/index.html#service">サービス</a></dd>
-            <dd><a href="../services/index.html#main">主要事業</a></dd>
-            <dd><a href="../services/index.html#related">関連事業</a></dd>
-            <dd><a href="../services/index.html#example">導入事例</a></dd>
-        </dl>
-      </li>
-
-      <li>
-        <dl>
-          <dt><a href="#">採用情報</a></dt>
-          <dd><a href="../recruit/index.html#newGraduate">新卒採用</a></dd>
-          <dd><a href="../recruit/index.html#midCareer">中途採用</a></dd>
-          <dd><a href="../recruit/index.html#work-example1">業務内容例①</a></dd>
-          <dd><a href="../recruit/index.html#work-example2">業務内容例②</a></dd>
-        </dl>
-      </li>
-
-      <li><a href="../access/index.html">アクセス</a></li>
-      <li><a href="../contact/index.html">お問い合わせ</a></li>
-    </ul>
-  </nav>
-</div> -->
-
+    <div id="gu-header-js"></div>
 
 
     <main>
-      <section>
-      </section>
+    
 
 
 
       <section class="gu-section">
         <div class="gu-container">
-          <h2 class="gu-heading-1 gu-heading__color-b">VISION</h2>
-          <div class="gu-inner">
-            <h3 class="gu-heading-2">湧きあがる泉にように</h3>
-            <p class="gu-text-1">私たちは、情熱が湧き出る泉のような存在でありたい。<br>
-            関わるすべての人に情熱を注ぐことで新たなムーブメントを起こします。<br>
-            雑貨事業から始まった私たちの活動は地域に貢献する事業を創造していきます。</p>
+          <div class="gu-top-content">
+            <h2 class="gu-heading-1 gu-heading__color-b">VISION</h2>
+            <div class="gu-top-inner">
+              <h3 class="gu-heading-2">湧きあがる泉にように</h3>
+              <p class="gu-text-1">私たちは、情熱が湧き出る泉のような存在でありたい。<br>関わるすべての人に情熱を注ぐことで新たなムーブメントを起こします。<br>雑貨事業から始まった私たちの活動は地域に貢献する事業を創造していきます。</p>
+  
+              <a class="gu-button-1" href="__dummy__" tabindex="0">Read more</a>
+            </div>
+          </div>
+          <div class="gu-top-contentImage">
+            <picture>
+              <source media="(max-width: 767px)" srcset="/assets/images/top_img01sp.jpg">
+              <img src="/assets/images/top_img01.jpg" alt="" width="800" height="600">
+            </picture>
           </div>
         </div>
       </section>
+
+
 
       <section class="gu-section">
         <div class="gu-container">
@@ -116,32 +57,83 @@
               <p class="gu-text-1 gu-text__color-a">個性が輝く人々との出会いにより、地域に寄り添う新しいアイデアやプロジェクトを生み出します。</p>
               <p class="gu-text-1 gu-text__color-a">生活を豊にするアイデアを生み出すことで共に未来への一歩を踏み出していきます。</p>
   
-              <a class="gu-button-1" href="#">事業についてはこちらへ</a>
+              <a class="gu-button-1 gu-button__color-a" href="__dummy__" tabindex="0">Read more</a>
             </div>
           </div>
-          <div class="gu-top-contentImage"></div>
+          <div class="gu-top-contentImage">
+            <picture>
+              <source media="(max-width: 767px)" srcset="/assets/images/top_img02sp.jpg">
+              <img src="/assets/images/top_img02.jpg" alt="" width="800" height="600">
+            </picture>
+          </div>
         </div>
       </section>
         
       <section class="gu-section">
         <div class="gu-container">
-          <h2 class="gu-heading-1 gu-heading__color-c">GREETING</h2>
-          <div class="gu-inner">
-            <div class="gu-vision__content">
-
-              <h3 class="gu-heading-2">まだ見ぬ未来をわたしたちと</h3>
-              <p class="gu-text-1">こんにちは。</p>
-              <p class="gu-text-1">弊社にご興味をお持ちいただき、ありがとうございます。</p>
-              <p class="gu-text-1">株式会社GUSHは、2021年に長野県上田市にて創業いたしました。</p>
-              <p class="gu-text-1">事業の始まりは20xx年にスタートした雑貨を販売するお店です。<br>常にお客様の気持ちに寄り添い、商品のセレクトやコーディネートに関する<br>サポートをすることで、最適なアイテムを提案し、<br>新たな魅力や価値観を発見する場として、満足度の高い体験を提供しています。</p>
-              <p class="gu-text-1">また、雑貨販売事業を通じて派生した様々な事業の運営として、<br>新規事業をスタートされる方のサポートや地域のスポーツ振興事業など、<br>多岐に渡る活動をしております。</p>
-              <p class="gu-text-1">私たちは様々な方との関わり出会うことで、アイデアを形にしてきました<br>これからも沢山の素敵な出会いがあることを願っております。<br>ともに社会を活性化させるムーブメントを起こしましょう。</p>
-              <p class="gu-text-1">代表取締役　佐藤　圭太</p>
+          <div class="gu-top-content">
+            <h2 class="gu-heading-1 gu-heading__color-b">RECRUIT</h2>
+            <div class="gu-top-inner">
+              <h3 class="gu-heading-2">採用について</h3>
+              <p class="gu-text-1">一人ひとりの感性が互いを高め合い、仕事に誇りを持つことで、最高の感動を創造します。<br>
+              私たちは、働くを通じて未来を創り上げる仲間たちをさがしています。<br>一緒に新しい未来を創りましょう。</p>
+              <a class="gu-button-1" href="__dummy__" tabindex="0">Read more</a>
             </div>
-              
-            <a class="gu-button-1 gu-button__center" href="#">事業についてはこちらへ</a>
+          </div>
+          <div class="gu-top-contentImage">
+            <picture>
+              <source media="(max-width: 767px)" srcset="/assets/images/top_img03sp.jpg">
+              <img src="/assets/images/top_img03.jpg" alt="" width="800" height="600">
+            </picture>
           </div>
         </div>
+      </section>
+
+      <section class="gu-section">
+        <div class="gu-container">
+          <div class="gu-top-content">
+            <h2 class="gu-heading-1 gu-heading__color-c">NEWS</h2>
+            <div class="gu-top-inner">
+              
+              <ul class="gu-news-list">
+                <li>
+                  <a href="__dummy__" tabindex="0">
+                    <span class="dt">2024/2/27</span><dd class="dd">サンプルについてサンプルについて</dd>
+                  </a>
+                </li>
+                <li>
+                  <a href="__dummy__" tabindex="0">
+                    <span class="dt">2024/2/27</span><dd class="dd">サンプルについてサンプルについてサンプルについてサンプルについて</dd>
+                  </a>
+                </li>
+                <li>
+                  <a href="__dummy__" tabindex="0">
+                    <span class="dt">2024/2/27</span><dd class="dd">サンプルについてサンプルについて</dd>
+                  </a>
+                </li>
+              </ul>
+
+              <a class="gu-button-1 gu-button__color-a" href="__dummy__" tabindex="0">Read more</a>
+            </div>
+          </div>
+          <div class="gu-top-contentImage">
+            <picture>
+              <source media="(max-width: 767px)" srcset="/assets/images/top_img04sp.jpg">
+              <img src="/assets/images/top_img04.jpg" alt="" width="800" height="600">
+            </picture>
+          </div>
+        </div>
+      </section>
+
+      <section class="gu-section gu-top-online">
+        <h2 class="gu-heading-1 gu-heading__color-c">ONLINE STORE</h2>
+        <div class="gu-top-online__image">
+          <picture>
+            <source media="(max-width: 767px)" srcset="/assets/images/top_img05sp.jpg">
+            <img src="/assets/images/top_img05.jpg" alt="" width="800" height="600">
+          </picture>
+        </div>
+        <a class="gu-button-1 gu-button__center" href="https://www.thepith-store.com/" target="_blank" title="オンラインストアを新規タブで開きます" rel="noopener noreferrer" tabindex="0">Click Here</a>
       </section>
         
         
@@ -149,43 +141,7 @@
       
     </main>
 
-    <footer class="gu-footer">
-      <div class="gu-footer__container">
-        <div class="gu-footer__addressArea">
-          <p class="gu-footer__logo"><img src="/assets/images/logo_w.png" alt="GUSH.Inc"></p>
-          <p class="gu-footer__address">
-            〒386-0034<br>長野県上田市中之条576-1<br>スカイビル 105
-          </p>
-          <p class="gu-footer__copyright">&copy; 2024 GUSH Inc. </p>
-        </div>
-        
-        <div class="gu-footer__map"></div>
-        
-        <div class="gu-footer__nav">
-          <ul class="gu-footer__navList">
-            <li>
-              <a href="">理念について</a>
-            </li>
-            <li>
-              <a href="">事業について</a>
-            </li>
-            <li>
-              <a href="">採用について</a>
-            </li>
-            <li>
-              <a href="">お知らせ</a>
-            </li>
-            <li>
-              <a href="">お問い合わせ</a>
-            </li>
-            <li>
-              <a href="">オンラインストア</a>
-            </li>
-          </ul>
-        </div>
-        
-      </div>
-    </footer>
+    <div id="gu-footer-js"></div>
   </div>
 </body>
 

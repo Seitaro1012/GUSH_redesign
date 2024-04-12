@@ -8,8 +8,8 @@ heading
   &-1 {
     font-family: Roboto; 
     font-weight: 700;
-    // margin-bottom: 0.3em;
-    line-height: 1.5;
+    line-height: 1;
+    // line-height: 1.5;
     @include mq-up(){
       font-size: vwpc(120);
     }
@@ -95,6 +95,10 @@ button
       font-size: vw(24);
       padding: vw(16) vw(22);
     }
+  }
+  &__color-a {
+    color: $base-color-blue;
+    background: $sub-color-blue02;
   }
   &__center{
     margin: 0 auto;

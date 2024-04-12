@@ -7,17 +7,51 @@
 }
 .top .gu-container{
   display:flex;
-  
+  justify-content: space-between;
+  padding: vwpc(140) 0;
+  @include mq-down{
+    flex-direction: column;
+    padding: vw(72) 0 0;
+  }
 }
 .gu-top-content{
   width: 50%;
+  @include mq-down{
+    width: 100%;
+    margin-bottom: vw(64);
+  }
+}
+.top .gu-button-1 {
+  margin-top: vwpc(63);
+  @include mq-down(){
+    margin-top: vw(23);
+    width: vw(112);
+    font-size: vw(12);
+    padding: vw(4) vw(12);
+    line-height: 1.5;
+  }
 }
 .gu-top-inner{
   padding-left: vwpc(40);
 }
-.gu-contentImage{
-  &:nth-of-type(add){
-    order: -1;
+.gu-top-contentImage{
+  width: 100vw;
+  max-width: 50%;
+  margin: 0 calc(50% - 50vw) 0;
+  @include mq-down(){
+    max-width: inherit;
+  }
+}
+@include mq-up(){
+  .gu-section:nth-of-type(odd) .gu-top-contentImage{
+      order: -1;
+  }
+}
+.gu-top-contentImage img{
+  width: vwpc(800);
+  display: block;
+  @include mq-down(){
+    width: 100%;
   }
 }
 
@@ -32,3 +66,82 @@
     margin-top:vwpc(150);
   }
 }
+
+.gu-news-list{
+  margin-top: vwpc(71);
+  color: $base-color-white;
+  font-size:vwpc(24);
+  row-gap: vwpc(32);
+  display: flex;
+  flex-direction: column;
+  @include mq-down(){
+    row-gap: vw(37);
+    font-size:vw(12);
+  }
+  li a{
+    display: flex;
+    border-bottom:1px solid $base-color-white ;
+    position: relative;
+  }
+  .dt{
+    width: 25%;
+    text-align: center;
+  }
+  .dd{
+    width: 75%;
+    padding-right: vwpc(60);
+    @include mq-down(){
+      padding-right: vw(30);
+
+    }
+    &::after{
+      content:"→";
+      position: absolute;
+      right:vwpc(24);
+      top:0;
+      @include mq-down(){
+        right:vw(12);
+
+      }
+    }
+  }
+}
+
+.gu-top-online{
+  padding: vwpc(85) 0 vwpc(106);
+  @include mq-down{
+    padding: vw(40) 0;
+
+  }
+  & .gu-heading-1{
+    width:fit-content;
+    margin: 0 auto;
+    margin-bottom: vwpc(44);
+    @include mq-down{
+      margin-bottom: vw(22);
+      
+    }
+  }
+  &__image{
+    @include mq-down{
+      margin-bottom: vw(40);
+  
+    }
+    // margin-bottom: vwpc(44);
+    img{
+      width: 100%;
+    }
+  }
+  
+}
+
+// .top .gu-footer{
+//   &:before{
+//     content:"";
+//     position: absolute;
+//     background: url("/assets/images/wave02.png") no-repeat 0 0 / 100%;
+//     width: 100%;
+//     height: vwpc(280);
+//     top: vwpc(-270);
+//   }
+// }

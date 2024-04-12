@@ -463,6 +463,11 @@ img {
   height: auto;
 }
 
+a:hover,
+button:hover {
+  opacity: 0.75;
+}
+
 .gu-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -736,7 +741,7 @@ heading
 .gu-heading-1 {
   font-family: Roboto;
   font-weight: 700;
-  line-height: 1.5;
+  line-height: 1;
 }
 
 .gu-heading-2 {
@@ -792,6 +797,11 @@ button
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+}
+
+.gu-button__color-a {
+  color: #0B5773;
+  background: #78C8DA;
 }
 
 .gu-button__center {
