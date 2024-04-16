@@ -361,13 +361,13 @@
 }
 
 .gu-object--topMv .gu-object__shape:nth-child(1):before {
-  -webkit-animation: unyonnyo 9s infinite ease-in-out, poyopoyo 12s infinite ease-in-out;
-  animation: unyonnyo 9s infinite ease-in-out, poyopoyo 12s infinite ease-in-out;
+  -webkit-animation: unyonnyo 8s infinite ease-in-out, poyopoyo 16s infinite ease-in-out;
+  animation: unyonnyo 8s infinite ease-in-out, poyopoyo 16s infinite ease-in-out;
 }
 
 .gu-object--topMv .gu-object__shape:nth-child(1):after {
-  -webkit-animation: unyonnyo2 9s infinite ease-in-out, poyopoyo2 12s infinite ease-in-out;
-  animation: unyonnyo2 9s infinite ease-in-out, poyopoyo2 12s infinite ease-in-out;
+  -webkit-animation: unyonnyo2 12s infinite ease-in-out, poyopoyo2 16s infinite ease-in-out;
+  animation: unyonnyo2 12s infinite ease-in-out, poyopoyo2 16s infinite ease-in-out;
 }
 
 .gu-object--topMv .gu-object__shape:nth-child(2) {
