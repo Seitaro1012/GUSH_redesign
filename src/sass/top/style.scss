@@ -1,4 +1,17 @@
 @use '../config' as *;
+@use '../mixin' as *;
+
+.top main{
+  margin-top: 0;
+}
+.top #gu-header-js {
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+}
+.top .gu-header {
+  background: transparent;
+}
 
 .top .gu-section{
   &::before{
@@ -135,13 +148,194 @@
   
 }
 
-// .top .gu-footer{
-//   &:before{
-//     content:"";
-//     position: absolute;
-//     background: url("/assets/images/wave02.png") no-repeat 0 0 / 100%;
-//     width: 100%;
-//     height: vwpc(280);
-//     top: vwpc(-270);
-//   }
-// }
+.gu-top-mv {
+  height: vwpc(1080);
+  background: url('/assets/images/top_MV01.jpg') no-repeat 0 0 / 100%;
+  position: relative;
+  @include mq-down(){
+    background: url('/assets/images/top_MV01.jpg') no-repeat 0 0 / 100%;
+    height:100vh;
+  }
+  &Title{
+    position: relative;
+    z-index: 10;
+    padding-top:vwpc(320);
+    text-align: center;
+    margin-bottom: vwpc(210);
+    &__text{
+      margin-bottom:  vwpc(34);
+
+    }
+  }
+  &ScrollGuide{
+    width:fit-content;
+    margin: 0 auto;
+    &:after{
+      content: '';
+      background: $base-color-white;
+      margin: vwpc(26) auto 0;
+      display: block;
+      height: vwpc(34);
+      width: vwpc(30);
+      clip-path: polygon(44% 0, 44% 80%, 0 60%, 0 75%, 50% 100%, 100% 75%, 100% 60%, 56% 80%, 56% 0);
+    }
+    &__text{
+      width:vwpc(256);
+    }
+  }
+  &Side{
+    position: absolute;
+    width: vwpc(28);
+    top: vwpc(673);
+    left: vwpc(103);
+    &__text:after{
+      content: '';
+      display: block;
+      width: vwpc(50);
+      height: vwpc(50);
+      background: url('/assets/images/icon01.png') no-repeat 0 0 / 100%; 
+      margin-top: vwpc(22);
+      margin-left: vwpc(-14);
+    }
+    img {
+      width: 100%;
+    }
+  }
+}
+
+
+
+
+
+
+.gu-object__shape {
+  position: absolute;
+  opacity: .6;
+  z-index: 1;
+
+  &:before ,
+  &:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  &:before {
+    top: 5px;
+    left: 5px;
+  }
+  &:after {
+    top: -5px;
+    left: -5px;
+  }
+
+  &--red {
+    &:before ,
+    &:after {
+      background-image: url(/assets/images/object/obje_red01.svg);
+    }
+  }
+  &--yellow {
+    &:before ,
+    &:after {
+      background-image: url(/assets/images/object/obje_yellow01.svg);
+    }
+  }
+  &--blue {
+    &:before ,
+    &:after {
+      background-image: url(/assets/images/object/obje_blue01.svg);
+    }
+  }
+
+  .gu-object--topMv & {
+    &:nth-child(1) {
+      top: vwpc(169);
+      left: 10%;
+      width: vwpc(330);
+      height: vwpc(350);
+
+      @include mq-down {
+        top: vw(240);
+        left: -3%;
+        width: vw(55);
+        height: vw(55);
+      }
+
+     
+      &:before {
+        @include object-anime-1-before();
+      }
+      &:after {
+        @include object-anime-1-after();
+      }
+    }
+    &:nth-child(2) {
+      top: vwpc(182);
+      right: 26%;
+      width: vwpc(200);
+      height: vwpc(210);
+
+      @include mq-down {
+        top: vw(75);
+        left: 12%;
+        width: vw(90);
+        height: vw(90);
+      }
+
+      &:before {
+        animation: unyonnyo 16s infinite ease-in-out, poyopoyo 24s infinite ease-in-out;
+      }
+      &:after {
+        animation: unyonnyo2 20s infinite ease-in-out, poyopoyo2 24s infinite ease-in-out;
+      }
+    }
+    &:nth-child(3) {
+      top: vwpc(600);
+      right: 13%;
+      width: vwpc(240);
+      height: vwpc(228);
+
+      @include mq-down {
+        top: vw(200);
+        left: 70%;
+        width: vw(130);
+        height: vw(130);
+      }
+
+      &:before {
+        animation: unyonnyo 12s infinite ease-in-out, poyopoyo 15s infinite ease-in-out;
+      }
+      &:after {
+        animation: unyonnyo2 12s infinite ease-in-out, poyopoyo2 15s infinite ease-in-out;
+      }
+    }
+  }
+}
+
+
+@keyframes unyonnyo {
+  0%{ transform: scale(1.08, 0.92); }
+  50%{ transform: scale(0.92, 1.08); }
+  100%{ transform: scale(1.08, 0.92); }
+}
+@keyframes unyonnyo2 {
+  0%{ transform: scale(0.92, 1.08); }
+  50%{ transform: scale(1.08, 0.92); }
+  100%{ transform: scale(0.92, 1.08); }
+}
+@keyframes poyopoyo {
+  0%{ top: 6px; left: 6px; }
+  50%{ top: 0; left: 0; }
+  100%{ top: 6px; left: 6px; }
+}
+@keyframes poyopoyo2 {
+  0%{ top: -7px; left: -7px; }
+  50%{ top: 0; left: 0; }
+  100%{ top: -7px; left: -7px; }
+}
+
+

@@ -20,7 +20,7 @@ const gu_header = `
     <a href="/contact/" tabindex="0">問い合わせ</a>
   </li>
   <li>
-    <a href="https://www.thepith-store.com/" target="_blank" title="オンラインストアを新規タブで開きます" rel="noopener noreferrer" tabindex="0">オンラインストア</a>
+    <a href="https://www.thepith-store.com/" target="_blank" aria-label="オンラインストアを新規タブで開きます" rel="noopener noreferrer" tabindex="0">オンラインストア</a>
   </li>
 </ul>
 <button class="gu-mobile-menu-icon js-toggleButton" tabindex="0">
@@ -34,8 +34,8 @@ const gu_header = `
   <p class="gu-overlay__headerLogo"><a href="/" tabindex="0"><img src="/assets/images/logo_w.png" alt="GUSH.Inc"></a></p>
   <p class="gu-overlay__headerAddress">〒386-0034  長野県上田市中之条576-1 スカイビル 105</p>
   <ul class="gu-overlay__headerSnsIcons">
-    <li><a href="__dummy__" target="_blank" title="インスタグラムを新規タブで開きます" rel="noopener noreferrer" tabindex="0"><img src="/assets/images/icon01.png" alt="インスタグラム"></a></li>
-    <li><a href="https://maps.app.goo.gl/7Z465CwU9qYgyo5w8" target="_blank" title="Googleマップを新規タブで開きます" rel="noopener noreferrer"><img src="/assets/images/icon02.png" alt="Googleマップ" tabindex="0"></a></li>
+    <li><a href="__dummy__" target="_blank" aria-label="インスタグラムを新規タブで開きます" rel="noopener noreferrer" tabindex="0"><img src="/assets/images/icon01.png" alt="インスタグラム"></a></li>
+    <li><a href="https://maps.app.goo.gl/7Z465CwU9qYgyo5w8" target="_blank" aria-label="Googleマップを新規タブで開きます" rel="noopener noreferrer"><img src="/assets/images/icon02.png" alt="Googleマップ" tabindex="0"></a></li>
   </ul>
 </div>
 <nav class="gu-overlay__nav">
@@ -56,7 +56,7 @@ const gu_header = `
     <a href="/contact/" tabindex="0">問い合わせ</a>
   </li>
   <li>
-    <a href="https://www.thepith-store.com/" target="_blank" title="オンラインストアを新規タブで開きます" rel="noopener noreferrer" tabindex="0">オンラインストア</a>
+    <a href="https://www.thepith-store.com/" target="_blank" aria-label="オンラインストアを新規タブで開きます" rel="noopener noreferrer" tabindex="0">オンラインストア</a>
   </li>
 </ul>
 </nav>
@@ -101,7 +101,7 @@ const gu_footer = `
         <a href="/contact/" tabindex="0">お問い合わせ</a>
       </li>
       <li>
-        <a href="https://www.thepith-store.com/" target="_blank" title="オンラインストアを新規タブで開きます" rel="noopener noreferrer" tabindex="0">オンラインストア</a>
+        <a href="https://www.thepith-store.com/" target="_blank" aria-label="オンラインストアを新規タブで開きます" rel="noopener noreferrer" tabindex="0">オンラインストア</a>
       </li>
     </ul>
   </div>
