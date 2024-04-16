@@ -2,105 +2,42 @@
 <html>
 
 <head>
-	<meta charset="utf-8" />
+	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="robots" content="noindex">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>問い合わせ</title>
-	<link rel="stylesheet" href="../common/css/common.css">
+	<title>株式会社GUSH</title>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-	<link rel="stylesheet" type="text/css" id="applicationStylesheet" href="style.css" />
-	<link rel="stylesheet" href="css_sp/style_sp.css">
+	<script type="module" src="/assets/js/main.js" defer></script>
+  
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  
+	<link rel="stylesheet" href="/assets/css/common.css">
+	<link rel="stylesheet" href="/assets/css/contact/style.css">
 </head>
-
 <body>
-	<div id="container">
-		<div class="contact-section-head">
-			<div id="infomation" class="inner-content">
-				<div class="content-heading">
-					<div class="heading">
-						<div class="double-spinner">
-							<div></div>
-							<div></div>
-						</div>
-						<h2>Contact</h2>
-					</div>
-					<div class="headig-text">
-						<span>お問い合わせ</span>
+	<div class="gu-wrap">
+		<div id="gu-header-js"></div>
+		<main>
+			<section class="gu-section gu-section__contact-1">
+				<div class="gu-container">
+					<h2 class="gu-heading-1 gu-heading__color-b">CONTACT</h2>
+					<div class="gu-inner">
+					  <h3 class="gu-heading-2">お問い合わせはこちらから</h3>
+					  <div class="contact-form-area">
+					  <iframe class="contact-form" src="https://docs.google.com/forms/d/e/1FAIpQLSeptglM69E6u3vRWlYaiRbJz9MWuuAbjzGJwtKJUd8CNZgzOA/viewform?embedded=true">読み込んでいます…</iframe>
 					</div>
 				</div>
-				<ul class="contact-list">
-					<li class="contact-detail">
-						<div class="contact-title">
-							<h3>お電話でのお問合わせ</h3>
-						</div>
-						<div class="contact-text">
-							<p>●●●-●●●-●●●</p>
-						</div>
-						<div class="contact-text">
-							<p>平日 9:00〜17:30</p>
-						</div>
-					</li>
-					<li class="contact-detail">
-						<div class="contact-title">
-							<h3>WEBでのお問い合わせ</h3>
-						</div>
-						<div class="contact-text">
-							<span>
-								<a href="#">
-									<p>こちらの専用フォームより</p>
-									<p>お問い合わせください</p>
-								</a>
-							</span>
-						</div>
-					</li>
-					<li class="contact-detail">
-						<div class="contact-title">
-							<h3>採用についてのお問い合わせ</h3>
-						</div>
-						<div class="contact-text">
-							<span>
-								<a href="#">
-									<p>こちらよりご確認ください</p>
-								</a>
-							</span>
-						</div>
-					</li>
-				</ul>
-			</div>
-		</div>
+				
+			</section>
+		</main>
+		<div id="gu-footer-js"></div>
+
+
 
 	</div>
-	<footer></footer>
-	<script>
-
-
-		$(function () {
-			$.ajax({
-				url: '../common/header.html',
-				dataType: 'html',
-				success: function (data) {
-					$('body').prepend(data);
-				},
-				error: function () {
-					alert('header error!');
-				},
-			});
-			$.ajax({
-				url: '../common/footer.html',
-				dataType: 'html',
-				success: function (data) {
-					$('footer').prepend(data);
-				},
-				error: function () {
-					alert('footer error!');
-				},
-			});
-
-		});
-
-
-	</script>
+	
 </body>
-
 </html>
