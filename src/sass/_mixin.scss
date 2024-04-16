@@ -1,0 +1,31 @@
+
+@mixin object-anime-1-before() {
+animation: unyonnyo 8s infinite ease-in-out, poyopoyo 16s infinite ease-in-out;
+}
+@mixin object-anime-1-after() {
+animation: unyonnyo2 12s infinite ease-in-out, poyopoyo2 16s infinite ease-in-out;
+}
+
+
+
+@keyframes unyonnyo {
+  0%{ transform: scale(1.08, 0.92); }
+  50%{ transform: scale(0.92, 1.08); }
+  100%{ transform: scale(1.08, 0.92); }
+}
+@keyframes unyonnyo2 {
+  0%{ transform: scale(0.92, 1.08); }
+  50%{ transform: scale(1.08, 0.92); }
+  100%{ transform: scale(0.92, 1.08); }
+}
+@keyframes poyopoyo {
+  0%{ top: 6px; left: 6px; }
+  50%{ top: 0; left: 0; }
+  100%{ top: 6px; left: 6px; }
+}
+@keyframes poyopoyo2 {
+  0%{ top: -7px; left: -7px; }
+  50%{ top: 0; left: 0; }
+  100%{ top: -7px; left: -7px; }
+}
+

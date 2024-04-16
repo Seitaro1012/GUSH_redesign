@@ -16,6 +16,7 @@ img {
 }
 
 a,button{
+  transition: .3s;
   &:hover{
     opacity: 0.75;
   }
