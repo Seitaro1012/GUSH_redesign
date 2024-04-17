@@ -58,6 +58,17 @@
 }
 }
 
+.company-img-area {
+
+  @include mq-up(){
+    width:vwpc(600);
+  }
+  @include mq-down(){
+    width:vw(300);
+  }
+  
+}
+
 // 仮で記述
 
 dd {
