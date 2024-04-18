@@ -86,6 +86,13 @@
 
 .gu-recruit__textArea {
   padding-left: 40px;
+
+  @include mq-up(){
+     height: 100%;
+  }
+  @include mq-down(){
+    display: none;
+  }
 }
 
 .gu-recruit__textArea dl{
@@ -94,21 +101,41 @@
 }
 
 .company-image{
-  width: 31.25vw;
-  padding-top: 95px;
-}
+  @include mq-up(){
+    width: vwpc(600);
+    padding-top: vwpc(100);
+  }
+  @include mq-down(){
+    display: none;
+  }
+  }
+
+  .gu-section__recruit-3{
+    @include mq-up(){
+      padding-bottom:vwpc(130);
+    }
+    @include mq-down(){
+      padding-bottom:vw(100);
+    }
+  }
 
 dd {
   width: 70%;
   border-bottom: 0.5px solid;
-  padding:  17px 0 15px 0;
+  @include mq-up() {
+    padding-top:  vwpc(20);
+    padding-bottom: vwpc(20);
+  }
+
 }
 
 dt {
-  float: left;
   width: 30%;
   border-bottom: 0.5px solid;
-  padding:  17px 0 15px 0;
+  @include mq-up() {
+    padding-top:  vwpc(20);
+    padding-bottom: vwpc(20);
+  }
 }
 
 // .company-content-text {

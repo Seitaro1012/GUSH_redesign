@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>株式会社GUSH</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script src="/assets/js/main.js" defer></script>
+    <script type="module" src="/assets/js/main.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -23,76 +23,7 @@
 
   <body>
     <div class="gu-wrap">
-      <header class="gu-header">
-        <h1 class="gu-header__logo">
-          <img src="/assets/images/logo.png" alt="GUSH.Inc" />
-        </h1>
-        <ul class="gu-header__navList">
-          <li>
-            <a href="/company/index.html">理念について</a>
-          </li>
-          <li>
-            <a href="/services/index.html">事業について</a>
-          </li>
-          <li>
-            <a href="/recruit/index.html">採用について</a>
-          </li>
-          <li>
-            <a href="/access/index.html">お知らせ</a>
-          </li>
-          <li>
-            <a href="/contact/index.html">問い合わせ</a>
-          </li>
-          <li>
-            <a href="/contact/index.html">オンラインショップ</a>
-          </li>
-        </ul>
-        <button class="gu-mobile-menu-icon" onclick="overlay()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-      </header>
-      <div class="gu-overlay">
-        <div class="gu-overlay__header">
-          <p class="gu-overlay__headerLogo"></p>
-          <p class="gu-overlay__headerAddress"></p>
-          <ul class="gu-overlay__headerSnsIcons">
-            <li><img src="" alt="" /></li>
-            <li><img src="" alt="" /></li>
-          </ul>
-        </div>
-        <nav class="gu-overlay__nav">
-          <li>
-            <a href="/company/index.html">理念について</a>
-          </li>
-          <li>
-            <a href="/services/index.html">事業について</a>
-          </li>
-          <li>
-            <a href="/recruit/index.html">採用について</a>
-          </li>
-          <li>
-            <a href="/access/index.html">お知らせ</a>
-          </li>
-          <li>
-            <a href="/contact/index.html">問い合わせ</a>
-          </li>
-          <li>
-            <a href="/contact/index.html">オンラインショップ</a>
-          </li>
-        </nav>
-        <p class="gu-overlay__copyright"></p>
-      </div>
-
-      <!--モバイルメニュー-->
-      <!-- <img id="mobile-logo" src="../common/img/logos/logo.png">
-<button class="mobile-menu-icon" onclick="overlay()">
-  <span></span>
-  <span></span>
-  <span></span>
-</button> -->
-
+      <div id="gu-header-js"></div>
       <main>
         <section class="gu-section gu-section__recruit-1">
           <div class="gu-container">
@@ -195,45 +126,7 @@
           </div>
         </section>
       </main>
-
-      <footer class="gu-footer">
-        <div class="gu-footer__container">
-          <div class="gu-footer__addressArea">
-            <p class="gu-footer__logo">
-              <img src="/assets/images/logo_w.png" alt="GUSH.Inc" />
-            </p>
-            <p class="gu-footer__address">
-              〒386-0034<br />長野県上田市中之条576-1<br />スカイビル 105
-            </p>
-            <p class="gu-footer__copyright">&copy; 2024 GUSH Inc.</p>
-          </div>
-
-          <div class="gu-footer__map"></div>
-
-          <div class="gu-footer__nav">
-            <ul class="gu-footer__navList">
-              <li>
-                <a href="">理念について</a>
-              </li>
-              <li>
-                <a href="">事業について</a>
-              </li>
-              <li>
-                <a href="">採用について</a>
-              </li>
-              <li>
-                <a href="">お知らせ</a>
-              </li>
-              <li>
-                <a href="">お問い合わせ</a>
-              </li>
-              <li>
-                <a href="">オンラインストア</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </footer>
+      <div id="gu-footer-js"></div>
     </div>
   </body>
 </html>
