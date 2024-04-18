@@ -5,7 +5,7 @@ const gu_header = `
 <h1 class="gu-header__logo"><a href="/" tabindex="0"><img src="/assets/images/logo.png" alt="GUSH.Inc"></a></h1>
 <ul class="gu-header__navList">
   <li>
-    <a href="/company/" tabindex="0">理念について</a>
+    <a href="/vision/" tabindex="0">理念について</a>
   </li>
   <li>
     <a href="/services/" tabindex="0">事業について</a>
@@ -41,7 +41,7 @@ const gu_header = `
 <nav class="gu-overlay__nav">
   <ul class="gu-overlay__navList">
   <li>
-    <a href="/company/" tabindex="0">理念について</a>
+    <a href="/vision/" tabindex="0">理念について</a>
   </li>
   <li>
     <a href="/services/" tabindex="0">事業について</a>
@@ -86,7 +86,7 @@ const gu_footer = `
   <div class="gu-footer__nav">
     <ul class="gu-footer__navList">
       <li>
-        <a href="/company/" tabindex="0">理念について</a>
+        <a href="/vision/" tabindex="0">理念について</a>
       </li>
       <li>
         <a href="/services/" tabindex="0">事業について</a>
