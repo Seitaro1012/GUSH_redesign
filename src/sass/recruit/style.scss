@@ -27,6 +27,7 @@
     }
   }
 
+
 .gu-heading-3 {
     @include mq-up(){
       margin-top:1em;
@@ -88,12 +89,11 @@
   padding-left: 40px;
 
   @include mq-up(){
-     height: 100%;
+    padding-left: vwpc(40);
   }
-  @include mq-down(){
-    display: none;
   }
-}
+  
+
 
 .gu-recruit__textArea dl{
   display: flex;
@@ -119,6 +119,15 @@
     }
   }
 
+  .text-area {
+    @include mq-up() {
+      margin-top: vwpc(40);
+    }
+    @include mq-down() {
+      margin-top: vw(20);
+    }
+  }
+
 dd {
   width: 70%;
   border-bottom: 0.5px solid;
@@ -126,8 +135,13 @@ dd {
     padding-top:  vwpc(20);
     padding-bottom: vwpc(20);
   }
-
-}
+  @include mq-down(){
+    padding-top:  vw(15);
+    padding-bottom: vw(15);
+    font-size: 12px;
+  }
+  }
+  
 
 dt {
   width: 30%;
@@ -135,6 +149,11 @@ dt {
   @include mq-up() {
     padding-top:  vwpc(20);
     padding-bottom: vwpc(20);
+  }
+  @include mq-down(){
+    padding-top:  vw(15);
+    padding-bottom: vw(15);
+    font-size: 12px;
   }
 }
 

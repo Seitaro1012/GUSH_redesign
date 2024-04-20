@@ -65,7 +65,7 @@ dt {
   }
 
   .gu-recruit__textArea {
-    height: 100%;
+    padding-left: 2.08vw;
   }
 
   .company-image {
@@ -75,6 +75,10 @@ dt {
 
   .gu-section__recruit-3 {
     padding-bottom: 6.77vw;
+  }
+
+  .text-area {
+    margin-top: 2.08vw;
   }
 
   dd {
@@ -121,16 +125,28 @@ dt {
     margin-top: 21.37vw;
   }
 
-  .gu-recruit__textArea {
-    display: none;
-  }
-
   .company-image {
     display: none;
   }
 
   .gu-section__recruit-3 {
     padding-bottom: 25.45vw;
+  }
+
+  .text-area {
+    margin-top: 5.09vw;
+  }
+
+  dd {
+    padding-top: 3.82vw;
+    padding-bottom: 3.82vw;
+    font-size: 12px;
+  }
+
+  dt {
+    padding-top: 3.82vw;
+    padding-bottom: 3.82vw;
+    font-size: 12px;
   }
 }
 /*# sourceMappingURL=style.css.map */
