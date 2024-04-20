@@ -23,6 +23,11 @@
     width: 100%;
     height: vwpc(150);
     top: vwpc(-140);
+    @include mq-down(){
+      height: vw(35);
+      top: vw(-29);
+
+    }
   }
 }
 .top .gu-section{
@@ -456,8 +461,8 @@
       height: vwpc(114);
 
       @include mq-down {
-        top: vw(300);
-        right: vw(121);
+        top: vw(25);
+        left: vw(289);
         width: vw(51);
         height: vw(57);
       }

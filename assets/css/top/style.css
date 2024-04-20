@@ -581,6 +581,11 @@
 }
 
 @media screen and (max-width: 767px) {
+  .top .gu-footer:before {
+    height: 8.91vw;
+    top: -7.38vw;
+  }
+
   .top .gu-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -730,8 +735,8 @@
   }
 
   .gu-object--topSection04 .gu-object__shape:nth-child(1) {
-    top: 76.34vw;
-    right: 30.79vw;
+    top: 6.36vw;
+    left: 73.54vw;
     width: 12.98vw;
     height: 14.5vw;
   }
