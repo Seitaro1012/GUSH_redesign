@@ -27,6 +27,7 @@
     }
   }
 
+
 .gu-heading-3 {
     @include mq-up(){
       margin-top:1em;
@@ -36,15 +37,6 @@
     }
     @include mq-down(){
       margin-top:1.5em;
-    }
-  }
-
-.gu-recruit__textArea + .gu-button-1{
-    @include mq-up(){
-      margin-top:vwpc(150);
-    }
-    @include mq-down(){
-      margin-top:vw(84);
     }
   }
 
@@ -59,7 +51,6 @@
 }
 
 .company-img-area {
-
   @include mq-up(){
     width:vwpc(600);
   }
@@ -69,17 +60,101 @@
   
 }
 
-// 仮で記述
+
+.div-wrap{
+  display: flex;
+  gap: 75px;
+}
+
+.company-details{
+  @include mq-up(){
+    width:vwpc(810);
+  }
+  @include mq-down(){
+    width:vw(300);
+}
+}
+
+.gu-button-1{
+  @include mq-up(){
+    margin-top:vwpc(150);
+  }
+  @include mq-down(){
+    margin-top:vw(84);
+  }
+}
+
+
+.gu-recruit__textArea {
+  padding-left: 40px;
+
+  @include mq-up(){
+    padding-left: vwpc(40);
+  }
+  }
+  
+
+
+.gu-recruit__textArea dl{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.company-image{
+  @include mq-up(){
+    width: vwpc(600);
+    padding-top: vwpc(100);
+  }
+  @include mq-down(){
+    display: none;
+  }
+  }
+
+  .gu-section__recruit-3{
+    @include mq-up(){
+      padding-bottom:vwpc(130);
+    }
+    @include mq-down(){
+      padding-bottom:vw(100);
+    }
+  }
+
+  .text-area {
+    @include mq-up() {
+      margin-top: vwpc(40);
+    }
+    @include mq-down() {
+      margin-top: vw(20);
+    }
+  }
 
 dd {
   width: 70%;
   border-bottom: 0.5px solid;
-}
+  @include mq-up() {
+    padding-top:  vwpc(20);
+    padding-bottom: vwpc(20);
+  }
+  @include mq-down(){
+    padding-top:  vw(15);
+    padding-bottom: vw(15);
+    font-size: 12px;
+  }
+  }
+  
 
 dt {
-  float: left;
   width: 30%;
   border-bottom: 0.5px solid;
+  @include mq-up() {
+    padding-top:  vwpc(20);
+    padding-bottom: vwpc(20);
+  }
+  @include mq-down(){
+    padding-top:  vw(15);
+    padding-bottom: vw(15);
+    font-size: 12px;
+  }
 }
 
 // .company-content-text {

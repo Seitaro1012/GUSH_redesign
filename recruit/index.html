@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>株式会社GUSH</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script src="/assets/js/main.js" defer></script>
+    <script type="module" src="/assets/js/main.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -23,76 +23,7 @@
 
   <body>
     <div class="gu-wrap">
-      <header class="gu-header">
-        <h1 class="gu-header__logo">
-          <img src="/assets/images/logo.png" alt="GUSH.Inc" />
-        </h1>
-        <ul class="gu-header__navList">
-          <li>
-            <a href="/company/index.html">理念について</a>
-          </li>
-          <li>
-            <a href="/services/index.html">事業について</a>
-          </li>
-          <li>
-            <a href="/recruit/index.html">採用について</a>
-          </li>
-          <li>
-            <a href="/access/index.html">お知らせ</a>
-          </li>
-          <li>
-            <a href="/contact/index.html">問い合わせ</a>
-          </li>
-          <li>
-            <a href="/contact/index.html">オンラインショップ</a>
-          </li>
-        </ul>
-        <button class="gu-mobile-menu-icon" onclick="overlay()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-      </header>
-      <div class="gu-overlay">
-        <div class="gu-overlay__header">
-          <p class="gu-overlay__headerLogo"></p>
-          <p class="gu-overlay__headerAddress"></p>
-          <ul class="gu-overlay__headerSnsIcons">
-            <li><img src="" alt="" /></li>
-            <li><img src="" alt="" /></li>
-          </ul>
-        </div>
-        <nav class="gu-overlay__nav">
-          <li>
-            <a href="/company/index.html">理念について</a>
-          </li>
-          <li>
-            <a href="/services/index.html">事業について</a>
-          </li>
-          <li>
-            <a href="/recruit/index.html">採用について</a>
-          </li>
-          <li>
-            <a href="/access/index.html">お知らせ</a>
-          </li>
-          <li>
-            <a href="/contact/index.html">問い合わせ</a>
-          </li>
-          <li>
-            <a href="/contact/index.html">オンラインショップ</a>
-          </li>
-        </nav>
-        <p class="gu-overlay__copyright"></p>
-      </div>
-
-      <!--モバイルメニュー-->
-      <!-- <img id="mobile-logo" src="../common/img/logos/logo.png">
-<button class="mobile-menu-icon" onclick="overlay()">
-  <span></span>
-  <span></span>
-  <span></span>
-</button> -->
-
+      <div id="gu-header-js"></div>
       <main>
         <section class="gu-section gu-section__recruit-1">
           <div class="gu-container">
@@ -131,6 +62,7 @@
           <div class="gu-container">
             <h2 class="gu-heading-1 gu-heading__color-c">TOP MESSAGE</h2>
             <div class="gu-inner">
+              <div class="text-area">
               <p class="gu-text-1 gu-text__color-a">
                 目の前に広がる世界は果てしなくリアルだ。
               </p>
@@ -150,79 +82,45 @@
                 複雑でリアルな世界で共に楽しもう。
               </p>
             </div>
+            </div>
           </div>
         </section>
 
-        <style>
-          .div-wrap{
-            display: flex;
-            gap: 75px;
-          }
-          .div1{
-            width: 810px;
-          }
-          .gu-recruit__textArea {
-            padding-left: 40px;
-          }
-          .gu-recruit__textArea dl{
-            display: flex;
-            flex-wrap: wrap;
-          }
-          .div2{
-            width: 31.25vw;
-          }
-        </style>
         <section class="gu-section gu-section__recruit-3">
           <div class="gu-container">
             <div class="div-wrap">
-              <div class="div1">
+              <div class="company-details">
                 <h2 class="gu-heading-1 gu-heading__color-b">COMPANY</h2>
                 <div class="gu-recruit__textArea">
                   <h3 class="gu-heading-2">会社概要</h3>
                   <dl>
-                    <!-- <div class="company-content-text"> -->
                       <dt>商号</dt>
-                      <dd>株式会社GUSH</dd>
-                    <!-- </div> -->
-                    <!-- <div class="company-content-text"> -->
+                      <dd>株式会社GUSH</dd>    
                       <dt>設立日</dt>
-                      <dd>2023年3月31日</dd>
-                    <!-- </div> -->
-                    <!-- <div class="company-content-text"> -->
+                      <dd>2023年3月31日</dd> 
                       <dt>代表取締役</dt>
                       <dd>佐藤 圭太</dd>
-                    <!-- </div> -->
-                    <!-- <div class="company-content-text"> -->
                       <dt>所在地</dt>
                       <dd>〒386-0034 長野県上田市中之条576-1</dd>
-                    <!-- </div> -->
-                    <!-- <div class="company-content-text"> -->
                       <dt>TEL</dt>
                       <dd>0268-75-5975</dd>
-                    <!-- </div> -->
-                    <!-- <div class="company-content-text"> -->
                       <dt>MAIL</dt>
                       <dd>info@gush.jp</dd>
-                    <!-- </div> -->
-                    <!-- <div class="company-content-text"> -->
                       <dt>事業内容</dt>
                       <dd>
-                        雑貨店運営地域活性化イベントの企画・運営
-                        地元企業とのコラボ商品開発
-                        起業プロデュース・コンサルティング
+                        雑貨店運営地域活性化イベントの企画・運営<br>
+                        地元企業とのコラボ商品開発<br>
+                        起業プロデュース・コンサルティング<br>
                         その他、地域活性化に貢献する事業
                       </dd>
-                    <!-- </div> -->
                   </dl>
                 </div>
               </div>
 
-              <div class="div2">
+              <div class="company-image">
                 <div class="company-img-area">
                   <img src="/assets/images/recruit-company-img.png" alt="会社の外観の社員">
                 </div>
-              <!-- </div> -->
-              <!-- <div class="gu-inner"> -->
               </div>
 
             </div>
@@ -230,45 +128,7 @@
           </div>
         </section>
       </main>
-
-      <footer class="gu-footer">
-        <div class="gu-footer__container">
-          <div class="gu-footer__addressArea">
-            <p class="gu-footer__logo">
-              <img src="/assets/images/logo_w.png" alt="GUSH.Inc" />
-            </p>
-            <p class="gu-footer__address">
-              〒386-0034<br />長野県上田市中之条576-1<br />スカイビル 105
-            </p>
-            <p class="gu-footer__copyright">&copy; 2024 GUSH Inc.</p>
-          </div>
-
-          <div class="gu-footer__map"></div>
-
-          <div class="gu-footer__nav">
-            <ul class="gu-footer__navList">
-              <li>
-                <a href="">理念について</a>
-              </li>
-              <li>
-                <a href="">事業について</a>
-              </li>
-              <li>
-                <a href="">採用について</a>
-              </li>
-              <li>
-                <a href="">お知らせ</a>
-              </li>
-              <li>
-                <a href="">お問い合わせ</a>
-              </li>
-              <li>
-                <a href="">オンラインストア</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </footer>
+      <div id="gu-footer-js"></div>
     </div>
   </body>
 </html>
