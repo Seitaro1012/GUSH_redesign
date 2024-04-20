@@ -136,6 +136,74 @@
   }
 }
 
+@-webkit-keyframes poyopoyo_mini {
+  0% {
+    top: 2px;
+    left: 2px;
+  }
+
+  50% {
+    top: 0;
+    left: 0;
+  }
+
+  100% {
+    top: 2px;
+    left: 2px;
+  }
+}
+
+@keyframes poyopoyo_mini {
+  0% {
+    top: 2px;
+    left: 2px;
+  }
+
+  50% {
+    top: 0;
+    left: 0;
+  }
+
+  100% {
+    top: 2px;
+    left: 2px;
+  }
+}
+
+@-webkit-keyframes poyopoyo2_mini {
+  0% {
+    top: -3px;
+    left: -3px;
+  }
+
+  50% {
+    top: 0;
+    left: 0;
+  }
+
+  100% {
+    top: -3px;
+    left: -3px;
+  }
+}
+
+@keyframes poyopoyo2_mini {
+  0% {
+    top: -3px;
+    left: -3px;
+  }
+
+  50% {
+    top: 0;
+    left: 0;
+  }
+
+  100% {
+    top: -3px;
+    left: -3px;
+  }
+}
+
 .top {
   overflow-x: hidden;
 }
@@ -152,6 +220,15 @@
 
 .top .gu-header {
   background: transparent;
+}
+
+.top .gu-footer:before {
+  content: "";
+  position: absolute;
+  background: url("/assets/images/wave_light01.png") no-repeat 0 0/100%;
+  width: 100%;
+  height: 7.81vw;
+  top: -7.29vw;
 }
 
 .top .gu-section::before {
@@ -357,6 +434,21 @@
   background-image: url(/assets/images/object/obje_blue01.svg);
 }
 
+.gu-object__shape--blue02:before,
+.gu-object__shape--blue02:after {
+  background-image: url(/assets/images/object/obje_blue02.svg);
+}
+
+.gu-object__shape--blue03:before,
+.gu-object__shape--blue03:after {
+  background-image: url(/assets/images/object/obje_blue03.svg);
+}
+
+.gu-object__shape--blue04:before,
+.gu-object__shape--blue04:after {
+  background-image: url(/assets/images/object/obje_blue04.svg);
+}
+
 .gu-object--topMv .gu-object__shape:nth-child(1) {
   top: 8.8vw;
   left: 10%;
@@ -399,81 +491,81 @@
 }
 
 .gu-object--topMv .gu-object__shape:nth-child(3):before {
-  -webkit-animation: unyonnyo 12s infinite ease-in-out, poyopoyo 15s infinite ease-in-out;
-  animation: unyonnyo 12s infinite ease-in-out, poyopoyo 15s infinite ease-in-out;
+  -webkit-animation: unyonnyo 16s infinite ease-in-out, poyopoyo 24s infinite ease-in-out;
+  animation: unyonnyo 16s infinite ease-in-out, poyopoyo 24s infinite ease-in-out;
 }
 
 .gu-object--topMv .gu-object__shape:nth-child(3):after {
-  -webkit-animation: unyonnyo2 12s infinite ease-in-out, poyopoyo2 15s infinite ease-in-out;
-  animation: unyonnyo2 12s infinite ease-in-out, poyopoyo2 15s infinite ease-in-out;
+  -webkit-animation: unyonnyo2 20s infinite ease-in-out, poyopoyo2 24s infinite ease-in-out;
+  animation: unyonnyo2 20s infinite ease-in-out, poyopoyo2 24s infinite ease-in-out;
 }
 
-@keyframes unyonnyo {
-  0% {
-    -webkit-transform: scale(1.08, 0.92);
-    transform: scale(1.08, 0.92);
-  }
-
-  50% {
-    -webkit-transform: scale(0.92, 1.08);
-    transform: scale(0.92, 1.08);
-  }
-
-  100% {
-    -webkit-transform: scale(1.08, 0.92);
-    transform: scale(1.08, 0.92);
-  }
+.gu-object--topSection01 .gu-object__shape:nth-child(1) {
+  top: 2.86vw;
+  right: 4.58vw;
+  width: 4.17vw;
+  height: 5vw;
 }
 
-@keyframes unyonnyo2 {
-  0% {
-    -webkit-transform: scale(0.92, 1.08);
-    transform: scale(0.92, 1.08);
-  }
-
-  50% {
-    -webkit-transform: scale(1.08, 0.92);
-    transform: scale(1.08, 0.92);
-  }
-
-  100% {
-    -webkit-transform: scale(0.92, 1.08);
-    transform: scale(0.92, 1.08);
-  }
+.gu-object--topSection01 .gu-object__shape:nth-child(1):before {
+  -webkit-animation: unyonnyo 5s infinite ease-in-out, poyopoyo_mini 10s infinite ease-in-out;
+  animation: unyonnyo 5s infinite ease-in-out, poyopoyo_mini 10s infinite ease-in-out;
 }
 
-@keyframes poyopoyo {
-  0% {
-    top: 6px;
-    left: 6px;
-  }
-
-  50% {
-    top: 0;
-    left: 0;
-  }
-
-  100% {
-    top: 6px;
-    left: 6px;
-  }
+.gu-object--topSection01 .gu-object__shape:nth-child(1):after {
+  -webkit-animation: unyonnyo2 8s infinite ease-in-out, poyopoyo2_mini 11s infinite ease-in-out;
+  animation: unyonnyo2 8s infinite ease-in-out, poyopoyo2_mini 11s infinite ease-in-out;
 }
 
-@keyframes poyopoyo2 {
-  0% {
-    top: -7px;
-    left: -7px;
-  }
+.gu-object--topSection02 .gu-object__shape:nth-child(1) {
+  top: 2.86vw;
+  right: 45.05vw;
+  width: 6.09vw;
+  height: 5.94vw;
+}
 
-  50% {
-    top: 0;
-    left: 0;
-  }
+.gu-object--topSection02 .gu-object__shape:nth-child(1):before {
+  -webkit-animation: unyonnyo 8s infinite ease-in-out, poyopoyo_mini 12s infinite ease-in-out;
+  animation: unyonnyo 8s infinite ease-in-out, poyopoyo_mini 12s infinite ease-in-out;
+}
 
-  100% {
-    top: -7px;
-    left: -7px;
-  }
+.gu-object--topSection02 .gu-object__shape:nth-child(1):after {
+  -webkit-animation: unyonnyo2 10s infinite ease-in-out, poyopoyo2_mini 12s infinite ease-in-out;
+  animation: unyonnyo2 10s infinite ease-in-out, poyopoyo2_mini 12s infinite ease-in-out;
+}
+
+.gu-object--topSection03 .gu-object__shape:nth-child(1) {
+  bottom: 3.33vw;
+  right: 9.9vw;
+  width: 6.09vw;
+  height: 5.94vw;
+}
+
+.gu-object--topSection03 .gu-object__shape:nth-child(1):before {
+  -webkit-animation: unyonnyo 8s infinite ease-in-out, poyopoyo_mini 16s infinite ease-in-out;
+  animation: unyonnyo 8s infinite ease-in-out, poyopoyo_mini 16s infinite ease-in-out;
+}
+
+.gu-object--topSection03 .gu-object__shape:nth-child(1):after {
+  -webkit-animation: unyonnyo2 12s infinite ease-in-out, poyopoyo2_mini 16s infinite ease-in-out;
+  animation: unyonnyo2 12s infinite ease-in-out, poyopoyo2_mini 16s infinite ease-in-out;
+}
+
+.gu-object--topSection04 .gu-object__shape:nth-child(1) {
+  top: 3.91vw;
+  left: 3.13vw;
+  width: 6.09vw;
+  height: 5.94vw;
+}
+
+.gu-object--topSection04 .gu-object__shape:nth-child(1):before {
+  -webkit-animation: unyonnyo 5s infinite ease-in-out, poyopoyo_mini 10s infinite ease-in-out;
+  animation: unyonnyo 5s infinite ease-in-out, poyopoyo_mini 10s infinite ease-in-out;
+}
+
+.gu-object--topSection04 .gu-object__shape:nth-child(1):after {
+  -webkit-animation: unyonnyo2 8s infinite ease-in-out, poyopoyo2_mini 11s infinite ease-in-out;
+  animation: unyonnyo2 8s infinite ease-in-out, poyopoyo2_mini 11s infinite ease-in-out;
 }
 
 @media screen and (min-width: 768px) {
@@ -544,29 +636,104 @@
   }
 
   .gu-top-mv {
-    background: url("/assets/images/top_MV01.jpg") no-repeat 0 0/100%;
-    height: 100vh;
+    background: url("/assets/images/top_MV01sp.jpg") no-repeat 0 0/100%;
+    height: 162.85vw;
+  }
+
+  .gu-top-mvTitle {
+    padding-top: 61.07vw;
+    margin-bottom: 37.15vw;
+  }
+
+  .gu-top-mvTitle__subText {
+    margin-top: 0;
+  }
+
+  .gu-top-mvScrollGuide__text {
+    width: 24.43vw;
+  }
+
+  .gu-top-mvSide {
+    display: none;
   }
 
   .gu-object--topMv .gu-object__shape:nth-child(1) {
-    top: 61.07vw;
-    left: -3%;
-    width: 13.99vw;
-    height: 13.99vw;
+    top: 26.97vw;
+    left: 7.63vw;
+    width: 22.65vw;
+    height: 24.17vw;
+  }
+
+  .gu-object--topMv .gu-object__shape:nth-child(1):before {
+    -webkit-animation: unyonnyo 8s infinite ease-in-out, poyopoyo_mini 12s infinite ease-in-out;
+    animation: unyonnyo 8s infinite ease-in-out, poyopoyo_mini 12s infinite ease-in-out;
+  }
+
+  .gu-object--topMv .gu-object__shape:nth-child(1):after {
+    -webkit-animation: unyonnyo2 10s infinite ease-in-out, poyopoyo2_mini 12s infinite ease-in-out;
+    animation: unyonnyo2 10s infinite ease-in-out, poyopoyo2_mini 12s infinite ease-in-out;
   }
 
   .gu-object--topMv .gu-object__shape:nth-child(2) {
-    top: 19.08vw;
-    left: 12%;
-    width: 22.9vw;
-    height: 22.9vw;
+    top: 106.11vw;
+    left: 10.94vw;
+    width: 14.76vw;
+    height: 14.76vw;
+  }
+
+  .gu-object--topMv .gu-object__shape:nth-child(2):before {
+    -webkit-animation: unyonnyo 5s infinite ease-in-out, poyopoyo_mini 10s infinite ease-in-out;
+    animation: unyonnyo 5s infinite ease-in-out, poyopoyo_mini 10s infinite ease-in-out;
+  }
+
+  .gu-object--topMv .gu-object__shape:nth-child(2):after {
+    -webkit-animation: unyonnyo2 8s infinite ease-in-out, poyopoyo2_mini 11s infinite ease-in-out;
+    animation: unyonnyo2 8s infinite ease-in-out, poyopoyo2_mini 11s infinite ease-in-out;
   }
 
   .gu-object--topMv .gu-object__shape:nth-child(3) {
-    top: 50.89vw;
-    left: 70%;
-    width: 33.08vw;
-    height: 33.08vw;
+    top: 45.04vw;
+    right: 9.67vw;
+    width: 20.36vw;
+    height: 21.37vw;
+  }
+
+  .gu-object--topMv .gu-object__shape:nth-child(3):before {
+    -webkit-animation: unyonnyo 8s infinite ease-in-out, poyopoyo_mini 16s infinite ease-in-out;
+    animation: unyonnyo 8s infinite ease-in-out, poyopoyo_mini 16s infinite ease-in-out;
+  }
+
+  .gu-object--topMv .gu-object__shape:nth-child(3):after {
+    -webkit-animation: unyonnyo2 12s infinite ease-in-out, poyopoyo2_mini 16s infinite ease-in-out;
+    animation: unyonnyo2 12s infinite ease-in-out, poyopoyo2_mini 16s infinite ease-in-out;
+  }
+
+  .gu-object--topSection01 .gu-object__shape:nth-child(1) {
+    top: 7.38vw;
+    right: 10.18vw;
+    width: 13.99vw;
+    height: 15.27vw;
+  }
+
+  .gu-object--topSection02 .gu-object__shape:nth-child(1) {
+    top: 69.97vw;
+    right: 9.67vw;
+    width: 12.98vw;
+    height: 14.5vw;
+  }
+
+  .gu-object--topSection03 .gu-object__shape:nth-child(1) {
+    top: 76.34vw;
+    right: 30.79vw;
+    width: 12.98vw;
+    height: 14.5vw;
+  }
+
+  .gu-object--topSection04 .gu-object__shape:nth-child(1) {
+    top: 76.34vw;
+    right: 30.79vw;
+    width: 12.98vw;
+    height: 14.5vw;
   }
 }
 /*# sourceMappingURL=style.css.map */

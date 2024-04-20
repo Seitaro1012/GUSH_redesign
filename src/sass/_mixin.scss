@@ -1,9 +1,39 @@
-
 @mixin object-anime-1-before() {
 animation: unyonnyo 8s infinite ease-in-out, poyopoyo 16s infinite ease-in-out;
 }
 @mixin object-anime-1-after() {
 animation: unyonnyo2 12s infinite ease-in-out, poyopoyo2 16s infinite ease-in-out;
+}
+@mixin object-anime-1-before_mini() {
+animation: unyonnyo 8s infinite ease-in-out, poyopoyo_mini 12s infinite ease-in-out;
+}
+@mixin object-anime-1-after_mini() {
+animation: unyonnyo2 10s infinite ease-in-out, poyopoyo2_mini 12s infinite ease-in-out;
+}
+
+@mixin object-anime-2-before() {
+animation: unyonnyo 16s infinite ease-in-out, poyopoyo 24s infinite ease-in-out;
+}
+@mixin object-anime-2-after() {
+animation: unyonnyo2 20s infinite ease-in-out, poyopoyo2 24s infinite ease-in-out;
+}
+@mixin object-anime-2-before_mini() {
+animation: unyonnyo 5s infinite ease-in-out, poyopoyo_mini 10s infinite ease-in-out;
+}
+@mixin object-anime-2-after_mini() {
+animation: unyonnyo2 8s infinite ease-in-out, poyopoyo2_mini 11s infinite ease-in-out;
+}
+@mixin object-anime-3-before() {
+animation: unyonnyo 16s infinite ease-in-out, poyopoyo 24s infinite ease-in-out;
+}
+@mixin object-anime-3-after() {
+animation: unyonnyo2 20s infinite ease-in-out, poyopoyo2 24s infinite ease-in-out;
+}
+@mixin object-anime-3-before_mini() {
+animation: unyonnyo 8s infinite ease-in-out, poyopoyo_mini 16s infinite ease-in-out;
+}
+@mixin object-anime-3-after_mini() {
+animation: unyonnyo2 12s infinite ease-in-out, poyopoyo2_mini 16s infinite ease-in-out;
 }
 
 
@@ -27,5 +57,15 @@ animation: unyonnyo2 12s infinite ease-in-out, poyopoyo2 16s infinite ease-in-ou
   0%{ top: -7px; left: -7px; }
   50%{ top: 0; left: 0; }
   100%{ top: -7px; left: -7px; }
+}
+@keyframes poyopoyo_mini {
+  0%{ top: 2px; left: 2px; }
+  50%{ top: 0; left: 0; }
+  100%{ top: 2px; left: 2px; }
+}
+@keyframes poyopoyo2_mini {
+  0%{ top: -3px; left: -3px; }
+  50%{ top: 0; left: 0; }
+  100%{ top: -3px; left: -3px; }
 }
 
