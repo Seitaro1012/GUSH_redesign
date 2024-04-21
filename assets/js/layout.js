@@ -14,15 +14,7 @@ const gu_header = `
     <a href="/recruit/" tabindex="0">採用について</a>
   </li>
   <li>
-<<<<<<< HEAD
-<<<<<<< HEAD
     <a href="https://note.com/apark_nagano" tabindex="0">お知らせ</a>
-=======
-    <a href="/access/" target="_blank" aria-label="お知らせを新規タブで開きます" rel="noopener noreferrer" tabindex="0">お知らせ</a>
->>>>>>> 6529944549f1035d2848485d4e132f553dc02637
-=======
-    <a href="/access/" target="_blank" aria-label="お知らせを新規タブで開きます" rel="noopener noreferrer" tabindex="0">お知らせ</a>
->>>>>>> 6529944549f1035d2848485d4e132f553dc02637
   </li>
   <li>
     <a href="/contact/" tabindex="0">問い合わせ</a>
@@ -58,15 +50,7 @@ const gu_header = `
     <a href="/recruit/" tabindex="0">採用について</a>
   </li>
   <li>
-<<<<<<< HEAD
-<<<<<<< HEAD
     <a href="https://note.com/apark_nagano" tabindex="0">お知らせ</a>
-=======
-    <a href="/access/" target="_blank" aria-label="お知らせを新規タブで開きます" rel="noopener noreferrer" tabindex="0">お知らせ</a>
->>>>>>> 6529944549f1035d2848485d4e132f553dc02637
-=======
-    <a href="/access/" target="_blank" aria-label="お知らせを新規タブで開きます" rel="noopener noreferrer" tabindex="0">お知らせ</a>
->>>>>>> 6529944549f1035d2848485d4e132f553dc02637
   </li>
   <li>
     <a href="/contact/" tabindex="0">問い合わせ</a>
@@ -111,15 +95,7 @@ const gu_footer = `
         <a href="/recruit/" tabindex="0">採用について</a>
       </li>
       <li>
-<<<<<<< HEAD
-<<<<<<< HEAD
         <a href="https://note.com/apark_nagano" tabindex="0">お知らせ</a>
-=======
-        <a href="/access/" target="_blank" aria-label="お知らせを新規タブで開きます" rel="noopener noreferrer" tabindex="0">お知らせ</a>
->>>>>>> 6529944549f1035d2848485d4e132f553dc02637
-=======
-        <a href="/access/" target="_blank" aria-label="お知らせを新規タブで開きます" rel="noopener noreferrer" tabindex="0">お知らせ</a>
->>>>>>> 6529944549f1035d2848485d4e132f553dc02637
       </li>
       <li>
         <a href="/contact/" tabindex="0">お問い合わせ</a>
