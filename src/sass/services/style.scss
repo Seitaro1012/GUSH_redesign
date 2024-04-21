@@ -95,7 +95,7 @@
         // }
       }
       &:after {
-        @include object-anime-2-after();
+        @include object-anime-2-after_mini();
         // @include mq-down(){
         //   @include object-anime-1-after_mini();
           
@@ -193,7 +193,7 @@
 
      
       &:before {
-        @include object-anime-3-before();
+        @include object-anime-3-before_mini();
         // @include mq-down(){
         //   @include object-anime-1-before();
           
@@ -253,7 +253,7 @@
         }
       }
       &:after {
-        @include object-anime-3-after_mini();
+        @include object-anime-3-after();
         @include mq-down(){
           @include object-anime-1-after_mini();
           

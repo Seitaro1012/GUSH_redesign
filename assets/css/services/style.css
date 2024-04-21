@@ -227,8 +227,8 @@
 }
 
 .gu-object--services-2 .gu-object__shape:nth-child(1):after {
-  -webkit-animation: unyonnyo2 20s infinite ease-in-out, poyopoyo2 24s infinite ease-in-out;
-  animation: unyonnyo2 20s infinite ease-in-out, poyopoyo2 24s infinite ease-in-out;
+  -webkit-animation: unyonnyo2 8s infinite ease-in-out, poyopoyo2_mini 11s infinite ease-in-out;
+  animation: unyonnyo2 8s infinite ease-in-out, poyopoyo2_mini 11s infinite ease-in-out;
 }
 
 .gu-object--services-2 .gu-object__shape:nth-child(2) {
@@ -290,8 +290,8 @@
 }
 
 .gu-object--services-4 .gu-object__shape:nth-child(1):before {
-  -webkit-animation: unyonnyo 16s infinite ease-in-out, poyopoyo 24s infinite ease-in-out;
-  animation: unyonnyo 16s infinite ease-in-out, poyopoyo 24s infinite ease-in-out;
+  -webkit-animation: unyonnyo 8s infinite ease-in-out, poyopoyo_mini 16s infinite ease-in-out;
+  animation: unyonnyo 8s infinite ease-in-out, poyopoyo_mini 16s infinite ease-in-out;
 }
 
 .gu-object--services-4 .gu-object__shape:nth-child(1):after {
@@ -329,8 +329,8 @@
 }
 
 .gu-object--services-5 .gu-object__shape:nth-child(1):after {
-  -webkit-animation: unyonnyo2 12s infinite ease-in-out, poyopoyo2_mini 16s infinite ease-in-out;
-  animation: unyonnyo2 12s infinite ease-in-out, poyopoyo2_mini 16s infinite ease-in-out;
+  -webkit-animation: unyonnyo2 20s infinite ease-in-out, poyopoyo2 24s infinite ease-in-out;
+  animation: unyonnyo2 20s infinite ease-in-out, poyopoyo2 24s infinite ease-in-out;
 }
 
 .gu-object--services-5 .gu-object__shape:nth-child(2) {
