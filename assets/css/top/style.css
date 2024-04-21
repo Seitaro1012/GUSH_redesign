@@ -392,63 +392,6 @@
   width: 100%;
 }
 
-.gu-object__shape {
-  position: absolute;
-  opacity: 0.6;
-  z-index: 1;
-}
-
-.gu-object__shape:before,
-.gu-object__shape:after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-.gu-object__shape:before {
-  top: 5px;
-  left: 5px;
-}
-
-.gu-object__shape:after {
-  top: -5px;
-  left: -5px;
-}
-
-.gu-object__shape--red:before,
-.gu-object__shape--red:after {
-  background-image: url(/assets/images/object/obje_red01.svg);
-}
-
-.gu-object__shape--yellow:before,
-.gu-object__shape--yellow:after {
-  background-image: url(/assets/images/object/obje_yellow01.svg);
-}
-
-.gu-object__shape--blue:before,
-.gu-object__shape--blue:after {
-  background-image: url(/assets/images/object/obje_blue01.svg);
-}
-
-.gu-object__shape--blue02:before,
-.gu-object__shape--blue02:after {
-  background-image: url(/assets/images/object/obje_blue02.svg);
-}
-
-.gu-object__shape--blue03:before,
-.gu-object__shape--blue03:after {
-  background-image: url(/assets/images/object/obje_blue03.svg);
-}
-
-.gu-object__shape--blue04:before,
-.gu-object__shape--blue04:after {
-  background-image: url(/assets/images/object/obje_blue04.svg);
-}
-
 .gu-object--topMv .gu-object__shape:nth-child(1) {
   top: 8.8vw;
   left: 10%;

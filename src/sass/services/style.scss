@@ -1,4 +1,5 @@
 @use '../config' as *;
+@use '../mixin' as *;
 
 .gu-services__image01 {
   text-align: center;
@@ -32,11 +33,13 @@
   }
 }
 .gu-section__services-3{
+  background: url("/assets/images/bg_obje01.png") no-repeat right 35%/73%;
   @include mq-up(){
     padding-bottom:vwpc(500);
   }
   @include mq-down(){
     padding-bottom:vw(100);
+    background: url("/assets/images/bg_obje01.png") no-repeat right 71%/83%;
   }
 }
 .gu-section__services-4{
@@ -48,11 +51,13 @@
   }
 }
 .gu-section__services-5{
+  background: url("/assets/images/bg_obje02.png") no-repeat left 55%/77%;
   @include mq-up(){
     padding-bottom:vwpc(130);
   }
   @include mq-down(){
     padding-bottom:vw(100);
+    background: url("/assets/images/bg_obje02.png") no-repeat left 51%/88%;
   }
 }
 .gu-vision__textArea + .gu-button-1{
@@ -62,4 +67,220 @@
   @include mq-down(){
     margin-top:vw(84);
   }
+}
+
+
+.gu-object__shape {
+  
+  .gu-object--services-2 & {
+    &:nth-child(1) {
+      top: vwpc(18);
+      right: 12%;
+      width: vwpc(122);
+      height: vwpc(120);
+
+      @include mq-down {
+        top: vw(13);
+        right: 10%;
+        width: vw(50);
+        height: vw(55);
+      }
+
+     
+      &:before {
+        @include object-anime-2-before_mini();
+        // @include mq-down(){
+        //   @include object-anime-1-before_mini();
+          
+        // }
+      }
+      &:after {
+        @include object-anime-2-after();
+        // @include mq-down(){
+        //   @include object-anime-1-after_mini();
+          
+        // }
+      }
+    }
+    &:nth-child(2) {
+      top: vwpc(1200);
+      left: 11%;
+      width: vwpc(80);
+      height: vwpc(96);
+
+      @include mq-down {
+        display: none;
+      }
+
+      &:before {
+        @include object-anime-3-before_mini();
+      }
+      &:after {
+        @include object-anime-3-after_mini();
+      }
+    }
+ 
+  }
+  .gu-object--services-3 & {
+    &:nth-child(1) {
+      top: vwpc(1100);
+      left: 4%;
+      width: vwpc(110);
+      height: vwpc(116);
+
+      @include mq-down {
+        // top: vw(-6);
+        // right: 7%;
+        // left:auto;
+        // width: vw(50);
+        // height: vw(56);
+        display: none;
+      }
+
+     
+      &:before {
+        @include object-anime-3-before_mini();
+        // @include mq-down(){
+        //   @include object-anime-1-before_mini();
+          
+        // }
+      }
+      &:after {
+        @include object-anime-3-after_mini();
+        // @include mq-down(){
+        //   @include object-anime-1-after_mini();
+          
+        // }
+      }
+    }
+    &:nth-child(2) {
+      top: vwpc(700);
+      right: 27%;
+      width: vwpc(80);
+      height: vwpc(96);
+
+      @include mq-down {
+        top: vw(580);
+        right: 8%;
+        width: vw(50);
+        height: vw(55);
+      }
+
+      &:before {
+        @include object-anime-3-before_mini();
+      }
+      &:after {
+        @include object-anime-3-after_mini();
+      }
+    }
+ 
+  }
+  .gu-object--services-4 & {
+    &:nth-child(1) {
+      top: vwpc(130);
+      right: 8%;
+      width: vwpc(205);
+      height: vwpc(201);
+
+      @include mq-down {
+        // top: vw(-6);
+        // right: 7%;
+        // left:auto;
+        // width: vw(50);
+        // height: vw(56);
+        display: none;
+      }
+
+     
+      &:before {
+        @include object-anime-3-before();
+        // @include mq-down(){
+        //   @include object-anime-1-before();
+          
+        // }
+      }
+      &:after {
+        @include object-anime-3-after_mini();
+        // @include mq-down(){
+        //   @include object-anime-1-after_mini();
+          
+        // }
+      }
+    }
+    &:nth-child(2) {
+      top: vwpc(700);
+      right: 27%;
+      width: vwpc(80);
+      height: vwpc(96);
+
+      @include mq-down {
+        top: vw(580);
+        right: 8%;
+        width: vw(50);
+        height: vw(55);
+      }
+
+      &:before {
+        @include object-anime-3-before_mini();
+      }
+      &:after {
+        @include object-anime-3-after_mini();
+      }
+    }
+ 
+  }
+  .gu-object--services-5 & {
+    &:nth-child(1) {
+      top: vwpc(-80);
+      right: 25%;
+      width: vwpc(188);
+      height: vwpc(185);
+
+      @include mq-down {
+        top: vw(-8);
+        right: 28%;
+        left:auto;
+        width: vw(60);
+        height: vw(65);
+      }
+
+     
+      &:before {
+        @include object-anime-3-before();
+        @include mq-down(){
+          @include object-anime-1-before_mini();
+          
+        }
+      }
+      &:after {
+        @include object-anime-3-after_mini();
+        @include mq-down(){
+          @include object-anime-1-after_mini();
+          
+        }
+      }
+    }
+    &:nth-child(2) {
+      top: vwpc(700);
+      right: 27%;
+      width: vwpc(80);
+      height: vwpc(96);
+
+      @include mq-down {
+        top: vw(580);
+        right: 8%;
+        width: vw(50);
+        height: vw(55);
+      }
+
+      &:before {
+        @include object-anime-3-before_mini();
+      }
+      &:after {
+        @include object-anime-3-after_mini();
+      }
+    }
+ 
+  }
+
 }

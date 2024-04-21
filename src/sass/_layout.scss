@@ -307,6 +307,7 @@ main {
       width: 100%;
       height: vwpc(280);
       top: vwpc(-270);
+      // z-index: -1;
     }
     // background:$base-color-blue;
     
@@ -320,6 +321,71 @@ main {
       width: 100%;
       height: vwpc(280);
       top: vwpc(-270);
+    }
+  }
+}
+
+
+
+
+.gu-object__shape {
+  position: absolute;
+  opacity: .6;
+  z-index: 1;
+
+  &:before ,
+  &:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  &:before {
+    top: 5px;
+    left: 5px;
+  }
+  &:after {
+    top: -5px;
+    left: -5px;
+  }
+
+  &--red {
+    &:before ,
+    &:after {
+      background-image: url(/assets/images/object/obje_red01.svg);
+    }
+  }
+  &--yellow {
+    &:before ,
+    &:after {
+      background-image: url(/assets/images/object/obje_yellow01.svg);
+    }
+  }
+  &--blue {
+    &:before ,
+    &:after {
+      background-image: url(/assets/images/object/obje_blue01.svg);
+    }
+  }
+  &--blue02 {
+    &:before ,
+    &:after {
+      background-image: url(/assets/images/object/obje_blue02.svg);
+    }
+  }
+  &--blue03 {
+    &:before ,
+    &:after {
+      background-image: url(/assets/images/object/obje_blue03.svg);
+    }
+  }
+  &--blue04 {
+    &:before ,
+    &:after {
+      background-image: url(/assets/images/object/obje_blue04.svg);
     }
   }
 }
