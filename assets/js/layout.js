@@ -61,6 +61,10 @@ const gu_header = `
 </ul>
 </nav>
 <p class="gu-overlay__copyright">&copy; 2024 GUSH Inc. </p>
+<div class="gu-object gu-object--overlay">
+  <div class="gu-object__shape gu-object__shape--blue02"></div>
+  <div class="gu-object__shape gu-object__shape--blue03"></div>
+</div>
 </div>
 `;
 

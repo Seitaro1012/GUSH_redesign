@@ -1,4 +1,5 @@
 @use '_config' as *;
+@use '_mixin' as *;
 // ヘッダーフッター
 
 #gu-header-js{
@@ -387,5 +388,51 @@ main {
     &:after {
       background-image: url(/assets/images/object/obje_blue04.svg);
     }
+  }
+
+  .gu-object--overlay & {
+    &:nth-child(1) {
+
+      @include mq-down {
+        top: 28%;
+        right: 12%;
+        width: vh(45);
+        height: vh(50);
+      }
+
+     
+      &:before {
+        @include object-anime-1-before_mini();
+        // @include mq-down(){
+        //   @include object-anime-1-before_mini();
+          
+        // }
+      }
+      &:after {
+        @include object-anime-1-after_mini();
+        // @include mq-down(){
+        //   @include object-anime-1-after_mini();
+          
+        // }
+      }
+    }
+    &:nth-child(2) {
+     
+      @include mq-down {
+        top: 68%;
+        left: 9%;
+        width: vh(45);
+        height: vh(50);
+  
+      }
+
+      &:before {
+        @include object-anime-3-before_mini();
+      }
+      &:after {
+        @include object-anime-3-after_mini();
+      }
+    }
+ 
   }
 }
