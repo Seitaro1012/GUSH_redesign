@@ -1,8 +1,14 @@
+.company-img-area img {
+  width: 100%;
+}
+
 .div-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 75px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .gu-recruit__textArea {
@@ -118,11 +124,15 @@ dt {
   }
 
   .company-details {
-    width: 76.34vw;
+    width: 100%;
   }
 
   .gu-button-1 {
     margin-top: 21.37vw;
+  }
+
+  .gu-recruit__textArea {
+    padding-left: 2.04vw;
   }
 
   .company-image {

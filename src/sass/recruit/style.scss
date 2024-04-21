@@ -51,6 +51,9 @@
 }
 
 .company-img-area {
+  img{
+    width:100%;
+  }
   @include mq-up(){
     width:vwpc(600);
   }
@@ -63,7 +66,8 @@
 
 .div-wrap{
   display: flex;
-  gap: 75px;
+  // gap: vwpc;
+  justify-content: space-between;
 }
 
 .company-details{
@@ -71,7 +75,7 @@
     width:vwpc(810);
   }
   @include mq-down(){
-    width:vw(300);
+    width:100%;
 }
 }
 
@@ -91,7 +95,11 @@
   @include mq-up(){
     padding-left: vwpc(40);
   }
+  @include mq-down(){
+    padding-left: vw(8);
   }
+  
+}
   
 
 
