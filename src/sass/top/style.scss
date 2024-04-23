@@ -163,7 +163,7 @@
 
 .gu-top-mv {
   height: vwpc(1080);
-  background: url('/assets/images/top_MV01.jpg') no-repeat 0 0 / 100%;
+  background: url('/assets/images/top_MV01.jpg') no-repeat 0 0 / cover;
   position: relative;
   @include mq-down(){
     background: url('/assets/images/top_MV01sp.jpg') no-repeat 0 0 / 100%;
@@ -419,3 +419,17 @@
   }
 }
 
+.gu-section:first-of-type{
+  background: url("/assets/images/wave_bg01.png") no-repeat 0 0 / 100%;
+  @include mq-down {
+    background-image: url("/assets/images/wave_bg01sp.png");
+    background-position: 0 vw(5);
+  }
+}
+.gu-section:nth-of-type(3){
+  background: url("/assets/images/wave_bg02.png") no-repeat 0 0 / 100%;
+  @include mq-down {
+    background-image: url("/assets/images/wave_bg02sp.png");
+    background-position: 0 vw(8);
+  }
+}
