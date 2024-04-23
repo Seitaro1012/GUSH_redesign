@@ -11,7 +11,7 @@ heading
     line-height: 1;
     // line-height: 1.5;
     @include mq-up(){
-      font-size: vwpc(120);
+      font-size: vwpc(100);
     }
     @include mq-down() {
       font-size: vw(40);
@@ -21,7 +21,7 @@ heading
     font-weight: 700;
     margin-bottom: 1em;
     @include mq-up(){
-      font-size: vwpc(56);
+      font-size: vwpc(48);
     }
     @include mq-down() {
       font-size: vw(24);
@@ -31,7 +31,7 @@ heading
     font-weight: 700;
     margin-bottom: 1em;
     @include mq-up(){
-      font-size: vwpc(40);
+      font-size: vwpc(38);
     }
     @include mq-down() {
       font-size: vw(16);
