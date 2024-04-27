@@ -197,6 +197,17 @@
       height: vwpc(34);
       width: vwpc(30);
       clip-path: polygon(44% 0, 44% 80%, 0 60%, 0 75%, 50% 100%, 100% 75%, 100% 60%, 56% 80%, 56% 0);
+
+      animation-name: bounce;
+      transform-origin: center bottom;
+      animation-iteration-count: infinite;
+      animation-duration: 2s;
+      animation-fill-mode: both;
+      @include mq-down(){
+        height: vw(16);
+        width: vw(16);
+        margin: vw(10) auto 0;
+      }
     }
     &__text{
       width:vwpc(256);
@@ -221,13 +232,24 @@
       background: url('/assets/images/icon01.png') no-repeat 0 0 / 100%; 
       margin-top: vwpc(22);
       margin-left: vwpc(-14);
-    }
+
+    
+      }
+
+    
     img {
       width: 100%;
     }
   }
 }
 
+
+// スクロールガイドアニメーション
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+  40% {transform: translateY(-0.8em);}
+  60% {transform: translateY(-0.5em);}
+} 
 
 
 

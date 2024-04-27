@@ -1,10 +1,22 @@
-// @use 'sass: math';
 @use '_config' as *;
-// @use 'sass: meta';
 
 body{
   font-family: 'Noto Sans JP', sans-serif;
   font-size: vwpc(24);
+
+  // 見直すところ
+  // →vwpcを使用しているところにmq-max()を追加。
+  // 値はrem()←引数はvwpcと同じ。にする。
+  // mq-maxはmq-upよりも後に書く。
+  @include mq-max(){
+    font-size: rem(24);
+  }
+
+
+  @include mq-down(){
+    font-size: vw(12);
+
+  }
   line-height: 2.0em;
   color: $base-color-black;
 }
@@ -22,18 +34,3 @@ a,button{
   }
 }
 
-// // 数値の単位除去
-// @function strip-unit($number){
-//   @if meta.type-of($number) == 'number' and not math.is-unitlless($number){
-//     @return math.div($number, $number * 0 + 1);
-//   }
-//   @return $number;
-// }
-
-// // rem変換関数  font-size: rem(42px);など
-// @function rem($pixel, $base: 16){
-//   @if math.unit($pixel) != 'px'{
-//     @warn '引数には、単位がpxの数値を入れて下さい'
-//   }
-//   @return math.div(stip-unit($pixel), 16) * 1rem;
-// }

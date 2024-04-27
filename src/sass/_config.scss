@@ -10,19 +10,27 @@ $sub-color-blue02: #78C8DA;
 $sub-color-black: #000;
 
 // bleakpoint
+$contents-width-xl: 1480;
 $contents-width-sm: 768;
 
-
-// min-width
+// PC
+$breakpoint-max: (
+  'xl': 'screen and (min-width: #{$contents-width-xl}px)',
+) !default;
+// タブ〜PC
 $breakpoint-up: (
   'sm': 'screen and (min-width: #{$contents-width-sm}px)',
 ) !default;
-
-// max-width
+// SP
 $breakpoint-down: (
   'sm': 'screen and (max-width: #{$contents-width-sm - 1}px)',
 ) !default;
 
+@mixin mq-max($breakpoint: xl) {
+  @media #{map-get($breakpoint-max, $breakpoint)} {
+    @content;
+  }
+}
 @mixin mq-up($breakpoint: sm) {
   @media #{map-get($breakpoint-up, $breakpoint)} {
     @content;

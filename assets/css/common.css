@@ -1180,7 +1180,96 @@ button
   }
 }
 
+@media screen and (min-width: 1480px) {
+  body {
+    font-size: 1.5rem;
+  }
+
+  #gu-header-js {
+    height: 6.88rem;
+  }
+
+  .gu-header {
+    height: 6.88rem;
+    padding: 0 5rem 0.63rem 3rem;
+  }
+
+  .gu-header__logo {
+    width: 15.63rem;
+    padding: 0 0 0.5rem;
+  }
+
+  .gu-header__navList li {
+    width: 14rem;
+  }
+
+  .gu-header__navList li a {
+    padding: 1rem 0 0.5rem;
+  }
+
+  .gu-footer {
+    font-size: 1.13rem;
+  }
+
+  .gu-footer__container {
+    padding: 3.44rem 0 3.75rem;
+    max-width: 92.5rem;
+  }
+
+  .gu-footer__addressArea {
+    width: 18.75rem;
+  }
+
+  .gu-footer__logo {
+    width: 15.63rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .gu-footer__address {
+    margin-bottom: 2.5rem;
+  }
+
+  .gu-footer__mapWrap {
+    max-width: 37.5rem;
+    width: 37.5rem;
+  }
+
+  .gu-footer__nav {
+    width: 18.75rem;
+  }
+
+  .gu-footer__navList {
+    gap: 1.06rem;
+  }
+
+  main {
+    margin-top: 17.5rem;
+  }
+
+  .gu-container {
+    max-width: 92.5rem;
+  }
+
+  .gu-inner {
+    padding: 0 2.5rem 0;
+  }
+
+  .gu-section:nth-of-type(odd):before {
+    height: 17.5rem;
+    top: -16.88rem;
+  }
+
+  .gu-section:nth-of-type(even):before {
+    height: 17.5rem;
+    top: -16.88rem;
+  }
+}
+
 @media screen and (max-width: 767px) {
+  body {
+    font-size: 3.05vw;
+  }
+
   #gu-header-js {
     height: 10.18vw;
   }

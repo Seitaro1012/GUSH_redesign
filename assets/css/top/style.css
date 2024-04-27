@@ -365,6 +365,16 @@
   width: 1.56vw;
   -webkit-clip-path: polygon(44% 0, 44% 80%, 0 60%, 0 75%, 50% 100%, 100% 75%, 100% 60%, 56% 80%, 56% 0);
   clip-path: polygon(44% 0, 44% 80%, 0 60%, 0 75%, 50% 100%, 100% 75%, 100% 60%, 56% 80%, 56% 0);
+  -webkit-animation-name: bounce;
+  animation-name: bounce;
+  -webkit-transform-origin: center bottom;
+  transform-origin: center bottom;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
 }
 
 .gu-top-mvScrollGuide__text {
@@ -390,6 +400,40 @@
 
 .gu-top-mvSide img {
   width: 100%;
+}
+
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  40% {
+    -webkit-transform: translateY(-0.8em);
+    transform: translateY(-0.8em);
+  }
+
+  60% {
+    -webkit-transform: translateY(-0.5em);
+    transform: translateY(-0.5em);
+  }
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  40% {
+    -webkit-transform: translateY(-0.8em);
+    transform: translateY(-0.8em);
+  }
+
+  60% {
+    -webkit-transform: translateY(-0.5em);
+    transform: translateY(-0.5em);
+  }
 }
 
 .gu-object--topMv .gu-object__shape:nth-child(1) {
@@ -603,6 +647,12 @@
 
   .gu-top-mvTitle__subText {
     margin-top: 0;
+  }
+
+  .gu-top-mvScrollGuide:after {
+    height: 4.07vw;
+    width: 4.07vw;
+    margin: 2.54vw auto 0;
   }
 
   .gu-top-mvScrollGuide__text {
