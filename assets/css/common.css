@@ -454,7 +454,7 @@ th {
 body {
   font-family: "Noto Sans JP", sans-serif;
   font-size: 1.25vw;
-  line-height: 1.5;
+  line-height: 2em;
   color: #0B1D26;
 }
 
@@ -1155,15 +1155,15 @@ button
   }
 
   .gu-heading-1 {
-    font-size: 6.25vw;
+    font-size: 5.21vw;
   }
 
   .gu-heading-2 {
-    font-size: 2.92vw;
+    font-size: 2.5vw;
   }
 
   .gu-heading-3 {
-    font-size: 2.08vw;
+    font-size: 1.98vw;
   }
 
   .gu-text-1 {
