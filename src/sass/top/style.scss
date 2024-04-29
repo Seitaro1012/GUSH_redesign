@@ -23,36 +23,50 @@
     width: 100%;
     height: vwpc(150);
     top: vwpc(-140);
+
+    @include mq-max() {
+      height: rem(150);
+      top: rem(-140);
+    }
     @include mq-down(){
       height: vw(35);
       top: vw(-29);
-
     }
   }
 }
 .top .gu-section{
-  &::before{
-    content:none;
+  &::before {
+    content: none;
   }
 }
-.top .gu-container{
-  display:flex;
+.top .gu-container {
+  display: flex;
   justify-content: space-between;
   padding: vwpc(140) 0;
-  @include mq-down{
+  @include mq-max {
+    padding: rem(140) 0;
+
+  }
+
+  @include mq-down() {
     flex-direction: column;
     padding: vw(72) 0 0;
   }
 }
+
 .gu-top-content{
   width: 50%;
-  @include mq-down{
+  @include mq-down() {
     width: 100%;
     margin-bottom: vw(64);
   }
 }
+
 .top .gu-button-1 {
   margin-top: vwpc(63);
+  @include mq-max() {
+    margin-top: rem(63);
+  }
   @include mq-down(){
     margin-top: vw(23);
     width: vw(112);
@@ -63,8 +77,12 @@
 }
 .gu-top-inner{
   padding-left: vwpc(40);
+
+  @include mq-max() {
+    padding-left: rem(40);
+  }
 }
-.gu-top-contentImage{
+.gu-top-contentImage {
   width: 100vw;
   max-width: 50%;
   margin: 0 calc(50% - 50vw) 0;
@@ -80,6 +98,9 @@
 .gu-top-contentImage img{
   width: vwpc(800);
   display: block;
+  @include mq-max() {
+    width: vwpc(800);
+  }
   @include mq-down(){
     width: 100%;
   }
@@ -95,6 +116,9 @@
   @include mq-up(){
     margin-top:vwpc(150);
   }
+  @include mq-max() {
+    margin-top: rem(150);
+  }
 }
 
 .gu-news-list{
@@ -104,6 +128,12 @@
   row-gap: vwpc(32);
   display: flex;
   flex-direction: column;
+
+  @include mq-max() {
+    font-size:rem(24);
+    row-gap: rem(32);
+  
+  }
   @include mq-down(){
     row-gap: vw(37);
     font-size:vw(12);
@@ -117,21 +147,29 @@
     width: 25%;
     text-align: center;
   }
-  .dd{
+  .dd {
     width: 75%;
     padding-right: vwpc(60);
-    @include mq-down(){
+
+    @include mq-max() {
+    padding-right: rem(60);
+    }
+
+    @include mq-down() {
       padding-right: vw(30);
 
     }
-    &::after{
+    &::after {
       content:"→";
       position: absolute;
       right:vwpc(24);
       top:0;
-      @include mq-down(){
-        right:vw(12);
 
+      @include mq-max() {
+        right: rem(24);
+      }
+      @include mq-down() {
+        right:vw(12);
       }
     }
   }
@@ -139,6 +177,10 @@
 
 .gu-top-online{
   padding: vwpc(85) 0 vwpc(106);
+
+  @include mq-max() {
+    padding: rem(85) 0 rem(106);
+  }
   @include mq-down{
     padding: vw(40) 0;
   }
@@ -146,10 +188,16 @@
     width:fit-content;
     margin: 0 auto;
     margin-bottom: vwpc(44);
-    @include mq-down{
+
+    @include mq-max() {
+      margin-bottom: rem(44);
+    }
+
+    @include mq-down {
       margin-bottom: vw(22);
     }
   }
+
   &__image{
     @include mq-down{
       margin-bottom: vw(40);
@@ -165,6 +213,10 @@
   height: vwpc(1080);
   background: url('/assets/images/top_MV01.jpg') no-repeat 0 0 / cover;
   position: relative;
+
+  @include mq-max() {
+    height: rem(1080);
+  }
   @include mq-down(){
     background: url('/assets/images/top_MV01sp.jpg') no-repeat 0 0 / 100%;
     height:vw(640);
@@ -175,6 +227,11 @@
     padding-top:vwpc(320);
     text-align: center;
     margin-bottom: vwpc(210);
+
+    @include mq-max() {
+      padding-top: rem(320);
+      margin-bottom: rem(210);
+    }
     @include mq-down(){
       padding-top:vw(240);
       margin-bottom: vw(146);
@@ -189,6 +246,7 @@
   &ScrollGuide{
     width:fit-content;
     margin: 0 auto;
+    text-align: center;
     &:after{
       content: '';
       background: $base-color-white;
@@ -203,27 +261,48 @@
       animation-iteration-count: infinite;
       animation-duration: 2s;
       animation-fill-mode: both;
+
+      @include mq-max() {
+        margin: rem(26) auto 0;
+        height: rem(34);
+        width: rem(30);
+      } 
+        
+      }
       @include mq-down(){
         height: vw(16);
         width: vw(16);
         margin: vw(10) auto 0;
       }
     }
+
     &__text{
       width:vwpc(256);
+      
+      @include mq-max() {
+        width: rem(256);
+      }
       @include mq-down{
         width:vw(96);
       }
     }
-  }
-  &Side{
+
+  &Side {
     position: absolute;
     width: vwpc(28);
     top: vwpc(673);
     left: vwpc(103);
+
+    @include mq-max() {
+      width: rem(28);
+      top: rem(673);
+      left: rem(103);
+    }
+
     @include mq-down(){
       display: none;
     }
+
     &__text:after{
       content: '';
       display: block;
@@ -233,6 +312,12 @@
       margin-top: vwpc(22);
       margin-left: vwpc(-14);
 
+      @include mq-max() {
+        width: rem(50);
+        height: rem(50);
+        margin-top: rem(22);
+        margin-left: rem(-14);
+      }
     
       }
 
@@ -243,16 +328,12 @@
   }
 }
 
-
 // スクロールガイドアニメーション
 @keyframes bounce {
   0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
   40% {transform: translateY(-0.8em);}
   60% {transform: translateY(-0.5em);}
 } 
-
-
-
 
 
 .gu-object__shape {
@@ -262,6 +343,13 @@
       left: 10%;
       width: vwpc(330);
       height: vwpc(350);
+
+      @include mq-max() {
+        top: rem(169);
+        width: rem(330);
+        height: rem(350);
+        left: 50%;
+      }
 
       @include mq-down {
         top: vw(106);
@@ -292,6 +380,12 @@
       width: vwpc(200);
       height: vwpc(210);
 
+      @include mq-max() {
+        top: rem(182);
+        width: rem(200);
+        height: rem(210);
+      }
+
       @include mq-down {
         top: vw(417);
         left: vw(43);
@@ -319,6 +413,12 @@
       right: 13%;
       width: vwpc(240);
       height: vwpc(228);
+
+      @include mq-max() {
+        top: rem(600);
+        width: rem(240);
+        height: rem(228);
+      }
 
       @include mq-down {
         top: vw(177);
@@ -350,6 +450,13 @@
       width: vwpc(80);
       height: vwpc(96);
 
+      @include mq-max() {
+        top: rem(55);
+        right: rem(88);
+        width: rem(80);
+        height: rem(96);
+      }
+
       @include mq-down {
         top: vw(29);
         right: vw(40);
@@ -373,6 +480,13 @@
       right: vwpc(865);
       width: vwpc(117);
       height: vwpc(114);
+
+      @include mq-max() {
+        top: rem(55);
+        right: rem(865);
+        width: rem(117);
+        height: rem(114);
+      }
 
       @include mq-down {
         top: vw(275);
@@ -398,6 +512,13 @@
       width: vwpc(117);
       height: vwpc(114);
 
+      @include mq-max {
+        bottom: rem(64);
+        right: rem(190);
+        width: rem(117);
+        height: rem(114);
+      }
+
       @include mq-down {
         top: vw(300);
         right: vw(121);
@@ -421,6 +542,13 @@
       left: vwpc(60);
       width: vwpc(117);
       height: vwpc(114);
+
+      @include mq-max() {
+        top: rem(75);
+        left: rem(60);
+        width: rem(117);
+        height: rem(114);
+      }
 
       @include mq-down {
         top: vw(25);
