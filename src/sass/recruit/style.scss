@@ -58,6 +58,9 @@
   @include mq-up(){
     width:vwpc(600);
   }
+  @include mq-max(){
+    width:rem(600);
+  }
   @include mq-down(){
     width:vw(300);
   }
@@ -74,6 +77,9 @@
 .company-details{
   @include mq-up(){
     width:vwpc(810);
+  }
+  @include mq-max(){
+    width:rem(810);
   }
   @include mq-down(){
     width:100%;
@@ -96,6 +102,9 @@
   @include mq-up(){
     padding-left: vwpc(40);
   }
+  @include mq-max() {
+    padding-left: rem(40);
+  }
   @include mq-down(){
     padding-left: vw(8);
   }
@@ -112,7 +121,11 @@
 .company-image{
   @include mq-up(){
     width: vwpc(600);
-    padding-top: vwpc(100);
+    padding-top: vwpc(70);
+  }
+  @include mq-max() {
+    width: rem(600);
+    padding-top: rem(70);
   }
   @include mq-down(){
     display: none;
@@ -123,6 +136,9 @@
     @include mq-up(){
       padding-bottom:vwpc(130);
     }
+    @include mq-max() {
+      padding-bottom:rem(130);
+    }
     @include mq-down(){
       padding-bottom:vw(100);
     }
@@ -131,6 +147,9 @@
   .text-area {
     @include mq-up() {
       margin-top: vwpc(40);
+    }
+    @include mq-max() {
+      margin-top: rem(40);
     }
     @include mq-down() {
       margin-top: vw(20);
@@ -143,6 +162,10 @@ dd {
   @include mq-up() {
     padding-top:  vwpc(20);
     padding-bottom: vwpc(20);
+  }
+  @include mq-max() {
+    padding-top:  rem(20);
+    padding-bottom: rem(20);
   }
   @include mq-down(){
     padding-top:  vw(15);
@@ -158,6 +181,10 @@ dt {
   @include mq-up() {
     padding-top:  vwpc(20);
     padding-bottom: vwpc(20);
+  }
+  @include mq-max() {
+    padding-top:  rem(20);
+    padding-bottom: rem(20);
   }
   @include mq-down(){
     padding-top:  vw(15);
@@ -178,6 +205,12 @@ dt {
       right: 12%;
       width: vwpc(305);
       height: vwpc(325);
+
+      @include mq-max {
+        top: rem(268);
+        width: rem(305);
+        height: rem(325);
+      }
 
       @include mq-down {
         top: vw(12);
@@ -209,6 +242,12 @@ dt {
       width: vwpc(122);
       height: vwpc(120);
 
+      @include mq-max() {
+        top: rem(680);
+        width: rem(122);
+        height: rem(120);
+      }
+
       @include mq-down {
         display: none;
       }
@@ -228,6 +267,12 @@ dt {
       right: 8%;
       width: vwpc(365);
       height: vwpc(384);
+
+      @include mq-max {
+        top: rem(-13);
+        width: rem(365);
+        height: rem(384);
+      }
 
       @include mq-down {
         top: vw(-13);
@@ -258,6 +303,12 @@ dt {
       width: vwpc(122);
       height: vwpc(125);
 
+      @include mq-max {
+        top: rem(439);
+        width: rem(122);
+        height: rem(125);
+      }
+
       @include mq-down {
         display: none;
       }
@@ -278,6 +329,12 @@ dt {
       width: vwpc(227);
       height: vwpc(264);
       z-index: 0;
+
+      @include mq-max {
+        top: rem(-144);
+        width: rem(227);
+        height: rem(264);
+      }
 
       @include mq-down {
         display: none;

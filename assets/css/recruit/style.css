@@ -376,7 +376,7 @@ dt {
 
   .company-image {
     width: 31.25vw;
-    padding-top: 5.21vw;
+    padding-top: 3.65vw;
   }
 
   .gu-section__recruit-3 {
@@ -395,6 +395,73 @@ dt {
   dt {
     padding-top: 1.04vw;
     padding-bottom: 1.04vw;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .company-img-area {
+    width: 37.5rem;
+  }
+
+  .company-details {
+    width: 50.63rem;
+  }
+
+  .gu-recruit__textArea {
+    padding-left: 2.5rem;
+  }
+
+  .company-image {
+    width: 37.5rem;
+    padding-top: 4.38rem;
+  }
+
+  .gu-section__recruit-3 {
+    padding-bottom: 8.13rem;
+  }
+
+  .text-area {
+    margin-top: 2.5rem;
+  }
+
+  dd {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+
+  dt {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+
+  .gu-object--recruit-1 .gu-object__shape:nth-child(1) {
+    top: 16.75rem;
+    width: 19.06rem;
+    height: 20.31rem;
+  }
+
+  .gu-object--recruit-1 .gu-object__shape:nth-child(2) {
+    top: 42.5rem;
+    width: 7.63rem;
+    height: 7.5rem;
+  }
+
+  .gu-object--recruit-2 .gu-object__shape:nth-child(1) {
+    top: -0.81rem;
+    width: 22.81rem;
+    height: 24rem;
+  }
+
+  .gu-object--recruit-2 .gu-object__shape:nth-child(2) {
+    top: 27.44rem;
+    width: 7.63rem;
+    height: 7.81rem;
+  }
+
+  .gu-object--recruit-3 .gu-object__shape:nth-child(1) {
+    top: -9rem;
+    width: 14.19rem;
+    height: 16.5rem;
   }
 }
 
