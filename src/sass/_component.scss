@@ -13,6 +13,9 @@ heading
     @include mq-up(){
       font-size: vwpc(100);
     }
+    @include mq-max(){
+      font-size: rem(100);
+    }
     @include mq-down() {
       font-size: vw(40);
     }
@@ -23,6 +26,9 @@ heading
     @include mq-up(){
       font-size: vwpc(48);
     }
+    @include mq-max(){
+      font-size: rem(48);
+    }
     @include mq-down() {
       font-size: vw(24);
     }
@@ -32,6 +38,9 @@ heading
     margin-bottom: 1em;
     @include mq-up(){
       font-size: vwpc(38);
+    }
+    @include mq-max(){
+      font-size: rem(38);
     }
     @include mq-down() {
       font-size: vw(16);
@@ -58,6 +67,9 @@ text
     // margin-bottom:1em;
     @include mq-up(){
       font-size: vwpc(24);
+    }
+    @include mq-max(){
+      font-size: rem(24);
     }
     @include mq-down() {
       font-size: vw(12);
@@ -88,6 +100,10 @@ button
     @include mq-up(){
       font-size: vwpc(40);
       padding: vwpc(8) vwpc(64);
+    }
+    @include mq-max(){
+      font-size: rem(40);
+      padding: rem(8) rem(64);
     }
     @include mq-down(){
       text-align: center;

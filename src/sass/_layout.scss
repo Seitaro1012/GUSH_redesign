@@ -369,9 +369,10 @@ main {
       height: vwpc(280);
       top: vwpc(-270);
       @include mq-max(){
+        // background-size: cover;
         height: rem(280);
         top: rem(-270);
-
+        
       }
     }
     
@@ -386,6 +387,7 @@ main {
       height: vwpc(280);
       top: vwpc(-270);
       @include mq-max(){
+        // background-size: cover;
         height: rem(280);
         top: rem(-270);
 

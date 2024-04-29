@@ -1180,7 +1180,7 @@ button
   }
 }
 
-@media screen and (min-width: 1480px) {
+@media screen and (min-width: 1920px) {
   body {
     font-size: 1.5rem;
   }
@@ -1262,6 +1262,27 @@ button
   .gu-section:nth-of-type(even):before {
     height: 17.5rem;
     top: -16.88rem;
+  }
+
+  .gu-heading-1 {
+    font-size: 6.25rem;
+  }
+
+  .gu-heading-2 {
+    font-size: 3rem;
+  }
+
+  .gu-heading-3 {
+    font-size: 2.38rem;
+  }
+
+  .gu-text-1 {
+    font-size: 1.5rem;
+  }
+
+  .gu-button-1 {
+    font-size: 2.5rem;
+    padding: 0.5rem 4rem;
   }
 }
 
