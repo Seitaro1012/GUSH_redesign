@@ -354,6 +354,7 @@
   width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto;
+  text-align: center;
 }
 
 .gu-top-mvScrollGuide:after {
