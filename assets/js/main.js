@@ -61,3 +61,7 @@ $(window).scroll(function() {
     }
   });
 });
+
+$(document).ready(function() {
+  $('.openFadeIn').addClass('is-active');
+});
