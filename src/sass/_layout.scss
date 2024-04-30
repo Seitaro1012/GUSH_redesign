@@ -360,6 +360,7 @@ main {
 }
 .gu-section {
   position: relative;
+  overflow: hidden;
   &:nth-of-type(odd){
     &:before{
       content:"";
@@ -517,22 +518,20 @@ main {
 }
 
 .fadeIn.left {
-  opacity: 0; /* 初期状態を非表示に */
-  transform: translateX(-100%); /* 初期状態を左100px外側に */
+  overflow: hidden;
+  transform: translateX(calc(-50vw - 50%));
   transition: transform 1.0s ease; /* アニメーション設定 */
   &.is-active {
     transform: translateX(0); /* フェードイン完了状態の位置 */
-    opacity: 1;
   }
 }
 
 .fadeIn.right {
-  opacity: 0; /* 初期状態を非表示に */
-  transform: translateX(100%); /* 初期状態を左100px外側に */
+  overflow: hidden;
+  transform: translateX(calc(50vw + 50%));
   transition: transform 1.0s ease; /* アニメーション設定 */
   &.is-active {
     transform: translateX(0); /* フェードイン完了状態の位置 */
-    opacity: 1;
   }
 }
 
