@@ -518,7 +518,7 @@ main {
 
 .fadeIn.left {
   transform: translateX(calc(-50vw - 50%));
-  transition: transform 1.0s ease; /* アニメーション設定 */
+  transition: transform 0.8s ease; /* アニメーション設定 */
   &.is-active {
     transform: translateX(0); /* フェードイン完了状態の位置 */
   }
@@ -526,11 +526,12 @@ main {
 
 .fadeIn.right {
   transform: translateX(calc(50vw + 50%));
-  transition: transform 1.0s ease; /* アニメーション設定 */
+  transition: transform 0.8s ease; /* アニメーション設定 */
   &.is-active {
     transform: translateX(0); /* フェードイン完了状態の位置 */
   }
 }
+
 
 .openFadeIn {
   opacity: 0; /* 初期状態を透明にする */

@@ -1037,10 +1037,10 @@ main {
 .fadeIn.left {
   -webkit-transform: translateX(calc(-50vw - 50%));
   transform: translateX(calc(-50vw - 50%));
-  -webkit-transition: -webkit-transform 1s ease;
-  transition: -webkit-transform 1s ease;
-  transition: transform 1s ease;
-  transition: transform 1s ease, -webkit-transform 1s ease;
+  -webkit-transition: -webkit-transform 0.8s ease;
+  transition: -webkit-transform 0.8s ease;
+  transition: transform 0.8s ease;
+  transition: transform 0.8s ease, -webkit-transform 0.8s ease;
   /* アニメーション設定 */
 }
 
@@ -1053,10 +1053,10 @@ main {
 .fadeIn.right {
   -webkit-transform: translateX(calc(50vw + 50%));
   transform: translateX(calc(50vw + 50%));
-  -webkit-transition: -webkit-transform 1s ease;
-  transition: -webkit-transform 1s ease;
-  transition: transform 1s ease;
-  transition: transform 1s ease, -webkit-transform 1s ease;
+  -webkit-transition: -webkit-transform 0.8s ease;
+  transition: -webkit-transform 0.8s ease;
+  transition: transform 0.8s ease;
+  transition: transform 0.8s ease, -webkit-transform 0.8s ease;
   /* アニメーション設定 */
 }
 
