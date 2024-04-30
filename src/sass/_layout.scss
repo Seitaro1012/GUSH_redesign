@@ -507,3 +507,32 @@ main {
  
   }
 }
+
+.fadeIn {
+  opacity: 0; /* 初期状態を非表示に */
+  transition: opacity 1.5s ease; /* アニメーション設定 */
+  &.is-active {
+  opacity: 1; /* フェードイン完了状態の透明度 */
+  }
+}
+
+.fadeIn.left {
+  opacity: 0; /* 初期状態を非表示に */
+  transform: translateX(-100%); /* 初期状態を左100px外側に */
+  transition: transform 1.0s ease; /* アニメーション設定 */
+  &.is-active {
+    transform: translateX(0); /* フェードイン完了状態の位置 */
+    opacity: 1;
+  }
+}
+
+.fadeIn.right {
+  opacity: 0; /* 初期状態を非表示に */
+  transform: translateX(100%); /* 初期状態を左100px外側に */
+  transition: transform 1.0s ease; /* アニメーション設定 */
+  &.is-active {
+    transform: translateX(0); /* フェードイン完了状態の位置 */
+    opacity: 1;
+  }
+}
+

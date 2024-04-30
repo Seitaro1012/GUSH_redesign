@@ -1021,6 +1021,59 @@ main {
   animation: unyonnyo2 12s infinite ease-in-out, poyopoyo2_mini 16s infinite ease-in-out;
 }
 
+.fadeIn {
+  opacity: 0;
+  /* 初期状態を非表示に */
+  -webkit-transition: opacity 1.5s ease;
+  transition: opacity 1.5s ease;
+  /* アニメーション設定 */
+}
+
+.fadeIn.is-active {
+  opacity: 1;
+  /* フェードイン完了状態の透明度 */
+}
+
+.fadeIn.left {
+  opacity: 0;
+  /* 初期状態を非表示に */
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  /* 初期状態を左100px外側に */
+  -webkit-transition: -webkit-transform 1s ease;
+  transition: -webkit-transform 1s ease;
+  transition: transform 1s ease;
+  transition: transform 1s ease, -webkit-transform 1s ease;
+  /* アニメーション設定 */
+}
+
+.fadeIn.left.is-active {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  /* フェードイン完了状態の位置 */
+  opacity: 1;
+}
+
+.fadeIn.right {
+  opacity: 0;
+  /* 初期状態を非表示に */
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  /* 初期状態を左100px外側に */
+  -webkit-transition: -webkit-transform 1s ease;
+  transition: -webkit-transform 1s ease;
+  transition: transform 1s ease;
+  transition: transform 1s ease, -webkit-transform 1s ease;
+  /* アニメーション設定 */
+}
+
+.fadeIn.right.is-active {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  /* フェードイン完了状態の位置 */
+  opacity: 1;
+}
+
 /*--------
 heading
 ---------*/
