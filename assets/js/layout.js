@@ -1,7 +1,7 @@
 
 
 const gu_header = `
-<header class="gu-header openFadeIn">
+<header class="gu-header">
 <h1 class="gu-header__logo"><a href="/" tabindex="0"><img src="/assets/images/logo.png" alt="GUSH.Inc"></a></h1>
 <ul class="gu-header__navList">
   <li>

@@ -920,7 +920,6 @@ main {
 
 .gu-section {
   position: relative;
-  overflow: hidden;
 }
 
 .gu-section:nth-of-type(odd):before {
