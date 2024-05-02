@@ -229,6 +229,7 @@
   width: 100%;
   height: 7.81vw;
   top: -7.29vw;
+  pointer-events: none;
 }
 
 .top .gu-section::before {
@@ -573,6 +574,30 @@
 
   .gu-vision__content + .gu-button-1 {
     margin-top: 7.81vw;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .top .gu-section:nth-of-type(odd) .gu-container .gu-top-content {
+    margin-right: 13.75rem;
+  }
+
+  .top .gu-section:nth-of-type(even) .gu-container .gu-top-content {
+    margin-left: 13.75rem;
+  }
+
+  .top .gu-container {
+    max-width: 120rem;
+    margin: 0 auto;
+  }
+
+  .top .gu-container .gu-top-contentImage {
+    width: 46.25rem;
+    margin: 0;
+  }
+
+  .top .gu-container .gu-top-content {
+    max-width: 46.25rem;
   }
 }
 

@@ -23,6 +23,7 @@
     width: 100%;
     height: vwpc(150);
     top: vwpc(-140);
+    pointer-events: none;
     @include mq-down(){
       height: vw(35);
       top: vw(-29);
@@ -34,12 +35,41 @@
   &::before{
     content:none;
   }
+  @include mq-max(){
+    &:nth-of-type(odd){
+      .gu-container .gu-top-content{
+        margin-right:rem(220);
+        // margin-right: 0;
+      }
+    }
+    &:nth-of-type(even){
+      .gu-container .gu-top-content{
+        margin-left:rem(220);
+        // margin-right: 0;
+      }
+    }
+  }
 }
 .top .gu-container{
   display:flex;
   justify-content: space-between;
   padding: vwpc(140) 0;
-  @include mq-down{
+  
+  //画像位置固定考慮
+  @include mq-max(){
+    max-width: rem(1920);
+    margin: 0 auto;
+    .gu-top-contentImage{
+      width: rem(740);
+      margin: 0;
+    }
+    .gu-top-content{
+      max-width: rem(740);
+      // margin-right:rem(220);  
+    }
+   
+  }
+  @include mq-down(){
     flex-direction: column;
     padding: vw(72) 0 0;
   }
