@@ -1021,6 +1021,64 @@ main {
   animation: unyonnyo2 12s infinite ease-in-out, poyopoyo2_mini 16s infinite ease-in-out;
 }
 
+.fadeIn {
+  opacity: 0;
+  /* 初期状態を非表示に */
+  -webkit-transition: opacity 1s ease;
+  transition: opacity 1s ease;
+  /* アニメーション設定 */
+}
+
+.fadeIn.is-active {
+  opacity: 1;
+  /* フェードイン完了状態の透明度 */
+}
+
+.fadeIn.left {
+  -webkit-transform: translateX(calc(-50vw - 50%));
+  transform: translateX(calc(-50vw - 50%));
+  -webkit-transition: -webkit-transform 0.8s ease;
+  transition: -webkit-transform 0.8s ease;
+  transition: transform 0.8s ease;
+  transition: transform 0.8s ease, -webkit-transform 0.8s ease;
+  /* アニメーション設定 */
+}
+
+.fadeIn.left.is-active {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  /* フェードイン完了状態の位置 */
+}
+
+.fadeIn.right {
+  -webkit-transform: translateX(calc(50vw + 50%));
+  transform: translateX(calc(50vw + 50%));
+  -webkit-transition: -webkit-transform 0.8s ease;
+  transition: -webkit-transform 0.8s ease;
+  transition: transform 0.8s ease;
+  transition: transform 0.8s ease, -webkit-transform 0.8s ease;
+  /* アニメーション設定 */
+}
+
+.fadeIn.right.is-active {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  /* フェードイン完了状態の位置 */
+}
+
+.openFadeIn {
+  opacity: 0;
+  /* 初期状態を透明にする */
+  -webkit-transition: opacity 2s ease;
+  transition: opacity 2s ease;
+  /* アニメーション設定 */
+}
+
+.openFadeIn.is-active {
+  opacity: 1;
+  /* フェードイン完了状態の透明度 */
+}
+
 /*--------
 heading
 ---------*/
