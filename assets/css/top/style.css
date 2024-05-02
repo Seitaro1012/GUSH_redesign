@@ -557,14 +557,6 @@
   animation: unyonnyo2 8s infinite ease-in-out, poyopoyo2_mini 11s infinite ease-in-out;
 }
 
-.gu-section:first-of-type {
-  background: url("/assets/images/wave_bg01.png") no-repeat 0 0/100%;
-}
-
-.gu-section:nth-of-type(3) {
-  background: url("/assets/images/wave_bg02.png") no-repeat 0 0/100%;
-}
-
 @media screen and (min-width: 768px) {
   .gu-section:nth-of-type(odd) .gu-top-contentImage {
     -webkit-box-ordinal-group: 0;
@@ -766,16 +758,6 @@
     left: 73.54vw;
     width: 12.98vw;
     height: 14.5vw;
-  }
-
-  .gu-section:first-of-type {
-    background-image: url("/assets/images/wave_bg01sp.png");
-    background-position: 0 1.27vw;
-  }
-
-  .gu-section:nth-of-type(3) {
-    background-image: url("/assets/images/wave_bg02sp.png");
-    background-position: 0 2.04vw;
   }
 }
 /*# sourceMappingURL=style.css.map */

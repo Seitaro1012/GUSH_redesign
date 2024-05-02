@@ -50,6 +50,19 @@ $(window).scroll(function() {
   });
 });
 
+$(window).scroll(function() {
+  $('.fadeInBottom').each(function() {
+    const scrollPosition = $(window).scrollTop();
+    const windowHeight = $(window).height();
+    const fadeinTargetTop = $(this).offset().top;
+
+    if (scrollPosition >= fadeinTargetTop - windowHeight / 2) {
+      $(this).addClass('is-active');
+    }
+  });
+});
+
+
 $(document).ready(function() {
   $('.openFadeIn').addClass('is-active');
 });
