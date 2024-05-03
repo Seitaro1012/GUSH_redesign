@@ -561,6 +561,10 @@
   animation: unyonnyo2 8s infinite ease-in-out, poyopoyo2_mini 11s infinite ease-in-out;
 }
 
+.gu-top-mvTitle__text {
+  letter-spacing: 3px;
+}
+
 @media screen and (min-width: 768px) {
   .gu-section:nth-of-type(odd) .gu-top-contentImage {
     -webkit-box-ordinal-group: 0;

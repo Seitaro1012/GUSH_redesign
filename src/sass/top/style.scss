@@ -474,6 +474,7 @@
 }
 
 .gu-top-mvTitle__text {
+  letter-spacing: 3px;
   @include mq-up() {
     font-size: vwpc(120);
   }
