@@ -232,6 +232,10 @@
   pointer-events: none;
 }
 
+.top .gu-section {
+  overflow: hidden;
+}
+
 .top .gu-section::before {
   content: none;
 }

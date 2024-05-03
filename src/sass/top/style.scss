@@ -32,6 +32,7 @@
   }
 }
 .top .gu-section{
+  overflow: hidden;
   &::before{
     content:none;
   }
