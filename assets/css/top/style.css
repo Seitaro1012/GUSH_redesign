@@ -567,6 +567,10 @@
   .gu-vision__content + .gu-button-1 {
     margin-top: 7.81vw;
   }
+
+  .gu-top-mvTitle__text {
+    font-size: 6.25vw;
+  }
 }
 
 @media screen and (min-width: 1920px) {
@@ -590,6 +594,10 @@
 
   .top .gu-container .gu-top-content {
     max-width: 46.25rem;
+  }
+
+  .gu-top-mvTitle__text {
+    font-size: 7.5rem;
   }
 }
 
@@ -758,6 +766,10 @@
     left: 73.54vw;
     width: 12.98vw;
     height: 14.5vw;
+  }
+
+  .gu-top-mvTitle__text {
+    font-size: 10.18vw;
   }
 }
 /*# sourceMappingURL=style.css.map */

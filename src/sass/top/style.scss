@@ -472,6 +472,19 @@
   }
 }
 
+.gu-top-mvTitle__text {
+  @include mq-up() {
+    font-size: vwpc(120);
+  }
+  @include mq-max(){
+    font-size: rem(120);
+  }
+  @include mq-down() {
+    font-size: vw(40);
+  }
+}
+
+
 // .gu-section:first-of-type{
 //   background: url("/assets/images/wave_bg01.png") no-repeat 0 0 / 100%;
 //   @include mq-down {
@@ -486,5 +499,6 @@
 //     background-position: 0 vw(8);
 //   }
 // }
+
 
 
