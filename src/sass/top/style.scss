@@ -295,6 +295,7 @@
       width: vwpc(330);
       height: vwpc(350);
 
+
       @include mq-down {
         top: vw(106);
         left: vw(30);
@@ -485,6 +486,9 @@
     font-size: vw(40);
   }
 }
+
+// オブジェクトを移動させるすアニメーション
+
 
 
 // .gu-section:first-of-type{
