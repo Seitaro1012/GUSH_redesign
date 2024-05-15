@@ -232,6 +232,10 @@
   pointer-events: none;
 }
 
+.top .gu-section {
+  overflow: hidden;
+}
+
 .top .gu-section::before {
   content: none;
 }
@@ -557,12 +561,8 @@
   animation: unyonnyo2 8s infinite ease-in-out, poyopoyo2_mini 11s infinite ease-in-out;
 }
 
-.gu-section:first-of-type {
-  background: url("/assets/images/wave_bg01.png") no-repeat 0 0/100%;
-}
-
-.gu-section:nth-of-type(3) {
-  background: url("/assets/images/wave_bg02.png") no-repeat 0 0/100%;
+.gu-top-mvTitle__text {
+  letter-spacing: 3px;
 }
 
 @media screen and (min-width: 768px) {
@@ -574,6 +574,10 @@
 
   .gu-vision__content + .gu-button-1 {
     margin-top: 7.81vw;
+  }
+
+  .gu-top-mvTitle__text {
+    font-size: 6.25vw;
   }
 }
 
@@ -598,6 +602,10 @@
 
   .top .gu-container .gu-top-content {
     max-width: 46.25rem;
+  }
+
+  .gu-top-mvTitle__text {
+    font-size: 7.5rem;
   }
 }
 
@@ -768,14 +776,8 @@
     height: 14.5vw;
   }
 
-  .gu-section:first-of-type {
-    background-image: url("/assets/images/wave_bg01sp.png");
-    background-position: 0 1.27vw;
-  }
-
-  .gu-section:nth-of-type(3) {
-    background-image: url("/assets/images/wave_bg02sp.png");
-    background-position: 0 2.04vw;
+  .gu-top-mvTitle__text {
+    font-size: 10.18vw;
   }
 }
 /*# sourceMappingURL=style.css.map */

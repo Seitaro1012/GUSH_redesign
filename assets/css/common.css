@@ -1079,6 +1079,20 @@ main {
   /* フェードイン完了状態の透明度 */
 }
 
+.fadeInBottom {
+  opacity: 0;
+  -webkit-transform: translate(0, 100px);
+  transform: translate(0, 100px);
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.fadeInBottom.is-active {
+  opacity: 1;
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+
 /*--------
 heading
 ---------*/
@@ -1086,7 +1100,7 @@ heading
 .gu-heading-1 {
   font-family: Roboto;
   font-weight: 700;
-  line-height: 1;
+  line-height: 1.2;
 }
 
 .gu-heading-2 {
@@ -1117,6 +1131,7 @@ text
 
 .gu-text-1 {
   font-weight: 400;
+  line-height: 2;
 }
 
 .gu-text-1 + .gu-text-1 {
@@ -1213,11 +1228,11 @@ button
   }
 
   .gu-heading-1 {
-    font-size: 5.21vw;
+    font-size: 4.17vw;
   }
 
   .gu-heading-2 {
-    font-size: 2.5vw;
+    font-size: 2.08vw;
   }
 
   .gu-heading-3 {

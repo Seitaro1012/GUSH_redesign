@@ -121,11 +121,11 @@
 .company-image{
   @include mq-up(){
     width: vwpc(600);
-    padding-top: vwpc(70);
+    padding-top: vwpc(45);
   }
   @include mq-max() {
     width: rem(600);
-    padding-top: rem(70);
+    padding-top: rem(45);
   }
   @include mq-down(){
     display: none;

@@ -8,10 +8,10 @@ heading
   &-1 {
     font-family: Roboto; 
     font-weight: 700;
-    line-height: 1;
+    line-height: 1.2;
     // line-height: 1.5;
     @include mq-up(){
-      font-size: vwpc(100);
+      font-size: vwpc(80);
     }
     @include mq-max(){
       font-size: rem(100);
@@ -24,7 +24,7 @@ heading
     font-weight: 700;
     margin-bottom: 1em;
     @include mq-up(){
-      font-size: vwpc(48);
+      font-size: vwpc(40);
     }
     @include mq-max(){
       font-size: rem(48);
@@ -65,6 +65,7 @@ text
   &-1 {
     font-weight: 400;
     // margin-bottom:1em;
+    line-height: 2.0;
     @include mq-up(){
       font-size: vwpc(24);
     }

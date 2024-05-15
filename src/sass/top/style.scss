@@ -32,6 +32,7 @@
   }
 }
 .top .gu-section{
+  overflow: hidden;
   &::before{
     content:none;
   }
@@ -294,6 +295,7 @@
       width: vwpc(330);
       height: vwpc(350);
 
+
       @include mq-down {
         top: vw(106);
         left: vw(30);
@@ -472,19 +474,37 @@
   }
 }
 
-.gu-section:first-of-type{
-  background: url("/assets/images/wave_bg01.png") no-repeat 0 0 / 100%;
-  @include mq-down {
-    background-image: url("/assets/images/wave_bg01sp.png");
-    background-position: 0 vw(5);
+.gu-top-mvTitle__text {
+  letter-spacing: 3px;
+  @include mq-up() {
+    font-size: vwpc(120);
+  }
+  @include mq-max(){
+    font-size: rem(120);
+  }
+  @include mq-down() {
+    font-size: vw(40);
   }
 }
-.gu-section:nth-of-type(3){
-  background: url("/assets/images/wave_bg02.png") no-repeat 0 0 / 100%;
-  @include mq-down {
-    background-image: url("/assets/images/wave_bg02sp.png");
-    background-position: 0 vw(8);
-  }
-}
+
+// オブジェクトを移動させるすアニメーション
+
+
+
+// .gu-section:first-of-type{
+//   background: url("/assets/images/wave_bg01.png") no-repeat 0 0 / 100%;
+//   @include mq-down {
+//     background-image: url("/assets/images/wave_bg01sp.png");
+//     background-position: 0 vw(5);
+//   }
+// }
+// .gu-section:nth-of-type(3){
+//   background: url("/assets/images/wave_bg02.png") no-repeat 0 0 / 100%;
+//   @include mq-down {
+//     background-image: url("/assets/images/wave_bg02sp.png");
+//     background-position: 0 vw(8);
+//   }
+// }
+
 
 

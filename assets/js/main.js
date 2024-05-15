@@ -50,7 +50,52 @@ $(window).scroll(function() {
   });
 });
 
+$(window).scroll(function() {
+  $('.fadeInBottom').each(function() {
+    const scrollPosition = $(window).scrollTop();
+    const windowHeight = $(window).height();
+    const fadeinTargetTop = $(this).offset().top;
+
+    if (scrollPosition >= fadeinTargetTop - windowHeight / 2) {
+      $(this).addClass('is-active');
+    }
+  });
+});
+
+
 $(document).ready(function() {
   $('.openFadeIn').addClass('is-active');
 });
 
+
+//　オブジェクトを動かすコード
+
+$(document).ready(function() {
+  const object = $('.gu-object__shape');
+  const centerX = object.width() / 2;
+  const centerY = object.height() / 2;
+  const radius = 20; // 円の半径
+  let angle = 0; // 回転角度
+
+  // アニメーションループ
+  function animate() {
+    // 円周上の位置を計算
+    const x = centerX + radius * Math.cos(angle);
+    const y = centerY + radius * Math.sin(angle);
+
+    // オブジェクトの位置を更新
+    object.css({
+      top: y,
+      left: x
+    });
+
+    // 回転角度を更新
+    angle += Math.PI / 500; // 回転速度
+
+    // 次のフレームでアニメーションを続ける
+    requestAnimationFrame(animate);
+  }
+
+  // アニメーションを開始
+  animate();
+});
