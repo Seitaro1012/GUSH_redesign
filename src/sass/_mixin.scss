@@ -1,39 +1,40 @@
 @mixin object-anime-1-before() {
-animation: unyonnyo 8s infinite ease-in-out, poyopoyo 16s infinite ease-in-out;
+animation: unyonnyo 8s infinite ease-in-out, poyopoyo 16s infinite ease-in-out,  kurukuru_right 28s infinite linear;
 }
 @mixin object-anime-1-after() {
-animation: unyonnyo2 12s infinite ease-in-out, poyopoyo2 16s infinite ease-in-out;
+animation: unyonnyo2 12s infinite ease-in-out, poyopoyo2 16s infinite ease-in-out, kurukuru_right 28s infinite linear;
 }
 @mixin object-anime-1-before_mini() {
-animation: unyonnyo 8s infinite ease-in-out, poyopoyo_mini 12s infinite ease-in-out;
+animation: unyonnyo 8s infinite ease-in-out, poyopoyo_mini 12s infinite ease-in-out, kurukuru_right 28s infinite linear;
 }
 @mixin object-anime-1-after_mini() {
-animation: unyonnyo2 10s infinite ease-in-out, poyopoyo2_mini 12s infinite ease-in-out;
+animation: unyonnyo2 10s infinite ease-in-out, poyopoyo2_mini 12s infinite ease-in-out, kurukuru_right 28s infinite linear;
 }
 
 @mixin object-anime-2-before() {
-animation: unyonnyo 16s infinite ease-in-out, poyopoyo 24s infinite ease-in-out;
+animation: unyonnyo 16s infinite ease-in-out, poyopoyo 24s infinite ease-in-out, kurukuru_left 30s infinite linear;
 }
 @mixin object-anime-2-after() {
-animation: unyonnyo2 20s infinite ease-in-out, poyopoyo2 24s infinite ease-in-out;
+animation: unyonnyo2 20s infinite ease-in-out, poyopoyo2 24s infinite ease-in-out,
+kurukuru_left 30s infinite linear;
 }
 @mixin object-anime-2-before_mini() {
-animation: unyonnyo 5s infinite ease-in-out, poyopoyo_mini 10s infinite ease-in-out;
+animation: unyonnyo 5s infinite ease-in-out, poyopoyo_mini 10s infinite ease-in-out, kurukuru_left 30s infinite linear;
 }
 @mixin object-anime-2-after_mini() {
-animation: unyonnyo2 8s infinite ease-in-out, poyopoyo2_mini 11s infinite ease-in-out;
+animation: unyonnyo2 8s infinite ease-in-out, poyopoyo2_mini 11s infinite ease-in-out, kurukuru_left 30s infinite linear;;
 }
 @mixin object-anime-3-before() {
-animation: unyonnyo 16s infinite ease-in-out, poyopoyo 24s infinite ease-in-out;
+animation: unyonnyo 16s infinite ease-in-out, poyopoyo 24s infinite ease-in-out, kurukuru_right 24s infinite linear;
 }
 @mixin object-anime-3-after() {
-animation: unyonnyo2 20s infinite ease-in-out, poyopoyo2 24s infinite ease-in-out;
+animation: unyonnyo2 20s infinite ease-in-out, poyopoyo2 24s infinite ease-in-out, kurukuru_right 24s infinite linear;
 }
 @mixin object-anime-3-before_mini() {
-animation: unyonnyo 8s infinite ease-in-out, poyopoyo_mini 16s infinite ease-in-out;
+animation: unyonnyo 8s infinite ease-in-out, poyopoyo_mini 16s infinite ease-in-out, kurukuru_right 24s infinite linear;;
 }
 @mixin object-anime-3-after_mini() {
-animation: unyonnyo2 12s infinite ease-in-out, poyopoyo2_mini 16s infinite ease-in-out;
+animation: unyonnyo2 12s infinite ease-in-out, poyopoyo2_mini 16s infinite ease-in-out, kurukuru_right 24s infinite linear;;
 }
 
 
@@ -69,3 +70,36 @@ animation: unyonnyo2 12s infinite ease-in-out, poyopoyo2_mini 16s infinite ease-
   100%{ top: -3px; left: -3px; }
 }
 
+
+@keyframes kurukuru_right {
+  0%{ transform: rotate(0); 
+      transform-origin: 40% 60%;  }
+  50%{ transform: rotate(180deg); 
+       transform-origin: 45% 55%;  }
+  100%{ transform: rotate(360deg); 
+        transform-origin: 40% 60%;  }
+}
+// @keyframes kurukuru_right2 {
+//   0%{ transform: rotate(0); 
+//     transform-origin: 60% 40%;  }
+// 50%{ transform: rotate(180deg); 
+//      transform-origin: 55% 45%;  }
+// 100%{ transform: rotate(360deg); 
+//       transform-origin: 60% 40%;  }
+// }
+@keyframes kurukuru_left {
+  0%{ transform: rotate(0); 
+      transform-origin: 40% 60%;  }
+  50%{ transform: rotate(-180deg); 
+       transform-origin: 45% 55%;  }
+  100%{ transform: rotate(-360deg); 
+        transform-origin: 40% 60%;  }
+}
+// @keyframes kurukuru_left2 {
+//   0%{ transform: rotate(0); 
+//     transform-origin: 60% 40%;  }
+// 50%{ transform: rotate(-180deg); 
+//      transform-origin: 55% 45%;  }
+// 100%{ transform: rotate(-360deg); 
+//       transform-origin: 60% 40%;  }
+// }

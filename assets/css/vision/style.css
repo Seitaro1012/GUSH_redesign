@@ -202,6 +202,98 @@
   }
 }
 
+@-webkit-keyframes kurukuru_right {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+    -webkit-transform-origin: 40% 60%;
+    transform-origin: 40% 60%;
+  }
+
+  50% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+    -webkit-transform-origin: 45% 55%;
+    transform-origin: 45% 55%;
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-transform-origin: 40% 60%;
+    transform-origin: 40% 60%;
+  }
+}
+
+@keyframes kurukuru_right {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+    -webkit-transform-origin: 40% 60%;
+    transform-origin: 40% 60%;
+  }
+
+  50% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+    -webkit-transform-origin: 45% 55%;
+    transform-origin: 45% 55%;
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-transform-origin: 40% 60%;
+    transform-origin: 40% 60%;
+  }
+}
+
+@-webkit-keyframes kurukuru_left {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+    -webkit-transform-origin: 40% 60%;
+    transform-origin: 40% 60%;
+  }
+
+  50% {
+    -webkit-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+    -webkit-transform-origin: 45% 55%;
+    transform-origin: 45% 55%;
+  }
+
+  100% {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+    -webkit-transform-origin: 40% 60%;
+    transform-origin: 40% 60%;
+  }
+}
+
+@keyframes kurukuru_left {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+    -webkit-transform-origin: 40% 60%;
+    transform-origin: 40% 60%;
+  }
+
+  50% {
+    -webkit-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+    -webkit-transform-origin: 45% 55%;
+    transform-origin: 45% 55%;
+  }
+
+  100% {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+    -webkit-transform-origin: 40% 60%;
+    transform-origin: 40% 60%;
+  }
+}
+
 .gu-section__vision-1 {
   z-index: 1;
 }
@@ -219,13 +311,13 @@
 }
 
 .gu-object--vision-1 .gu-object__shape:nth-child(1):before {
-  -webkit-animation: unyonnyo 8s infinite ease-in-out, poyopoyo 16s infinite ease-in-out;
-  animation: unyonnyo 8s infinite ease-in-out, poyopoyo 16s infinite ease-in-out;
+  -webkit-animation: unyonnyo 8s infinite ease-in-out, poyopoyo 16s infinite ease-in-out, kurukuru_right 28s infinite linear;
+  animation: unyonnyo 8s infinite ease-in-out, poyopoyo 16s infinite ease-in-out, kurukuru_right 28s infinite linear;
 }
 
 .gu-object--vision-1 .gu-object__shape:nth-child(1):after {
-  -webkit-animation: unyonnyo2 12s infinite ease-in-out, poyopoyo2 16s infinite ease-in-out;
-  animation: unyonnyo2 12s infinite ease-in-out, poyopoyo2 16s infinite ease-in-out;
+  -webkit-animation: unyonnyo2 12s infinite ease-in-out, poyopoyo2 16s infinite ease-in-out, kurukuru_right 28s infinite linear;
+  animation: unyonnyo2 12s infinite ease-in-out, poyopoyo2 16s infinite ease-in-out, kurukuru_right 28s infinite linear;
 }
 
 .gu-object--vision-1 .gu-object__shape:nth-child(2) {
@@ -236,13 +328,13 @@
 }
 
 .gu-object--vision-1 .gu-object__shape:nth-child(2):before {
-  -webkit-animation: unyonnyo 8s infinite ease-in-out, poyopoyo_mini 16s infinite ease-in-out;
-  animation: unyonnyo 8s infinite ease-in-out, poyopoyo_mini 16s infinite ease-in-out;
+  -webkit-animation: unyonnyo 8s infinite ease-in-out, poyopoyo_mini 16s infinite ease-in-out, kurukuru_right 24s infinite linear;
+  animation: unyonnyo 8s infinite ease-in-out, poyopoyo_mini 16s infinite ease-in-out, kurukuru_right 24s infinite linear;
 }
 
 .gu-object--vision-1 .gu-object__shape:nth-child(2):after {
-  -webkit-animation: unyonnyo2 12s infinite ease-in-out, poyopoyo2_mini 16s infinite ease-in-out;
-  animation: unyonnyo2 12s infinite ease-in-out, poyopoyo2_mini 16s infinite ease-in-out;
+  -webkit-animation: unyonnyo2 12s infinite ease-in-out, poyopoyo2_mini 16s infinite ease-in-out, kurukuru_right 24s infinite linear;
+  animation: unyonnyo2 12s infinite ease-in-out, poyopoyo2_mini 16s infinite ease-in-out, kurukuru_right 24s infinite linear;
 }
 
 .gu-object--vision-2 .gu-object__shape:nth-child(1) {
@@ -253,13 +345,13 @@
 }
 
 .gu-object--vision-2 .gu-object__shape:nth-child(1):before {
-  -webkit-animation: unyonnyo 8s infinite ease-in-out, poyopoyo 16s infinite ease-in-out;
-  animation: unyonnyo 8s infinite ease-in-out, poyopoyo 16s infinite ease-in-out;
+  -webkit-animation: unyonnyo 8s infinite ease-in-out, poyopoyo 16s infinite ease-in-out, kurukuru_right 28s infinite linear;
+  animation: unyonnyo 8s infinite ease-in-out, poyopoyo 16s infinite ease-in-out, kurukuru_right 28s infinite linear;
 }
 
 .gu-object--vision-2 .gu-object__shape:nth-child(1):after {
-  -webkit-animation: unyonnyo2 12s infinite ease-in-out, poyopoyo2 16s infinite ease-in-out;
-  animation: unyonnyo2 12s infinite ease-in-out, poyopoyo2 16s infinite ease-in-out;
+  -webkit-animation: unyonnyo2 12s infinite ease-in-out, poyopoyo2 16s infinite ease-in-out, kurukuru_right 28s infinite linear;
+  animation: unyonnyo2 12s infinite ease-in-out, poyopoyo2 16s infinite ease-in-out, kurukuru_right 28s infinite linear;
 }
 
 .gu-object--vision-2 .gu-object__shape:nth-child(2) {
@@ -270,13 +362,13 @@
 }
 
 .gu-object--vision-2 .gu-object__shape:nth-child(2):before {
-  -webkit-animation: unyonnyo 8s infinite ease-in-out, poyopoyo_mini 16s infinite ease-in-out;
-  animation: unyonnyo 8s infinite ease-in-out, poyopoyo_mini 16s infinite ease-in-out;
+  -webkit-animation: unyonnyo 8s infinite ease-in-out, poyopoyo_mini 16s infinite ease-in-out, kurukuru_right 24s infinite linear;
+  animation: unyonnyo 8s infinite ease-in-out, poyopoyo_mini 16s infinite ease-in-out, kurukuru_right 24s infinite linear;
 }
 
 .gu-object--vision-2 .gu-object__shape:nth-child(2):after {
-  -webkit-animation: unyonnyo2 12s infinite ease-in-out, poyopoyo2_mini 16s infinite ease-in-out;
-  animation: unyonnyo2 12s infinite ease-in-out, poyopoyo2_mini 16s infinite ease-in-out;
+  -webkit-animation: unyonnyo2 12s infinite ease-in-out, poyopoyo2_mini 16s infinite ease-in-out, kurukuru_right 24s infinite linear;
+  animation: unyonnyo2 12s infinite ease-in-out, poyopoyo2_mini 16s infinite ease-in-out, kurukuru_right 24s infinite linear;
 }
 
 .gu-object--vision-3 .gu-object__shape:nth-child(1) {
@@ -287,13 +379,13 @@
 }
 
 .gu-object--vision-3 .gu-object__shape:nth-child(1):before {
-  -webkit-animation: unyonnyo 16s infinite ease-in-out, poyopoyo 24s infinite ease-in-out;
-  animation: unyonnyo 16s infinite ease-in-out, poyopoyo 24s infinite ease-in-out;
+  -webkit-animation: unyonnyo 16s infinite ease-in-out, poyopoyo 24s infinite ease-in-out, kurukuru_right 24s infinite linear;
+  animation: unyonnyo 16s infinite ease-in-out, poyopoyo 24s infinite ease-in-out, kurukuru_right 24s infinite linear;
 }
 
 .gu-object--vision-3 .gu-object__shape:nth-child(1):after {
-  -webkit-animation: unyonnyo2 20s infinite ease-in-out, poyopoyo2 24s infinite ease-in-out;
-  animation: unyonnyo2 20s infinite ease-in-out, poyopoyo2 24s infinite ease-in-out;
+  -webkit-animation: unyonnyo2 20s infinite ease-in-out, poyopoyo2 24s infinite ease-in-out, kurukuru_right 24s infinite linear;
+  animation: unyonnyo2 20s infinite ease-in-out, poyopoyo2 24s infinite ease-in-out, kurukuru_right 24s infinite linear;
 }
 
 .gu-object--vision-3 .gu-object__shape:nth-child(2) {
@@ -304,13 +396,13 @@
 }
 
 .gu-object--vision-3 .gu-object__shape:nth-child(2):before {
-  -webkit-animation: unyonnyo 8s infinite ease-in-out, poyopoyo_mini 16s infinite ease-in-out;
-  animation: unyonnyo 8s infinite ease-in-out, poyopoyo_mini 16s infinite ease-in-out;
+  -webkit-animation: unyonnyo 8s infinite ease-in-out, poyopoyo_mini 16s infinite ease-in-out, kurukuru_right 24s infinite linear;
+  animation: unyonnyo 8s infinite ease-in-out, poyopoyo_mini 16s infinite ease-in-out, kurukuru_right 24s infinite linear;
 }
 
 .gu-object--vision-3 .gu-object__shape:nth-child(2):after {
-  -webkit-animation: unyonnyo2 12s infinite ease-in-out, poyopoyo2_mini 16s infinite ease-in-out;
-  animation: unyonnyo2 12s infinite ease-in-out, poyopoyo2_mini 16s infinite ease-in-out;
+  -webkit-animation: unyonnyo2 12s infinite ease-in-out, poyopoyo2_mini 16s infinite ease-in-out, kurukuru_right 24s infinite linear;
+  animation: unyonnyo2 12s infinite ease-in-out, poyopoyo2_mini 16s infinite ease-in-out, kurukuru_right 24s infinite linear;
 }
 
 @media screen and (min-width: 768px) {
@@ -422,13 +514,13 @@
   }
 
   .gu-object--vision-1 .gu-object__shape:nth-child(1):before {
-    -webkit-animation: unyonnyo 8s infinite ease-in-out, poyopoyo_mini 12s infinite ease-in-out;
-    animation: unyonnyo 8s infinite ease-in-out, poyopoyo_mini 12s infinite ease-in-out;
+    -webkit-animation: unyonnyo 8s infinite ease-in-out, poyopoyo_mini 12s infinite ease-in-out, kurukuru_right 28s infinite linear;
+    animation: unyonnyo 8s infinite ease-in-out, poyopoyo_mini 12s infinite ease-in-out, kurukuru_right 28s infinite linear;
   }
 
   .gu-object--vision-1 .gu-object__shape:nth-child(1):after {
-    -webkit-animation: unyonnyo2 10s infinite ease-in-out, poyopoyo2_mini 12s infinite ease-in-out;
-    animation: unyonnyo2 10s infinite ease-in-out, poyopoyo2_mini 12s infinite ease-in-out;
+    -webkit-animation: unyonnyo2 10s infinite ease-in-out, poyopoyo2_mini 12s infinite ease-in-out, kurukuru_right 28s infinite linear;
+    animation: unyonnyo2 10s infinite ease-in-out, poyopoyo2_mini 12s infinite ease-in-out, kurukuru_right 28s infinite linear;
   }
 
   .gu-object--vision-1 .gu-object__shape:nth-child(2) {
