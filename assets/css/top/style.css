@@ -304,17 +304,17 @@
   margin-top: 0;
 }
 
-.top #gu-header-js {
+.top #fk-header-js {
   position: absolute;
   width: 100%;
   z-index: 20;
 }
 
-.top .gu-header {
+.top .fk-header {
   background: transparent;
 }
 
-.top .gu-footer:before {
+.top .fk-footer:before {
   content: "";
   position: absolute;
   background: url("/assets/images/wave_light01.png") no-repeat 0 0/100%;
@@ -324,15 +324,15 @@
   pointer-events: none;
 }
 
-.top .gu-section {
+.top .fk-section {
   overflow: hidden;
 }
 
-.top .gu-section::before {
+.top .fk-section::before {
   content: none;
 }
 
-.top .gu-container {
+.top .fk-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -342,38 +342,38 @@
   padding: 7.29vw 0;
 }
 
-.gu-top-content {
+.fk-top-content {
   width: 50%;
 }
 
-.top .gu-button-1 {
+.top .fk-button-1 {
   margin-top: 3.28vw;
 }
 
-.gu-top-inner {
+.fk-top-inner {
   padding-left: 2.08vw;
 }
 
-.gu-top-contentImage {
+.fk-top-contentImage {
   width: 100vw;
   max-width: 50%;
   margin: 0 calc(50% - 50vw) 0;
 }
 
-.gu-top-contentImage img {
+.fk-top-contentImage img {
   width: 41.67vw;
   display: block;
 }
 
-.gu-heading-3 {
+.fk-heading-3 {
   margin-top: 1em;
 }
 
-.gu-heading-3:first-of-type {
+.fk-heading-3:first-of-type {
   margin-top: 0;
 }
 
-.gu-news-list {
+.fk-news-list {
   margin-top: 3.7vw;
   color: #fff;
   font-size: 1.25vw;
@@ -387,7 +387,7 @@
   flex-direction: column;
 }
 
-.gu-news-list li a {
+.fk-news-list li a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -395,28 +395,28 @@
   position: relative;
 }
 
-.gu-news-list .dt {
+.fk-news-list .dt {
   width: 25%;
   text-align: center;
 }
 
-.gu-news-list .dd {
+.fk-news-list .dd {
   width: 75%;
   padding-right: 3.13vw;
 }
 
-.gu-news-list .dd::after {
+.fk-news-list .dd::after {
   content: "→";
   position: absolute;
   right: 1.25vw;
   top: 0;
 }
 
-.gu-top-online {
+.fk-top-online {
   padding: 4.43vw 0 5.52vw;
 }
 
-.gu-top-online .gu-heading-1 {
+.fk-top-online .fk-heading-1 {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -424,17 +424,17 @@
   margin-bottom: 2.29vw;
 }
 
-.gu-top-online__image img {
+.fk-top-online__image img {
   width: 100%;
 }
 
-.gu-top-mv {
+.fk-top-mv {
   height: 56.25vw;
   background: url("/assets/images/top_MV01.jpg") no-repeat 0 0/cover;
   position: relative;
 }
 
-.gu-top-mvTitle {
+.fk-top-mvTitle {
   position: relative;
   z-index: 10;
   padding-top: 16.67vw;
@@ -442,11 +442,11 @@
   margin-bottom: 10.94vw;
 }
 
-.gu-top-mvTitle__text {
+.fk-top-mvTitle__text {
   margin-bottom: 1.77vw;
 }
 
-.gu-top-mvScrollGuide {
+.fk-top-mvScrollGuide {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -454,7 +454,7 @@
   text-align: center;
 }
 
-.gu-top-mvScrollGuide:after {
+.fk-top-mvScrollGuide:after {
   content: "";
   background: #fff;
   margin: 1.35vw auto 0;
@@ -475,18 +475,18 @@
   animation-fill-mode: both;
 }
 
-.gu-top-mvScrollGuide__text {
+.fk-top-mvScrollGuide__text {
   width: 13.33vw;
 }
 
-.gu-top-mvSide {
+.fk-top-mvSide {
   position: absolute;
   width: 1.46vw;
   top: 35.05vw;
   left: 5.36vw;
 }
 
-.gu-top-mvSide__text:after {
+.fk-top-mvSide__text:after {
   content: "";
   display: block;
   width: 2.6vw;
@@ -496,7 +496,7 @@
   margin-left: -0.73vw;
 }
 
-.gu-top-mvSide img {
+.fk-top-mvSide img {
   width: 100%;
 }
 
@@ -534,180 +534,180 @@
   }
 }
 
-.gu-object--topMv .gu-object__shape:nth-child(1) {
+.fk-object--topMv .fk-object__shape:nth-child(1) {
   top: 8.8vw;
   left: 10%;
   width: 17.19vw;
   height: 18.23vw;
 }
 
-.gu-object--topMv .gu-object__shape:nth-child(1):before {
+.fk-object--topMv .fk-object__shape:nth-child(1):before {
   -webkit-animation: unyonnyo 8s infinite ease-in-out, poyopoyo 16s infinite ease-in-out, kurukuru_right 28s infinite linear;
   animation: unyonnyo 8s infinite ease-in-out, poyopoyo 16s infinite ease-in-out, kurukuru_right 28s infinite linear;
 }
 
-.gu-object--topMv .gu-object__shape:nth-child(1):after {
+.fk-object--topMv .fk-object__shape:nth-child(1):after {
   -webkit-animation: unyonnyo2 12s infinite ease-in-out, poyopoyo2 16s infinite ease-in-out, kurukuru_right 28s infinite linear;
   animation: unyonnyo2 12s infinite ease-in-out, poyopoyo2 16s infinite ease-in-out, kurukuru_right 28s infinite linear;
 }
 
-.gu-object--topMv .gu-object__shape:nth-child(2) {
+.fk-object--topMv .fk-object__shape:nth-child(2) {
   top: 9.48vw;
   right: 26%;
   width: 10.42vw;
   height: 10.94vw;
 }
 
-.gu-object--topMv .gu-object__shape:nth-child(2):before {
+.fk-object--topMv .fk-object__shape:nth-child(2):before {
   -webkit-animation: unyonnyo 16s infinite ease-in-out, poyopoyo 24s infinite ease-in-out, kurukuru_left 30s infinite linear;
   animation: unyonnyo 16s infinite ease-in-out, poyopoyo 24s infinite ease-in-out, kurukuru_left 30s infinite linear;
 }
 
-.gu-object--topMv .gu-object__shape:nth-child(2):after {
+.fk-object--topMv .fk-object__shape:nth-child(2):after {
   -webkit-animation: unyonnyo2 20s infinite ease-in-out, poyopoyo2 24s infinite ease-in-out, kurukuru_left 30s infinite linear;
   animation: unyonnyo2 20s infinite ease-in-out, poyopoyo2 24s infinite ease-in-out, kurukuru_left 30s infinite linear;
 }
 
-.gu-object--topMv .gu-object__shape:nth-child(3) {
+.fk-object--topMv .fk-object__shape:nth-child(3) {
   top: 31.25vw;
   right: 13%;
   width: 12.5vw;
   height: 11.88vw;
 }
 
-.gu-object--topMv .gu-object__shape:nth-child(3):before {
+.fk-object--topMv .fk-object__shape:nth-child(3):before {
   -webkit-animation: unyonnyo 16s infinite ease-in-out, poyopoyo 24s infinite ease-in-out, kurukuru_right 24s infinite linear;
   animation: unyonnyo 16s infinite ease-in-out, poyopoyo 24s infinite ease-in-out, kurukuru_right 24s infinite linear;
 }
 
-.gu-object--topMv .gu-object__shape:nth-child(3):after {
+.fk-object--topMv .fk-object__shape:nth-child(3):after {
   -webkit-animation: unyonnyo2 20s infinite ease-in-out, poyopoyo2 24s infinite ease-in-out, kurukuru_right 24s infinite linear;
   animation: unyonnyo2 20s infinite ease-in-out, poyopoyo2 24s infinite ease-in-out, kurukuru_right 24s infinite linear;
 }
 
-.gu-object--topSection01 .gu-object__shape:nth-child(1) {
+.fk-object--topSection01 .fk-object__shape:nth-child(1) {
   top: 2.86vw;
   right: 4.58vw;
   width: 4.17vw;
   height: 5vw;
 }
 
-.gu-object--topSection01 .gu-object__shape:nth-child(1):before {
+.fk-object--topSection01 .fk-object__shape:nth-child(1):before {
   -webkit-animation: unyonnyo 5s infinite ease-in-out, poyopoyo_mini 10s infinite ease-in-out, kurukuru_left 30s infinite linear;
   animation: unyonnyo 5s infinite ease-in-out, poyopoyo_mini 10s infinite ease-in-out, kurukuru_left 30s infinite linear;
 }
 
-.gu-object--topSection01 .gu-object__shape:nth-child(1):after {
+.fk-object--topSection01 .fk-object__shape:nth-child(1):after {
   -webkit-animation: unyonnyo2 8s infinite ease-in-out, poyopoyo2_mini 11s infinite ease-in-out, kurukuru_left 30s infinite linear;
   animation: unyonnyo2 8s infinite ease-in-out, poyopoyo2_mini 11s infinite ease-in-out, kurukuru_left 30s infinite linear;
 }
 
-.gu-object--topSection02 .gu-object__shape:nth-child(1) {
+.fk-object--topSection02 .fk-object__shape:nth-child(1) {
   top: 2.86vw;
   right: 45.05vw;
   width: 6.09vw;
   height: 5.94vw;
 }
 
-.gu-object--topSection02 .gu-object__shape:nth-child(1):before {
+.fk-object--topSection02 .fk-object__shape:nth-child(1):before {
   -webkit-animation: unyonnyo 8s infinite ease-in-out, poyopoyo_mini 12s infinite ease-in-out, kurukuru_right 28s infinite linear;
   animation: unyonnyo 8s infinite ease-in-out, poyopoyo_mini 12s infinite ease-in-out, kurukuru_right 28s infinite linear;
 }
 
-.gu-object--topSection02 .gu-object__shape:nth-child(1):after {
+.fk-object--topSection02 .fk-object__shape:nth-child(1):after {
   -webkit-animation: unyonnyo2 10s infinite ease-in-out, poyopoyo2_mini 12s infinite ease-in-out, kurukuru_right 28s infinite linear;
   animation: unyonnyo2 10s infinite ease-in-out, poyopoyo2_mini 12s infinite ease-in-out, kurukuru_right 28s infinite linear;
 }
 
-.gu-object--topSection03 .gu-object__shape:nth-child(1) {
+.fk-object--topSection03 .fk-object__shape:nth-child(1) {
   bottom: 3.33vw;
   right: 9.9vw;
   width: 6.09vw;
   height: 5.94vw;
 }
 
-.gu-object--topSection03 .gu-object__shape:nth-child(1):before {
+.fk-object--topSection03 .fk-object__shape:nth-child(1):before {
   -webkit-animation: unyonnyo 8s infinite ease-in-out, poyopoyo_mini 16s infinite ease-in-out, kurukuru_right 24s infinite linear;
   animation: unyonnyo 8s infinite ease-in-out, poyopoyo_mini 16s infinite ease-in-out, kurukuru_right 24s infinite linear;
 }
 
-.gu-object--topSection03 .gu-object__shape:nth-child(1):after {
+.fk-object--topSection03 .fk-object__shape:nth-child(1):after {
   -webkit-animation: unyonnyo2 12s infinite ease-in-out, poyopoyo2_mini 16s infinite ease-in-out, kurukuru_right 24s infinite linear;
   animation: unyonnyo2 12s infinite ease-in-out, poyopoyo2_mini 16s infinite ease-in-out, kurukuru_right 24s infinite linear;
 }
 
-.gu-object--topSection04 .gu-object__shape:nth-child(1) {
+.fk-object--topSection04 .fk-object__shape:nth-child(1) {
   top: 3.91vw;
   left: 3.13vw;
   width: 6.09vw;
   height: 5.94vw;
 }
 
-.gu-object--topSection04 .gu-object__shape:nth-child(1):before {
+.fk-object--topSection04 .fk-object__shape:nth-child(1):before {
   -webkit-animation: unyonnyo 5s infinite ease-in-out, poyopoyo_mini 10s infinite ease-in-out, kurukuru_left 30s infinite linear;
   animation: unyonnyo 5s infinite ease-in-out, poyopoyo_mini 10s infinite ease-in-out, kurukuru_left 30s infinite linear;
 }
 
-.gu-object--topSection04 .gu-object__shape:nth-child(1):after {
+.fk-object--topSection04 .fk-object__shape:nth-child(1):after {
   -webkit-animation: unyonnyo2 8s infinite ease-in-out, poyopoyo2_mini 11s infinite ease-in-out, kurukuru_left 30s infinite linear;
   animation: unyonnyo2 8s infinite ease-in-out, poyopoyo2_mini 11s infinite ease-in-out, kurukuru_left 30s infinite linear;
 }
 
-.gu-top-mvTitle__text {
+.fk-top-mvTitle__text {
   letter-spacing: 3px;
 }
 
 @media screen and (min-width: 768px) {
-  .gu-section:nth-of-type(odd) .gu-top-contentImage {
+  .fk-section:nth-of-type(odd) .fk-top-contentImage {
     -webkit-box-ordinal-group: 0;
     -ms-flex-order: -1;
     order: -1;
   }
 
-  .gu-vision__content + .gu-button-1 {
+  .fk-vision__content + .fk-button-1 {
     margin-top: 7.81vw;
   }
 
-  .gu-top-mvTitle__text {
+  .fk-top-mvTitle__text {
     font-size: 6.25vw;
   }
 }
 
 @media screen and (min-width: 1920px) {
-  .top .gu-section:nth-of-type(odd) .gu-container .gu-top-content {
+  .top .fk-section:nth-of-type(odd) .fk-container .fk-top-content {
     margin-right: 13.75rem;
   }
 
-  .top .gu-section:nth-of-type(even) .gu-container .gu-top-content {
+  .top .fk-section:nth-of-type(even) .fk-container .fk-top-content {
     margin-left: 13.75rem;
   }
 
-  .top .gu-container {
+  .top .fk-container {
     max-width: 120rem;
     margin: 0 auto;
   }
 
-  .top .gu-container .gu-top-contentImage {
+  .top .fk-container .fk-top-contentImage {
     width: 46.25rem;
     margin: 0;
   }
 
-  .top .gu-container .gu-top-content {
+  .top .fk-container .fk-top-content {
     max-width: 46.25rem;
   }
 
-  .gu-top-mvTitle__text {
+  .fk-top-mvTitle__text {
     font-size: 7.5rem;
   }
 }
 
 @media screen and (max-width: 767px) {
-  .top .gu-footer:before {
+  .top .fk-footer:before {
     height: 8.91vw;
     top: -7.38vw;
   }
 
-  .top .gu-container {
+  .top .fk-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -715,12 +715,12 @@
     padding: 18.32vw 0 0;
   }
 
-  .gu-top-content {
+  .fk-top-content {
     width: 100%;
     margin-bottom: 16.28vw;
   }
 
-  .top .gu-button-1 {
+  .top .fk-button-1 {
     margin-top: 5.85vw;
     width: 28.5vw;
     font-size: 3.05vw;
@@ -728,147 +728,147 @@
     line-height: 1.5;
   }
 
-  .gu-top-contentImage {
+  .fk-top-contentImage {
     max-width: inherit;
   }
 
-  .gu-top-contentImage img {
+  .fk-top-contentImage img {
     width: 100%;
   }
 
-  .gu-news-list {
+  .fk-news-list {
     row-gap: 9.41vw;
     font-size: 3.05vw;
   }
 
-  .gu-news-list .dd {
+  .fk-news-list .dd {
     padding-right: 7.63vw;
   }
 
-  .gu-news-list .dd::after {
+  .fk-news-list .dd::after {
     right: 3.05vw;
   }
 
-  .gu-top-online {
+  .fk-top-online {
     padding: 10.18vw 0;
   }
 
-  .gu-top-online .gu-heading-1 {
+  .fk-top-online .fk-heading-1 {
     margin-bottom: 5.6vw;
   }
 
-  .gu-top-online__image {
+  .fk-top-online__image {
     margin-bottom: 10.18vw;
   }
 
-  .gu-top-mv {
+  .fk-top-mv {
     background: url("/assets/images/top_MV01sp.jpg") no-repeat 0 0/100%;
     height: 162.85vw;
   }
 
-  .gu-top-mvTitle {
+  .fk-top-mvTitle {
     padding-top: 61.07vw;
     margin-bottom: 37.15vw;
   }
 
-  .gu-top-mvTitle__subText {
+  .fk-top-mvTitle__subText {
     margin-top: 0;
   }
 
-  .gu-top-mvScrollGuide:after {
+  .fk-top-mvScrollGuide:after {
     height: 4.07vw;
     width: 4.07vw;
     margin: 2.54vw auto 0;
   }
 
-  .gu-top-mvScrollGuide__text {
+  .fk-top-mvScrollGuide__text {
     width: 24.43vw;
   }
 
-  .gu-top-mvSide {
+  .fk-top-mvSide {
     display: none;
   }
 
-  .gu-object--topMv .gu-object__shape:nth-child(1) {
+  .fk-object--topMv .fk-object__shape:nth-child(1) {
     top: 26.97vw;
     left: 7.63vw;
     width: 22.65vw;
     height: 24.17vw;
   }
 
-  .gu-object--topMv .gu-object__shape:nth-child(1):before {
+  .fk-object--topMv .fk-object__shape:nth-child(1):before {
     -webkit-animation: unyonnyo 8s infinite ease-in-out, poyopoyo_mini 12s infinite ease-in-out, kurukuru_right 28s infinite linear;
     animation: unyonnyo 8s infinite ease-in-out, poyopoyo_mini 12s infinite ease-in-out, kurukuru_right 28s infinite linear;
   }
 
-  .gu-object--topMv .gu-object__shape:nth-child(1):after {
+  .fk-object--topMv .fk-object__shape:nth-child(1):after {
     -webkit-animation: unyonnyo2 10s infinite ease-in-out, poyopoyo2_mini 12s infinite ease-in-out, kurukuru_right 28s infinite linear;
     animation: unyonnyo2 10s infinite ease-in-out, poyopoyo2_mini 12s infinite ease-in-out, kurukuru_right 28s infinite linear;
   }
 
-  .gu-object--topMv .gu-object__shape:nth-child(2) {
+  .fk-object--topMv .fk-object__shape:nth-child(2) {
     top: 106.11vw;
     left: 10.94vw;
     width: 14.76vw;
     height: 14.76vw;
   }
 
-  .gu-object--topMv .gu-object__shape:nth-child(2):before {
+  .fk-object--topMv .fk-object__shape:nth-child(2):before {
     -webkit-animation: unyonnyo 5s infinite ease-in-out, poyopoyo_mini 10s infinite ease-in-out, kurukuru_left 30s infinite linear;
     animation: unyonnyo 5s infinite ease-in-out, poyopoyo_mini 10s infinite ease-in-out, kurukuru_left 30s infinite linear;
   }
 
-  .gu-object--topMv .gu-object__shape:nth-child(2):after {
+  .fk-object--topMv .fk-object__shape:nth-child(2):after {
     -webkit-animation: unyonnyo2 8s infinite ease-in-out, poyopoyo2_mini 11s infinite ease-in-out, kurukuru_left 30s infinite linear;
     animation: unyonnyo2 8s infinite ease-in-out, poyopoyo2_mini 11s infinite ease-in-out, kurukuru_left 30s infinite linear;
   }
 
-  .gu-object--topMv .gu-object__shape:nth-child(3) {
+  .fk-object--topMv .fk-object__shape:nth-child(3) {
     top: 45.04vw;
     right: 9.67vw;
     width: 20.36vw;
     height: 21.37vw;
   }
 
-  .gu-object--topMv .gu-object__shape:nth-child(3):before {
+  .fk-object--topMv .fk-object__shape:nth-child(3):before {
     -webkit-animation: unyonnyo 8s infinite ease-in-out, poyopoyo_mini 16s infinite ease-in-out, kurukuru_right 24s infinite linear;
     animation: unyonnyo 8s infinite ease-in-out, poyopoyo_mini 16s infinite ease-in-out, kurukuru_right 24s infinite linear;
   }
 
-  .gu-object--topMv .gu-object__shape:nth-child(3):after {
+  .fk-object--topMv .fk-object__shape:nth-child(3):after {
     -webkit-animation: unyonnyo2 12s infinite ease-in-out, poyopoyo2_mini 16s infinite ease-in-out, kurukuru_right 24s infinite linear;
     animation: unyonnyo2 12s infinite ease-in-out, poyopoyo2_mini 16s infinite ease-in-out, kurukuru_right 24s infinite linear;
   }
 
-  .gu-object--topSection01 .gu-object__shape:nth-child(1) {
+  .fk-object--topSection01 .fk-object__shape:nth-child(1) {
     top: 7.38vw;
     right: 10.18vw;
     width: 13.99vw;
     height: 15.27vw;
   }
 
-  .gu-object--topSection02 .gu-object__shape:nth-child(1) {
+  .fk-object--topSection02 .fk-object__shape:nth-child(1) {
     top: 69.97vw;
     right: 9.67vw;
     width: 12.98vw;
     height: 14.5vw;
   }
 
-  .gu-object--topSection03 .gu-object__shape:nth-child(1) {
+  .fk-object--topSection03 .fk-object__shape:nth-child(1) {
     top: 76.34vw;
     right: 30.79vw;
     width: 12.98vw;
     height: 14.5vw;
   }
 
-  .gu-object--topSection04 .gu-object__shape:nth-child(1) {
+  .fk-object--topSection04 .fk-object__shape:nth-child(1) {
     top: 6.36vw;
     left: 73.54vw;
     width: 12.98vw;
     height: 14.5vw;
   }
 
-  .gu-top-mvTitle__text {
+  .fk-top-mvTitle__text {
     font-size: 10.18vw;
   }
 }

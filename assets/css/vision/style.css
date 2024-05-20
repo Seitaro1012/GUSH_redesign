@@ -294,15 +294,15 @@
   }
 }
 
-.gu-section__vision-1 {
+.fk-section__vision-1 {
   z-index: 1;
 }
 
-.gu-section__vision-1:before {
+.fk-section__vision-1:before {
   z-index: -1;
 }
 
-.gu-object--vision-1 .gu-object__shape:nth-child(1) {
+.fk-object--vision-1 .fk-object__shape:nth-child(1) {
   top: -8.07vw;
   right: 7%;
   width: 15.89vw;
@@ -310,175 +310,175 @@
   z-index: -1;
 }
 
-.gu-object--vision-1 .gu-object__shape:nth-child(1):before {
+.fk-object--vision-1 .fk-object__shape:nth-child(1):before {
   -webkit-animation: unyonnyo 8s infinite ease-in-out, poyopoyo 16s infinite ease-in-out, kurukuru_right 28s infinite linear;
   animation: unyonnyo 8s infinite ease-in-out, poyopoyo 16s infinite ease-in-out, kurukuru_right 28s infinite linear;
 }
 
-.gu-object--vision-1 .gu-object__shape:nth-child(1):after {
+.fk-object--vision-1 .fk-object__shape:nth-child(1):after {
   -webkit-animation: unyonnyo2 12s infinite ease-in-out, poyopoyo2 16s infinite ease-in-out, kurukuru_right 28s infinite linear;
   animation: unyonnyo2 12s infinite ease-in-out, poyopoyo2 16s infinite ease-in-out, kurukuru_right 28s infinite linear;
 }
 
-.gu-object--vision-1 .gu-object__shape:nth-child(2) {
+.fk-object--vision-1 .fk-object__shape:nth-child(2) {
   top: 26.04vw;
   left: 34%;
   width: 4.17vw;
   height: 5vw;
 }
 
-.gu-object--vision-1 .gu-object__shape:nth-child(2):before {
+.fk-object--vision-1 .fk-object__shape:nth-child(2):before {
   -webkit-animation: unyonnyo 8s infinite ease-in-out, poyopoyo_mini 16s infinite ease-in-out, kurukuru_right 24s infinite linear;
   animation: unyonnyo 8s infinite ease-in-out, poyopoyo_mini 16s infinite ease-in-out, kurukuru_right 24s infinite linear;
 }
 
-.gu-object--vision-1 .gu-object__shape:nth-child(2):after {
+.fk-object--vision-1 .fk-object__shape:nth-child(2):after {
   -webkit-animation: unyonnyo2 12s infinite ease-in-out, poyopoyo2_mini 16s infinite ease-in-out, kurukuru_right 24s infinite linear;
   animation: unyonnyo2 12s infinite ease-in-out, poyopoyo2_mini 16s infinite ease-in-out, kurukuru_right 24s infinite linear;
 }
 
-.gu-object--vision-2 .gu-object__shape:nth-child(1) {
+.fk-object--vision-2 .fk-object__shape:nth-child(1) {
   top: -2.6vw;
   right: 13%;
   width: 23.65vw;
   height: 24.84vw;
 }
 
-.gu-object--vision-2 .gu-object__shape:nth-child(1):before {
+.fk-object--vision-2 .fk-object__shape:nth-child(1):before {
   -webkit-animation: unyonnyo 8s infinite ease-in-out, poyopoyo 16s infinite ease-in-out, kurukuru_right 28s infinite linear;
   animation: unyonnyo 8s infinite ease-in-out, poyopoyo 16s infinite ease-in-out, kurukuru_right 28s infinite linear;
 }
 
-.gu-object--vision-2 .gu-object__shape:nth-child(1):after {
+.fk-object--vision-2 .fk-object__shape:nth-child(1):after {
   -webkit-animation: unyonnyo2 12s infinite ease-in-out, poyopoyo2 16s infinite ease-in-out, kurukuru_right 28s infinite linear;
   animation: unyonnyo2 12s infinite ease-in-out, poyopoyo2 16s infinite ease-in-out, kurukuru_right 28s infinite linear;
 }
 
-.gu-object--vision-2 .gu-object__shape:nth-child(2) {
+.fk-object--vision-2 .fk-object__shape:nth-child(2) {
   top: 46.88vw;
   left: 11%;
   width: 4.17vw;
   height: 5vw;
 }
 
-.gu-object--vision-2 .gu-object__shape:nth-child(2):before {
+.fk-object--vision-2 .fk-object__shape:nth-child(2):before {
   -webkit-animation: unyonnyo 8s infinite ease-in-out, poyopoyo_mini 16s infinite ease-in-out, kurukuru_right 24s infinite linear;
   animation: unyonnyo 8s infinite ease-in-out, poyopoyo_mini 16s infinite ease-in-out, kurukuru_right 24s infinite linear;
 }
 
-.gu-object--vision-2 .gu-object__shape:nth-child(2):after {
+.fk-object--vision-2 .fk-object__shape:nth-child(2):after {
   -webkit-animation: unyonnyo2 12s infinite ease-in-out, poyopoyo2_mini 16s infinite ease-in-out, kurukuru_right 24s infinite linear;
   animation: unyonnyo2 12s infinite ease-in-out, poyopoyo2_mini 16s infinite ease-in-out, kurukuru_right 24s infinite linear;
 }
 
-.gu-object--vision-3 .gu-object__shape:nth-child(1) {
+.fk-object--vision-3 .fk-object__shape:nth-child(1) {
   top: 11.46vw;
   right: 9%;
   width: 18.96vw;
   height: 19.64vw;
 }
 
-.gu-object--vision-3 .gu-object__shape:nth-child(1):before {
+.fk-object--vision-3 .fk-object__shape:nth-child(1):before {
   -webkit-animation: unyonnyo 16s infinite ease-in-out, poyopoyo 24s infinite ease-in-out, kurukuru_right 24s infinite linear;
   animation: unyonnyo 16s infinite ease-in-out, poyopoyo 24s infinite ease-in-out, kurukuru_right 24s infinite linear;
 }
 
-.gu-object--vision-3 .gu-object__shape:nth-child(1):after {
+.fk-object--vision-3 .fk-object__shape:nth-child(1):after {
   -webkit-animation: unyonnyo2 20s infinite ease-in-out, poyopoyo2 24s infinite ease-in-out, kurukuru_right 24s infinite linear;
   animation: unyonnyo2 20s infinite ease-in-out, poyopoyo2 24s infinite ease-in-out, kurukuru_right 24s infinite linear;
 }
 
-.gu-object--vision-3 .gu-object__shape:nth-child(2) {
+.fk-object--vision-3 .fk-object__shape:nth-child(2) {
   top: 36.46vw;
   right: 27%;
   width: 4.17vw;
   height: 5vw;
 }
 
-.gu-object--vision-3 .gu-object__shape:nth-child(2):before {
+.fk-object--vision-3 .fk-object__shape:nth-child(2):before {
   -webkit-animation: unyonnyo 8s infinite ease-in-out, poyopoyo_mini 16s infinite ease-in-out, kurukuru_right 24s infinite linear;
   animation: unyonnyo 8s infinite ease-in-out, poyopoyo_mini 16s infinite ease-in-out, kurukuru_right 24s infinite linear;
 }
 
-.gu-object--vision-3 .gu-object__shape:nth-child(2):after {
+.fk-object--vision-3 .fk-object__shape:nth-child(2):after {
   -webkit-animation: unyonnyo2 12s infinite ease-in-out, poyopoyo2_mini 16s infinite ease-in-out, kurukuru_right 24s infinite linear;
   animation: unyonnyo2 12s infinite ease-in-out, poyopoyo2_mini 16s infinite ease-in-out, kurukuru_right 24s infinite linear;
 }
 
 @media screen and (min-width: 768px) {
-  .gu-section__vision-1 {
+  .fk-section__vision-1 {
     padding-bottom: 23.96vw;
   }
 
-  .gu-section__vision-2 {
+  .fk-section__vision-2 {
     padding-bottom: 23.96vw;
   }
 
-  .gu-section__vision-3 {
+  .fk-section__vision-3 {
     padding-bottom: 6.77vw;
   }
 
-  .gu-heading-3 {
+  .fk-heading-3 {
     margin-top: 1em;
   }
 
-  .gu-heading-3:first-of-type {
+  .fk-heading-3:first-of-type {
     margin-top: 0;
   }
 
-  .gu-vision__textArea + .gu-button-1 {
+  .fk-vision__textArea + .fk-button-1 {
     margin-top: 7.81vw;
   }
 }
 
 @media screen and (min-width: 1920px) {
-  .gu-section__vision-1 {
+  .fk-section__vision-1 {
     padding-bottom: 28.75rem;
   }
 
-  .gu-section__vision-2 {
+  .fk-section__vision-2 {
     padding-bottom: 28.75rem;
   }
 
-  .gu-section__vision-3 {
+  .fk-section__vision-3 {
     padding-bottom: 8.13rem;
   }
 
-  .gu-vision__textArea + .gu-button-1 {
+  .fk-vision__textArea + .fk-button-1 {
     margin-top: 9.38rem;
   }
 
-  .gu-object--vision-1 .gu-object__shape:nth-child(1) {
+  .fk-object--vision-1 .fk-object__shape:nth-child(1) {
     top: -9.69rem;
     width: 19.06rem;
     height: 20.31rem;
   }
 
-  .gu-object--vision-1 .gu-object__shape:nth-child(2) {
+  .fk-object--vision-1 .fk-object__shape:nth-child(2) {
     top: 31.25rem;
     width: 5rem;
     height: 6rem;
   }
 
-  .gu-object--vision-2 .gu-object__shape:nth-child(1) {
+  .fk-object--vision-2 .fk-object__shape:nth-child(1) {
     top: -3.13rem;
     width: 28.38rem;
     height: 29.81rem;
   }
 
-  .gu-object--vision-2 .gu-object__shape:nth-child(2) {
+  .fk-object--vision-2 .fk-object__shape:nth-child(2) {
     top: 56.25rem;
     width: 5rem;
     height: 6rem;
   }
 
-  .gu-object--vision-3 .gu-object__shape:nth-child(1) {
+  .fk-object--vision-3 .fk-object__shape:nth-child(1) {
     top: 13.75rem;
     width: 22.75rem;
     height: 23.56rem;
   }
 
-  .gu-object--vision-3 .gu-object__shape:nth-child(2) {
+  .fk-object--vision-3 .fk-object__shape:nth-child(2) {
     top: 43.75rem;
     width: 5rem;
     height: 6rem;
@@ -486,63 +486,63 @@
 }
 
 @media screen and (max-width: 767px) {
-  .gu-section__vision-1 {
+  .fk-section__vision-1 {
     padding-bottom: 25.45vw;
   }
 
-  .gu-section__vision-2 {
+  .fk-section__vision-2 {
     padding-bottom: 25.45vw;
   }
 
-  .gu-section__vision-3 {
+  .fk-section__vision-3 {
     padding-bottom: 12.72vw;
   }
 
-  .gu-heading-3 {
+  .fk-heading-3 {
     margin-top: 1.5em;
   }
 
-  .gu-vision__textArea + .gu-button-1 {
+  .fk-vision__textArea + .fk-button-1 {
     margin-top: 21.37vw;
   }
 
-  .gu-object--vision-1 .gu-object__shape:nth-child(1) {
+  .fk-object--vision-1 .fk-object__shape:nth-child(1) {
     top: 3.05vw;
     right: 4%;
     width: 20.36vw;
     height: 21.63vw;
   }
 
-  .gu-object--vision-1 .gu-object__shape:nth-child(1):before {
+  .fk-object--vision-1 .fk-object__shape:nth-child(1):before {
     -webkit-animation: unyonnyo 8s infinite ease-in-out, poyopoyo_mini 12s infinite ease-in-out, kurukuru_right 28s infinite linear;
     animation: unyonnyo 8s infinite ease-in-out, poyopoyo_mini 12s infinite ease-in-out, kurukuru_right 28s infinite linear;
   }
 
-  .gu-object--vision-1 .gu-object__shape:nth-child(1):after {
+  .fk-object--vision-1 .fk-object__shape:nth-child(1):after {
     -webkit-animation: unyonnyo2 10s infinite ease-in-out, poyopoyo2_mini 12s infinite ease-in-out, kurukuru_right 28s infinite linear;
     animation: unyonnyo2 10s infinite ease-in-out, poyopoyo2_mini 12s infinite ease-in-out, kurukuru_right 28s infinite linear;
   }
 
-  .gu-object--vision-1 .gu-object__shape:nth-child(2) {
+  .fk-object--vision-1 .fk-object__shape:nth-child(2) {
     display: none;
   }
 
-  .gu-object--vision-2 .gu-object__shape:nth-child(1) {
+  .fk-object--vision-2 .fk-object__shape:nth-child(1) {
     display: none;
   }
 
-  .gu-object--vision-2 .gu-object__shape:nth-child(2) {
+  .fk-object--vision-2 .fk-object__shape:nth-child(2) {
     top: 127.23vw;
     left: 28%;
     width: 12.72vw;
     height: 13.99vw;
   }
 
-  .gu-object--vision-3 .gu-object__shape:nth-child(1) {
+  .fk-object--vision-3 .fk-object__shape:nth-child(1) {
     display: none;
   }
 
-  .gu-object--vision-3 .gu-object__shape:nth-child(2) {
+  .fk-object--vision-3 .fk-object__shape:nth-child(2) {
     top: 147.58vw;
     right: 8%;
     width: 12.72vw;

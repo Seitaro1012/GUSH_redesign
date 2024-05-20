@@ -4,56 +4,48 @@
 heading
 ---------*/
 
-.gu-heading{
+.fk-heading{
+  // font-family: Noto Serif JP; 
   &-1 {
-    font-family: Roboto; 
     font-weight: 700;
-    line-height: 1.2;
+    font-size: vwpc(48);
+    // line-height: 1.4375 ;
     // line-height: 1.5;
-    @include mq-up(){
-      font-size: vwpc(80);
-    }
-    @include mq-max(){
-      font-size: rem(100);
-    }
-    @include mq-down() {
-      font-size: vw(40);
-    }
-  }
-  &-2 {
-    font-weight: 700;
-    margin-bottom: 1em;
-    @include mq-up(){
-      font-size: vwpc(40);
-    }
     @include mq-max(){
       font-size: rem(48);
-    }
+    }     
     @include mq-down() {
-      font-size: vw(24);
+      font-size: vw(18);
     }
   }
-  &-3{
+  &__sub {
+    font-family: Roboto;
     font-weight: 700;
-    margin-bottom: 1em;
-    @include mq-up(){
-      font-size: vwpc(38);
-    }
+    font-size: vwpc(40);
+    line-height: 1.172;
+    color: $base-color-yellow;
     @include mq-max(){
-      font-size: rem(38);
+      font-size: rem(40);
     }
     @include mq-down() {
       font-size: vw(16);
     }
+
   }
-  &__color-a{
-    color:$base-color-white;
+
+
+  &__noLine{
+    // オレンジラインなし
   }
-  &__color-b{
-    color:$sub-color-blue01;
-  }
-  &__color-c{
-    color:$sub-color-blue02;
+  &Wrap {
+    text-align: center;
+    margin-bottom: vwpc(120);
+    @include mq-max(){
+      font-size: rem(120);
+    }
+    @include mq-down() {
+      font-size: vw(48);
+    }
   }
 }
 
@@ -61,14 +53,10 @@ heading
 text
 ---------*/
 
-.gu-text{
+.fk-text{
   &-1 {
-    font-weight: 400;
-    // margin-bottom:1em;
-    line-height: 2.0;
-    @include mq-up(){
-      font-size: vwpc(24);
-    }
+    font-weight: 700;
+    font-size: vwpc(24);
     @include mq-max(){
       font-size: rem(24);
     }
@@ -79,43 +67,53 @@ text
       margin-top:1em;
     }
   }
-  &__color-a{
-    color:$base-color-white;
+  &-2 {
+    font-weight: 700;
+    font-size: vwpc(22);
+    @include mq-max(){
+      font-size: rem(22);
+    }
+    @include mq-down() {
+      font-size: vw(12);
+    }
   }
+  &__sans{
+    font-family: Noto Sans JP;
+    font-weight: 400;
+    font-size: vwpc(24);
+    line-height: 1.6667;
+    @include mq-max(){
+      font-size: rem(24);
+    }
+    @include mq-down() {
+      font-size: vw(12);
+    }
+  }
+  
 }
 
 /*--------
 button
 ---------*/
 
-.gu-button{
+.fk-button{
   &-1{
     display: block;
-    font-family: Roboto; 
     font-weight:700;
-    line-height: 1.17;
-    color:$base-color-white;
-    background: $sub-color-blue01;
-    border-radius: 9999px;
+    background: $base-color-yellow;
     width: fit-content;
     @include mq-up(){
-      font-size: vwpc(40);
-      padding: vwpc(8) vwpc(64);
+      font-size: vwpc(24);
+      padding: vwpc(16) vwpc(104);
     }
     @include mq-max(){
-      font-size: rem(40);
-      padding: rem(8) rem(64);
+      font-size: rem(24);
+      padding: rem(16) rem(104);
     }
     @include mq-down(){
-      text-align: center;
-      width: 100%;
-      font-size: vw(24);
-      padding: vw(16) vw(22);
+      font-size: vw(12);
+      padding: vw(7.11) vw(35.49);
     }
-  }
-  &__color-a {
-    color: $base-color-blue;
-    background: $sub-color-blue02;
   }
   &__center{
     margin: 0 auto;

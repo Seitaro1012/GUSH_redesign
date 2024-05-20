@@ -1,9 +1,9 @@
 
 
 const gu_header = `
-<header class="gu-header">
-<h1 class="gu-header__logo"><a href="/" tabindex="0"><img src="/assets/images/logo.png" alt="GUSH.Inc"></a></h1>
-<ul class="gu-header__navList">
+<header class="fk-header">
+<h1 class="fk-header__logo"><a href="/" tabindex="0"><img src="/assets/images/logo.png" alt="GUSH.Inc"></a></h1>
+<ul class="fk-header__navList">
   <li>
     <a href="/vision/" tabindex="0">理念について</a>
   </li>
@@ -23,23 +23,23 @@ const gu_header = `
     <a href="https://www.thepith-store.com/" target="_blank" aria-label="オンラインストアを新規タブで開きます" rel="noopener noreferrer" tabindex="0">オンラインストア</a>
   </li>
 </ul>
-<button class="gu-mobile-menu-icon js-toggleButton" tabindex="0">
+<button class="fk-mobile-menu-icon js-toggleButton" tabindex="0">
   <span></span>
   <span></span>
   <span></span>
 </button>
 </header>
-<div class="gu-overlay">
-<div class="gu-overlay__header">
-  <p class="gu-overlay__headerLogo"><a href="/" tabindex="0"><img src="/assets/images/logo_w.png" alt="GUSH.Inc"></a></p>
-  <p class="gu-overlay__headerAddress">〒386-0034  長野県上田市中之条576-1 スカイビル 105</p>
-  <ul class="gu-overlay__headerSnsIcons">
+<div class="fk-overlay">
+<div class="fk-overlay__header">
+  <p class="fk-overlay__headerLogo"><a href="/" tabindex="0"><img src="/assets/images/logo_w.png" alt="GUSH.Inc"></a></p>
+  <p class="fk-overlay__headerAddress">〒386-0034  長野県上田市中之条576-1 スカイビル 105</p>
+  <ul class="fk-overlay__headerSnsIcons">
     <li><a href="__dummy__" target="_blank" aria-label="インスタグラムを新規タブで開きます" rel="noopener noreferrer" tabindex="0"><img src="/assets/images/icon01.png" alt="インスタグラム"></a></li>
     <li><a href="https://maps.app.goo.gl/7Z465CwU9qYgyo5w8" target="_blank" aria-label="Googleマップを新規タブで開きます" rel="noopener noreferrer"><img src="/assets/images/icon02.png" alt="Googleマップ" tabindex="0"></a></li>
   </ul>
 </div>
-<nav class="gu-overlay__nav">
-  <ul class="gu-overlay__navList">
+<nav class="fk-overlay__nav">
+  <ul class="fk-overlay__navList">
   <li>
     <a href="/vision/" tabindex="0">理念について</a>
   </li>
@@ -60,10 +60,10 @@ const gu_header = `
   </li>
 </ul>
 </nav>
-<p class="gu-overlay__copyright">&copy; 2024 GUSH Inc. </p>
-<div class="gu-object gu-object--overlay">
-  <div class="gu-object__shape gu-object__shape--blue02"></div>
-  <div class="gu-object__shape gu-object__shape--blue03"></div>
+<p class="fk-overlay__copyright">&copy; 2024 GUSH Inc. </p>
+<div class="fk-object fk-object--overlay">
+  <div class="fk-object__shape fk-object__shape--blue02"></div>
+  <div class="fk-object__shape fk-object__shape--blue03"></div>
 </div>
 </div>
 `;
@@ -71,24 +71,24 @@ const gu_header = `
 
 
 const gu_footer = `
-<footer class="gu-footer">
-<div class="gu-footer__container">
-  <div class="gu-footer__addressArea">
-    <p class="gu-footer__logo"><a href="/" tabindex="0"><img src="/assets/images/logo_w.png" alt="GUSH.Inc"></a></p>
-    <p class="gu-footer__address">
+<footer class="fk-footer">
+<div class="fk-footer__container">
+  <div class="fk-footer__addressArea">
+    <p class="fk-footer__logo"><a href="/" tabindex="0"><img src="/assets/images/logo_w.png" alt="GUSH.Inc"></a></p>
+    <p class="fk-footer__address">
       〒386-0034<br class="only-pc">長野県上田市中之条576-1<br class="only-pc">スカイビル 105
     </p>
-    <p class="gu-footer__copyright">&copy; 2024 GUSH Inc. </p>
+    <p class="fk-footer__copyright">&copy; 2024 GUSH Inc. </p>
   </div>
   
-  <div class="gu-footer__mapWrap">
-    <div class="gu-footer__map">
+  <div class="fk-footer__mapWrap">
+    <div class="fk-footer__map">
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12845.865615837636!2d138.21985176605048!3d36.397909457829726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601da2d744e8f48d%3A0x8cfc656aaf93da11!2sTHE%20PITH!5e0!3m2!1sja!2sjp!4v1712408568044!5m2!1sja!2sjp" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
   </div>
   
-  <div class="gu-footer__nav">
-    <ul class="gu-footer__navList">
+  <div class="fk-footer__nav">
+    <ul class="fk-footer__navList">
       <li>
         <a href="/vision/" tabindex="0">理念について</a>
       </li>
